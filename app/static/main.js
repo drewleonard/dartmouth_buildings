@@ -3,8 +3,9 @@
  */
 
 var thisDate = 1765,
-    dateEnd = 1785,
-    stepTime = 1000;
+    dateEnd = 1785;
+
+var stepTime = 500;
 
 /**
  * MAP
@@ -14,7 +15,7 @@ var thisDate = 1765,
 var tiles = new L.StamenTileLayer("toner-lite");
 var map = new L.Map("map", {
     center: new L.LatLng(43.7043222, -72.2875),
-    zoom: 17
+    zoom: 16
 });
 
 // Add feature layer to map object
@@ -52,39 +53,128 @@ var highlightStyle = {
  * POPULATE SIDEBAR WITH YEARS
  */
 
-for (i = thisDate; i < dateEnd; i++) {
+function populateSidebarYears(yearStart, yearEnd) {
 
-    var sidebarHeight = $("#sidebar").height();
+    for (i = yearStart; i <= yearEnd; i++) {
 
-    if (i == thisDate) {
-        var $thisYearDivContainer = $("<div/>")
-            .attr("id", "current-year-item")
-            .addClass("current-year-item")
-            .html("<div></div>");
-    } else {
+        // Record sidebar height
+        var sidebarHeight = $("#sidebar").height();
+
         var $thisYearDivContainer = $("<div/>")
             .attr("id", "sidebar-year-item")
             .addClass("sidebar-year-item")
             .html("<div></div>");
+
+        // if (i == thisDate) {
+        //     var $thisYearDivContainer = $("<div/>")
+        //         .attr("id", "current-year-item")
+        //         .addClass("current-year-item")
+        //         .html("<div></div>");
+        // } else {
+        //     var $thisYearDivContainer = $("<div/>")
+        //         .attr("id", "sidebar-year-item")
+        //         .addClass("sidebar-year-item")
+        //         .html("<div></div>");
+        // }
+
+        var $thisYearDivIcon = $("<div/>")
+            .attr("id", "year-div-icon")
+            .addClass("year-div-icon")
+            .html("<div></div>");
+
+        var $thisYearDivYear = $("<div/>")
+            .attr("id", "year-div-year")
+            .addClass("year-div-year")
+            .html("<div>" + i + "</div>");
+
+        $thisYearDivContainer.append($thisYearDivIcon);
+        $thisYearDivContainer.append($thisYearDivYear);
+        $("#sidebar-year-container").append($thisYearDivContainer);
+
+        // Set sidebar height
+        $("#sidebar").height(sidebarHeight);
+
     }
 
-    var $thisYearDivIcon = $("<div/>")
-        .attr("id", "year-div-icon")
-        .addClass("year-div-icon")
-        .html("<div></div>");
+}
 
-    var $thisYearDivYear = $("<div/>")
-        .attr("id", "year-div-year")
-        .addClass("year-div-year")
-        .html("<div>" + i + "</div>");
+function createStoryItem(number, title) {
 
-    $thisYearDivContainer.append($thisYearDivIcon);
-    $thisYearDivContainer.append($thisYearDivYear);
-    $("#sidebar-year-container").append($thisYearDivContainer);
+    if (number == 1) {
 
-    $("#sidebar").height(sidebarHeight);
+        var $thisStoryDivItem = $("<div/>")
+            .attr("id", "story-div-item")
+            .addClass("story-div-item-current")
+            .html("<div></div>");
+
+        var $thisItemNumber = $("<div/>")
+            .attr("id", "item-number")
+            .addClass("item-number-current")
+            .html("<div>" + number + "</div>");
+
+        var $thisItemTitle = $("<div/>")
+            .attr("id", "item-title")
+            .addClass("item-title-current")
+            .html("<div>" + title + "</div>");
+
+    } else {
+
+        var $thisStoryDivItem = $("<div/>")
+            .attr("id", "story-div-item")
+            .addClass("story-div-item")
+            .html("<div></div>");
+
+        var $thisItemNumber = $("<div/>")
+            .attr("id", "item-number")
+            .addClass("item-number")
+            .html("<div>" + number + "</div>");
+
+        var $thisItemTitle = $("<div/>")
+            .attr("id", "item-title")
+            .addClass("item-title")
+            .html("<div>" + title + "</div>");
+
+    }
+
+    $thisStoryDivItem.append($thisItemNumber);
+    $thisStoryDivItem.append($thisItemTitle);
+
+    return $thisStoryDivItem;
 
 }
+
+function createStoryTitle(title) {
+
+    // Story title
+    var $thisStoryDivTitle = $("<div/>")
+        .attr("id", "story-div-title")
+        .addClass("story-div-title")
+        .html("<div>" + title + "</div>");
+
+    // Add story title to container
+    return $thisStoryDivTitle;
+
+}
+
+function createSidebarStory() {
+
+    // Story container
+    var $thisStoryDiv = $("<div/>")
+        .attr("id", "story-div")
+        .addClass("story-div")
+        .html("<div></div>");
+
+    $thisStoryDiv.append(createStoryTitle("Introduction"));
+    $thisStoryDiv.append(createStoryItem(1, "This project"));
+    $thisStoryDiv.append(createStoryItem(2, "Going forward"));
+
+    // Add story to container
+    $("#sidebar-year-container").append($thisStoryDiv);
+
+}
+
+createSidebarStory();
+populateSidebarYears(thisDate, 1781);
 
 /**
  * ANIMATION OVER YEARS
@@ -148,4 +238,5 @@ function step() {
         setTimeout(step, stepTime);
     }
 }
+
 step();

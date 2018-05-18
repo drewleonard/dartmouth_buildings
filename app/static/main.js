@@ -7,6 +7,16 @@ var thisDate = 1765,
 
 var stepTime = 500;
 
+const storyDict = {
+    1765: {
+        "title": "Introduction",
+        "items": {
+            "1": "This project",
+            "2": "Going forward"
+        }
+    }
+};
+
 /**
  * MAP
  */
@@ -50,53 +60,8 @@ var highlightStyle = {
 };
 
 /**
- * POPULATE SIDEBAR WITH YEARS
+ * CREATE SIDERBAR STORIES
  */
-
-function populateSidebarYears(yearStart, yearEnd) {
-
-    for (i = yearStart; i <= yearEnd; i++) {
-
-        // Record sidebar height
-        var sidebarHeight = $("#sidebar").height();
-
-        var $thisYearDivContainer = $("<div/>")
-            .attr("id", "sidebar-year-item")
-            .addClass("sidebar-year-item")
-            .html("<div></div>");
-
-        // if (i == thisDate) {
-        //     var $thisYearDivContainer = $("<div/>")
-        //         .attr("id", "current-year-item")
-        //         .addClass("current-year-item")
-        //         .html("<div></div>");
-        // } else {
-        //     var $thisYearDivContainer = $("<div/>")
-        //         .attr("id", "sidebar-year-item")
-        //         .addClass("sidebar-year-item")
-        //         .html("<div></div>");
-        // }
-
-        var $thisYearDivIcon = $("<div/>")
-            .attr("id", "year-div-icon")
-            .addClass("year-div-icon")
-            .html("<div></div>");
-
-        var $thisYearDivYear = $("<div/>")
-            .attr("id", "year-div-year")
-            .addClass("year-div-year")
-            .html("<div>" + i + "</div>");
-
-        $thisYearDivContainer.append($thisYearDivIcon);
-        $thisYearDivContainer.append($thisYearDivYear);
-        $("#sidebar-year-container").append($thisYearDivContainer);
-
-        // Set sidebar height
-        $("#sidebar").height(sidebarHeight);
-
-    }
-
-}
 
 function createStoryItem(number, title) {
 
@@ -156,7 +121,7 @@ function createStoryTitle(title) {
 
 }
 
-function createSidebarStory() {
+function createSidebarStory(key) {
 
     // Story container
     var $thisStoryDiv = $("<div/>")
@@ -164,16 +129,73 @@ function createSidebarStory() {
         .addClass("story-div")
         .html("<div></div>");
 
-    $thisStoryDiv.append(createStoryTitle("Introduction"));
-    $thisStoryDiv.append(createStoryItem(1, "This project"));
-    $thisStoryDiv.append(createStoryItem(2, "Going forward"));
+    $thisStoryDiv.append(createStoryTitle(storyDict[key]["title"]));
 
-    // Add story to container
-    $("#sidebar-year-container").append($thisStoryDiv);
+    for (var itemKey in storyDict[key]["items"]) {
+        $thisStoryDiv.append(createStoryItem(itemKey, storyDict[key]["items"][itemKey]));
+    }
+
+    return $thisStoryDiv;
 
 }
 
-createSidebarStory();
+/**
+ * POPULATE SIDEBAR WITH YEARS
+ */
+
+function populateSidebarYears(yearStart, yearEnd) {
+
+    for (i = yearStart; i <= yearEnd; i++) {
+
+        // Add story if available
+        for (var key in storyDict) {
+            if (i == key) {
+                $("#sidebar-year-container")
+                    .append(createSidebarStory(key));
+            }
+        }
+
+        // Record sidebar height
+        var sidebarHeight = $("#sidebar").height();
+
+        var $thisYearDivContainer = $("<div/>")
+            .attr("id", "sidebar-year-item")
+            .addClass("sidebar-year-item")
+            .html("<div></div>");
+
+        // if (i == thisDate) {
+        //     var $thisYearDivContainer = $("<div/>")
+        //         .attr("id", "current-year-item")
+        //         .addClass("current-year-item")
+        //         .html("<div></div>");
+        // } else {
+        //     var $thisYearDivContainer = $("<div/>")
+        //         .attr("id", "sidebar-year-item")
+        //         .addClass("sidebar-year-item")
+        //         .html("<div></div>");
+        // }
+
+        var $thisYearDivIcon = $("<div/>")
+            .attr("id", "year-div-icon")
+            .addClass("year-div-icon")
+            .html("<div></div>");
+
+        var $thisYearDivYear = $("<div/>")
+            .attr("id", "year-div-year")
+            .addClass("year-div-year")
+            .html("<div>" + i + "</div>");
+
+        $thisYearDivContainer.append($thisYearDivIcon);
+        $thisYearDivContainer.append($thisYearDivYear);
+        $("#sidebar-year-container").append($thisYearDivContainer);
+
+        // Set sidebar height
+        $("#sidebar").height(sidebarHeight);
+
+    }
+
+}
+
 populateSidebarYears(thisDate, 1781);
 
 /**
@@ -182,7 +204,7 @@ populateSidebarYears(thisDate, 1781);
 
 function step() {
 
-    console.log("Step: " + thisDate);
+    // console.log("Step: " + thisDate);
 
     map.removeLayer(featureLayer);
 

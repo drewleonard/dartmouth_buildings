@@ -1,13 +1,50 @@
 html,
 body {
-    background-color: #fdf6e3;
+    background-color: #F5F5F5;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.mdc-card {
+    border-radius: 10px;
+}
+
+#site-container-test {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#site-container-top-test {
+    height: 70px;
+    background-color: green;
+}
+
+#site-container-bottom-test {
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+}
+
+#sidebar {
+    width: 255px;
+    margin-right: 10px;
+}
+
+.mdc-toolbar__row {
+    background-color: #2962FF;
 }
 
 #map {
-    width: 960px;
-    height: 500px;
+    flex-grow: 1;
+    background-color: #fdf6e3;
+}
+
+.animate-opacity {
+    opacity: .9;
+    fill-opacity: 0.25;
 }

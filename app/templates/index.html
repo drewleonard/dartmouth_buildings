@@ -13,19 +13,48 @@
     <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <!-- d3 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"></script>
-    <style>
-    #map {
-        width: 99vw;
-        height: 99vh;
-    }
-    </style>
+    <!-- MDC Web -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
 
 <body>
-    <div id="map"></div>
-    <script type="text/javascript" src="{{ url_for('static', filename='campus.js') }}"></script>
+    <div id="site-container-test">
+        <div id="site-container-top-test">
+            <header id="top-container" class="mdc-toolbar mdc-toolbar--fixed">
+                <div class="mdc-toolbar__row">
+                    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                        <span class="mdc-toolbar__title">GEOG 53 Project</span>
+                    </section>
+                </div>
+            </header>
+        </div>
+        <div id="site-container-bottom-test">
+            <div id="sidebar" class="mdc-card"></div>
+            <div id="map" class="mdc-card"></div>
+        </div>
+    </div>
+    <!-- <div class="site-container">
+    <div id="top-container">Hello</div>
+    <header id="top-container" class="mdc-toolbar mdc-toolbar--fixed">
+        <div class="mdc-toolbar__row">
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                <span class="mdc-toolbar__title">GEOG 53 Project</span>
+            </section>
+        </div>
+    </header>
+    <div id="bottom-container">
+        <div id="sidebar" class="mdc-card"></div>
+        <div id="map" class="mdc-card"></div>
+    </div>
+</div> -->
+    <!-- <script type="text/javascript" src="{{ url_for('static', filename='campus.js') }}"></script> -->
+    <script type="text/javascript" src="{{ url_for('static', filename='thisCampus.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}" charset="utf-8"></script>
 </body>
 

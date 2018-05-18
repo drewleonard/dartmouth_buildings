@@ -1,4 +1,12 @@
 /**
+ * GLOBAL SETTINGS
+ */
+
+var thisDate = 1765,
+    dateEnd = 1785,
+    stepTime = 1000;
+
+/**
  * MAP
  */
 
@@ -41,12 +49,46 @@ var highlightStyle = {
 };
 
 /**
- * ANIMATION OVER YEARS
+ * POPULATE SIDEBAR WITH YEARS
  */
 
-var thisDate = 1769,
-    dateEnd = 1777,
-    stepTime = 1000;
+for (i = thisDate; i < dateEnd; i++) {
+
+    var sidebarHeight = $("#sidebar").height();
+
+    if (i == thisDate) {
+        var $thisYearDivContainer = $("<div/>")
+            .attr("id", "current-year-item")
+            .addClass("current-year-item")
+            .html("<div></div>");
+    } else {
+        var $thisYearDivContainer = $("<div/>")
+            .attr("id", "sidebar-year-item")
+            .addClass("sidebar-year-item")
+            .html("<div></div>");
+    }
+
+    var $thisYearDivIcon = $("<div/>")
+        .attr("id", "year-div-icon")
+        .addClass("year-div-icon")
+        .html("<div></div>");
+
+    var $thisYearDivYear = $("<div/>")
+        .attr("id", "year-div-year")
+        .addClass("year-div-year")
+        .html("<div>" + i + "</div>");
+
+    $thisYearDivContainer.append($thisYearDivIcon);
+    $thisYearDivContainer.append($thisYearDivYear);
+    $("#sidebar-year-container").append($thisYearDivContainer);
+
+    $("#sidebar").height(sidebarHeight);
+
+}
+
+/**
+ * ANIMATION OVER YEARS
+ */
 
 function step() {
 

@@ -33,6 +33,38 @@ body {
 #sidebar {
     width: 255px;
     margin-right: 10px;
+    padding: 30px;
+    overflow-y: scroll;
+}
+
+#sidebar-year-item,
+#current-year-item {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 2em;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+#current-year-item {
+    background-color: #DADCE0;
+}
+
+#year-div-icon {
+    -moz-border-radius: 7px/7px;
+    -webkit-border-radius: 7px/7px;
+    border-radius: 7px/7px;
+    border: solid 2px #2962FF;
+    width: 7px;
+    height: 7px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+#year-div-year {
+    font-size: 22px;
 }
 
 .mdc-toolbar__row {

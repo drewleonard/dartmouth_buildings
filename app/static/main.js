@@ -229,7 +229,7 @@ function populateSidebarYears(yearStart, yearEnd, thisDateEnd) {
 
 }
 
-populateSidebarYears(thisDate, thisDate + numYears);
+populateSidebarYears(thisDate, thisDate + numYears, startDate);
 
 /**
  * ANIMATE MAP ON JUMP

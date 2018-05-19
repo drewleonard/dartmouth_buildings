@@ -1,4 +1,12 @@
 /**
+ * TODO
+ * 1. Animate buildings over many years
+ * 2. Edit timeline sidebar
+ *     => UI
+ *     => Controls
+ */
+
+/**
  * GLOBAL SETTINGS
  */
 
@@ -155,6 +163,7 @@ function createSidebarStory(key) {
     var $thisStoryDiv = $("<div/>")
         .attr("id", "story-div")
         .addClass("story-div")
+
         .html("<div></div>");
 
     $thisStoryDiv.append(createStoryTitle(storyDict[key]["title"]));

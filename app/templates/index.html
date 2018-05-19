@@ -47,7 +47,7 @@
                     <button id="story-button-back" class="mdc-button mdc-button--raised mdc-button--dense">
                         Back
                     </button>
-                    <button onclick="storyToStoryFoward()" id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
+                    <button onclick="storyToStoryForward()" id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
                         Next
                     </button>
                 </div>
@@ -61,7 +61,7 @@
                     <button onclick="storyToStoryBackward()" id="story-button-back" class="mdc-button mdc-button--raised mdc-button--dense">
                         Back
                     </button>
-                    <button onclick="storyToMap()" id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
+                    <button onclick="storyToMapForward()" id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
                         Next
                     </button>
                 </div>
@@ -69,8 +69,50 @@
             <div id="story-card-3" class="mdc-card" style="display:none">
                 <div class="story-card-title">
                     <span class="story-card-subtitle">
-                    Story 1:
-                    </span>First card</div>
+                    SECOND:
+                    </span>PART 1</div>
+                <div class="story-card-buttons">
+                    <button onclick="storyToMapBackward()" id="story-button-back" class="mdc-button mdc-button--raised mdc-button--dense">
+                        Back
+                    </button>
+                    <button onclick="storyToStoryForward()" id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
+                        Next
+                    </button>
+                </div>
+            </div>
+            <div id="story-card-4" class="mdc-card" style="display:none">
+                <div class="story-card-title">
+                    <span class="story-card-subtitle">
+                    SECOND:
+                    </span>PART 2</div>
+                <div class="story-card-buttons">
+                    <button onclick="storyToStoryBackward()" id="story-button-back" class="mdc-button mdc-button--raised mdc-button--dense">
+                        Back
+                    </button>
+                    <button onclick="storyToMapForward()" id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
+                        Next
+                    </button>
+                </div>
+            </div>
+            <div id="story-card-5" class="mdc-card" style="display:none">
+                <div class="story-card-title">
+                    <span class="story-card-subtitle">
+                    THIRD:
+                    </span>PART 1</div>
+                <div class="story-card-buttons">
+                    <button onclick="storyToMapBackward()" id="story-button-back" class="mdc-button mdc-button--raised mdc-button--dense">
+                        Back
+                    </button>
+                    <button onclick="storyToStoryForward()" id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
+                        Next
+                    </button>
+                </div>
+            </div>
+            <div id="story-card-6" class="mdc-card" style="display:none">
+                <div class="story-card-title">
+                    <span class="story-card-subtitle">
+                    THIRD:
+                    </span>PART 2</div>
                 <div class="story-card-buttons">
                     <button onclick="storyToStoryBackward()" id="story-button-back" class="mdc-button mdc-button--raised mdc-button--dense">
                         Back
@@ -82,7 +124,7 @@
             </div>
             <div id="map" class="mdc-card" style="display:none">
                 <div id="map-button-story-container">
-                    <button onclick="mapToStory()" id="map-button-story" class="mdc-button mdc-button--raised mdc-button--dense" style="display:none">
+                    <button onclick="mapToStoryForward()" id="map-button-story" class="mdc-button mdc-button--raised mdc-button--dense" style="display:none">
                         Story
                     </button>
                 </div>

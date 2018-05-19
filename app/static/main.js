@@ -8,11 +8,10 @@ var startDate = 1765,
     thisDateEnd = endDate,
     numYears = 10;
 
-var stepTime = 200;
+var stepTime = 50;
 
-var currentStoryIndex = 1,
-    masterStoryIndex = 0;
-
+var currentStoryIndex = 1, // current story pane
+    masterStoryIndex = 1; // current story
 
 const storyDict = {
     1765: {
@@ -27,6 +26,13 @@ const storyDict = {
         "items": {
             "1": "2nd project",
             "2": "2nd forward"
+        }
+    },
+    1825: {
+        "title": "Third Story",
+        "items": {
+            "1": "3rd project",
+            "2": "3rd forward"
         }
     }
 };
@@ -186,11 +192,6 @@ function populateSidebarYears(yearStart, yearEnd) {
         // Record sidebar height
         var sidebarHeight = $("#sidebar").height();
 
-        // var $thisYearDivContainer = $("<div/>")
-        //     .attr("id", "sidebar-year-item")
-        //     .addClass("sidebar-year-item")
-        //     .html("<div></div>");
-
         if (i == thisDate) {
             var $thisYearDivContainer = $("<div/>")
                 .attr("id", "current-year-item")
@@ -230,7 +231,7 @@ populateSidebarYears(thisDate, thisDate + numYears);
  * ANIMATE MAP ON JUMP
  */
 
-function storyToMap(thisParent) {
+function storyToMapForward() {
 
     // Slide the map in
     var slideTime = 100,
@@ -249,23 +250,20 @@ function storyToMap(thisParent) {
         }, slideTime)
     }, slideTime + delay);
 
-    // Set the masterStoryIndex and currentStoryIndex
-    masterStoryIndex++;
-    currentStoryIndex++;
-
     // Find next year to jump to
     thisDateEnd = Object.keys(storyDict).sort()[masterStoryIndex];
     step();
 
 }
 
-function mapToStory() {
+function mapToStoryForward() {
 
     // Slide the map in
     var slideTime = 100,
         delay = 25;
 
-    // $thisParent = $(thisParent).parent().parent();
+    masterStoryIndex++;
+    currentStoryIndex++;
     $thisParent = $("#story-card-" + currentStoryIndex.toString());
 
     $("#map").toggle("slide", {
@@ -280,21 +278,43 @@ function mapToStory() {
 
 }
 
-/**
- * JUMP BETWEEN CARDS
- */
+function storyToMapBackward() {
 
-function storyToStoryFoward() {
-
+    // Slide map in
     var slideTime = 100,
         delay = 25;
 
+    // $thisParent = $(thisParent).parent().parent();
     $thisParent = $("#story-card-" + currentStoryIndex.toString());
-    currentStoryIndex++;
 
-    $buttonParentIndex = $thisParent.attr("id").slice(-1);
-    nextIndex = parseInt($buttonParentIndex) + 1;
-    $nextParent = $("#" + $thisParent.attr("id").slice(0, -1) + nextIndex);
+    // Set the masterStoryIndex and currentStoryIndex
+    masterStoryIndex--;
+    currentStoryIndex--;
+
+    $thisParent.toggle("slide", {
+        direction: "left"
+    }, slideTime);
+
+    setTimeout(function() {
+        $("#map").toggle("slide", {
+            direction: "right"
+        }, slideTime)
+    }, slideTime + delay);
+
+}
+
+/**
+ * MOVE BETWEEN STORY CARDS
+ */
+
+function storyToStoryForward() {
+
+    var slideTime = 100,
+        delay = 250;
+
+    $thisParent = $("#story-card-" + currentStoryIndex.toString());
+    $nextParent = $("#story-card-" + (currentStoryIndex + 1).toString());
+    currentStoryIndex++;
 
     $thisParent.toggle("slide", {
         direction: "right"
@@ -330,21 +350,18 @@ function storyToStoryFoward() {
 function storyToStoryBackward() {
 
     var slideTime = 100,
-        delay = 25;
+        delay = 250;
 
     $thisParent = $("#story-card-" + currentStoryIndex.toString());
+    $prevParent = $("#story-card-" + (currentStoryIndex - 1).toString());
     currentStoryIndex--;
-
-    $buttonParentIndex = $thisParent.attr("id").slice(-1);
-    nextIndex = parseInt($buttonParentIndex) - 1;
-    $nextParent = $("#" + $thisParent.attr("id").slice(0, -1) + nextIndex);
 
     $thisParent.toggle("slide", {
         direction: "left"
     }, slideTime)
 
     setTimeout(function() {
-        $nextParent.toggle("slide", {
+        $prevParent.toggle("slide", {
             direction: "right"
         }, slideTime)
     }, slideTime + delay);

@@ -140,7 +140,10 @@ body {
 
 #story-card-1,
 #story-card-2,
-#story-card-3 {
+#story-card-3,
+#story-card-4,
+#story-card-5,
+#story-card-6 {
     flex-grow: 1;
     padding: 15px;
     display: flex;

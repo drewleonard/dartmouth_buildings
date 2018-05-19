@@ -139,7 +139,8 @@ body {
 }
 
 #story-card-1,
-#story-card-2 {
+#story-card-2,
+#story-card-3 {
     flex-grow: 1;
     padding: 15px;
     display: flex;
@@ -165,7 +166,8 @@ body {
 }
 
 #story-button-back,
-#story-button-next {
+#story-button-next,
+#map-button-story {
     border-radius: 4px;
     font-size: 14px;
     font-weight: 600;
@@ -177,7 +179,8 @@ body {
     color: #2962FF;
 }
 
-#story-button-next {
+#story-button-next,
+#map-button-story {
     background-color: #2962FF;
     color: #FFFFFF;
 }
@@ -185,6 +188,22 @@ body {
 #map {
     flex-grow: 1;
     background-color: #fdf6e3;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+#map-button-story-container {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 999;
+}
+
+#map-button-story {
+    align-self: flex-end;
+    z-index: 999;
 }
 
 .animate-opacity {

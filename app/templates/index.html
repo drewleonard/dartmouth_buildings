@@ -44,10 +44,10 @@
                     Introduction:
                     </span>This project</div>
                 <div class="story-card-buttons">
-                    <button onclick="jumpBackward(this)" id="story-button-back" class="mdc-button mdc-button--raised mdc-button--dense">
+                    <button id="story-button-back" class="mdc-button mdc-button--raised mdc-button--dense">
                         Back
                     </button>
-                    <button onclick="jumpFoward(this)" id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
+                    <button onclick="storyToStoryFoward()" id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
                         Next
                     </button>
                 </div>
@@ -58,15 +58,35 @@
                     Introduction:
                     </span>Going forward</div>
                 <div class="story-card-buttons">
-                    <button onclick="jumpBackward(this)" id="story-button-back" class="mdc-button mdc-button--raised mdc-button--dense">
+                    <button onclick="storyToStoryBackward()" id="story-button-back" class="mdc-button mdc-button--raised mdc-button--dense">
                         Back
                     </button>
-                    <button onclick="animateMap(this)" id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
+                    <button onclick="storyToMap()" id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
                         Next
                     </button>
                 </div>
             </div>
-            <div id="map" class="mdc-card" style="display:none"></div>
+            <div id="story-card-3" class="mdc-card" style="display:none">
+                <div class="story-card-title">
+                    <span class="story-card-subtitle">
+                    Story 1:
+                    </span>First card</div>
+                <div class="story-card-buttons">
+                    <button onclick="storyToStoryBackward()" id="story-button-back" class="mdc-button mdc-button--raised mdc-button--dense">
+                        Back
+                    </button>
+                    <button id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
+                        Next
+                    </button>
+                </div>
+            </div>
+            <div id="map" class="mdc-card" style="display:none">
+                <div id="map-button-story-container">
+                    <button onclick="mapToStory()" id="map-button-story" class="mdc-button mdc-button--raised mdc-button--dense" style="display:none">
+                        Story
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="{{ url_for('static', filename='thisCampus.js') }}"></script>

@@ -10,7 +10,9 @@ var startDate = 1765,
 
 var stepTime = 200;
 
-currentStoryIndex = 0;
+var currentStoryIndex = 1,
+    masterStoryIndex = 0;
+
 
 const storyDict = {
     1765: {
@@ -42,7 +44,7 @@ var map = new L.Map("map", {
     zoom: 16
 });
 
-tiles.addTo(map);
+// tiles.addTo(map);
 
 // Add feature layer to map object
 var featureLayer = new L.GeoJSON();
@@ -228,13 +230,14 @@ populateSidebarYears(thisDate, thisDate + numYears);
  * ANIMATE MAP ON JUMP
  */
 
-function animateMap(thisParent) {
+function storyToMap(thisParent) {
 
     // Slide the map in
     var slideTime = 100,
         delay = 25;
 
-    $thisParent = $(thisParent).parent().parent();
+    // $thisParent = $(thisParent).parent().parent();
+    $thisParent = $("#story-card-" + currentStoryIndex.toString());
 
     $thisParent.toggle("slide", {
         direction: "right"
@@ -246,12 +249,34 @@ function animateMap(thisParent) {
         }, slideTime)
     }, slideTime + delay);
 
-    // Set the currentStoryIndex
+    // Set the masterStoryIndex and currentStoryIndex
+    masterStoryIndex++;
     currentStoryIndex++;
 
     // Find next year to jump to
-    thisDateEnd = Object.keys(storyDict).sort()[currentStoryIndex];
+    thisDateEnd = Object.keys(storyDict).sort()[masterStoryIndex];
     step();
+
+}
+
+function mapToStory() {
+
+    // Slide the map in
+    var slideTime = 100,
+        delay = 25;
+
+    // $thisParent = $(thisParent).parent().parent();
+    $thisParent = $("#story-card-" + currentStoryIndex.toString());
+
+    $("#map").toggle("slide", {
+        direction: "right"
+    }, slideTime);
+
+    setTimeout(function() {
+        $thisParent.toggle("slide", {
+            direction: "left"
+        }, slideTime)
+    }, slideTime + delay);
 
 }
 
@@ -259,12 +284,14 @@ function animateMap(thisParent) {
  * JUMP BETWEEN CARDS
  */
 
-function jumpFoward(thisParent) {
+function storyToStoryFoward() {
 
     var slideTime = 100,
         delay = 25;
 
-    $thisParent = $(thisParent).parent().parent();
+    $thisParent = $("#story-card-" + currentStoryIndex.toString());
+    currentStoryIndex++;
+
     $buttonParentIndex = $thisParent.attr("id").slice(-1);
     nextIndex = parseInt($buttonParentIndex) + 1;
     $nextParent = $("#" + $thisParent.attr("id").slice(0, -1) + nextIndex);
@@ -300,12 +327,14 @@ function jumpFoward(thisParent) {
 
 }
 
-function jumpBackward(thisParent) {
+function storyToStoryBackward() {
 
     var slideTime = 100,
         delay = 25;
 
-    $thisParent = $(thisParent).parent().parent();
+    $thisParent = $("#story-card-" + currentStoryIndex.toString());
+    currentStoryIndex--;
+
     $buttonParentIndex = $thisParent.attr("id").slice(-1);
     nextIndex = parseInt($buttonParentIndex) - 1;
     $nextParent = $("#" + $thisParent.attr("id").slice(0, -1) + nextIndex);
@@ -347,6 +376,7 @@ function jumpBackward(thisParent) {
 
 function step() {
 
+    // Resize window due to fix hidden display issues
     window.dispatchEvent(new Event('resize'));
 
     // console.log("Step: " + thisDate);
@@ -406,6 +436,8 @@ function step() {
     thisDate++;
     if (thisDate <= thisDateEnd) {
         setTimeout(step, stepTime);
+    } else {
+        $("#map-button-story").show();
     }
 
 }

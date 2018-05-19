@@ -8,7 +8,9 @@ var startDate = 1765,
     thisDateEnd = endDate,
     numYears = 10;
 
-var stepTime = 50;
+var stepTime = 50,
+    slideTime = 100,
+    slideDelay = 25;
 
 var currentStoryIndex = 1, // current story pane
     masterStoryIndex = 1; // current story
@@ -177,7 +179,9 @@ function removeSidebarYears() {
  * POPULATE SIDEBAR WITH YEARS
  */
 
-function populateSidebarYears(yearStart, yearEnd) {
+function populateSidebarYears(yearStart, yearEnd, thisDateEnd) {
+
+    // console.log(yearStart);
 
     for (i = yearStart; i <= yearEnd; i++) {
 
@@ -192,7 +196,7 @@ function populateSidebarYears(yearStart, yearEnd) {
         // Record sidebar height
         var sidebarHeight = $("#sidebar").height();
 
-        if (i == thisDate) {
+        if (i == thisDate && yearStart !== parseInt(thisDateEnd)) {
             var $thisYearDivContainer = $("<div/>")
                 .attr("id", "current-year-item")
                 .addClass("current-year-item")
@@ -233,10 +237,6 @@ populateSidebarYears(thisDate, thisDate + numYears);
 
 function storyToMapForward() {
 
-    // Slide the map in
-    var slideTime = 100,
-        delay = 25;
-
     // $thisParent = $(thisParent).parent().parent();
     $thisParent = $("#story-card-" + currentStoryIndex.toString());
 
@@ -248,7 +248,7 @@ function storyToMapForward() {
         $("#map").toggle("slide", {
             direction: "left"
         }, slideTime)
-    }, slideTime + delay);
+    }, slideTime + slideDelay);
 
     // Find next year to jump to
     thisDateEnd = Object.keys(storyDict).sort()[masterStoryIndex];
@@ -257,10 +257,6 @@ function storyToMapForward() {
 }
 
 function mapToStoryForward() {
-
-    // Slide the map in
-    var slideTime = 100,
-        delay = 25;
 
     masterStoryIndex++;
     currentStoryIndex++;
@@ -274,15 +270,11 @@ function mapToStoryForward() {
         $thisParent.toggle("slide", {
             direction: "left"
         }, slideTime)
-    }, slideTime + delay);
+    }, slideTime + slideDelay);
 
 }
 
 function storyToMapBackward() {
-
-    // Slide map in
-    var slideTime = 100,
-        delay = 25;
 
     // $thisParent = $(thisParent).parent().parent();
     $thisParent = $("#story-card-" + currentStoryIndex.toString());
@@ -299,7 +291,7 @@ function storyToMapBackward() {
         $("#map").toggle("slide", {
             direction: "right"
         }, slideTime)
-    }, slideTime + delay);
+    }, slideTime + slideDelay);
 
 }
 
@@ -308,9 +300,6 @@ function storyToMapBackward() {
  */
 
 function storyToStoryForward() {
-
-    var slideTime = 100,
-        delay = 250;
 
     $thisParent = $("#story-card-" + currentStoryIndex.toString());
     $nextParent = $("#story-card-" + (currentStoryIndex + 1).toString());
@@ -324,7 +313,7 @@ function storyToStoryForward() {
         $nextParent.toggle("slide", {
             direction: "left"
         }, slideTime)
-    }, slideTime + delay);
+    }, slideTime + slideDelay);
 
     // Remove classing from current story item
     currentStoryItem.removeClass("story-div-item-current");
@@ -349,9 +338,6 @@ function storyToStoryForward() {
 
 function storyToStoryBackward() {
 
-    var slideTime = 100,
-        delay = 250;
-
     $thisParent = $("#story-card-" + currentStoryIndex.toString());
     $prevParent = $("#story-card-" + (currentStoryIndex - 1).toString());
     currentStoryIndex--;
@@ -364,7 +350,7 @@ function storyToStoryBackward() {
         $prevParent.toggle("slide", {
             direction: "right"
         }, slideTime)
-    }, slideTime + delay);
+    }, slideTime + slideDelay);
 
     // Remove classing from current story item
     currentStoryItem.removeClass("story-div-item-current");
@@ -448,7 +434,7 @@ function step() {
     map.addLayer(featureLayer);
 
     removeSidebarYears();
-    populateSidebarYears(thisDate, thisDate + numYears);
+    populateSidebarYears(thisDate, thisDate + numYears, thisDateEnd);
 
     thisDate++;
     if (thisDate <= thisDateEnd) {

@@ -2,7 +2,7 @@ html,
 body {
     background-color: #F5F5F5;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -136,6 +136,50 @@ body {
 
 .mdc-toolbar__row {
     background-color: #2962FF;
+}
+
+#story-card-1,
+#story-card-2 {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.story-card-title {
+    font-size: 32px;
+}
+
+.story-card-subtitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.story-card-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#story-button-back,
+#story-button-next {
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .6px;
+}
+
+#story-button-back {
+    background-color: #FFFFFF;
+    color: #2962FF;
+}
+
+#story-button-next {
+    background-color: #2962FF;
+    color: #FFFFFF;
 }
 
 #map {

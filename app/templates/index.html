@@ -20,7 +20,7 @@
     <!-- MDC Web -->
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +38,35 @@
             <div id="sidebar" class="mdc-card">
                 <div id="sidebar-year-container"></div>
             </div>
-            <div id="map" class="mdc-card"></div>
+            <div id="story-card-1" class="mdc-card">
+                <div class="story-card-title">
+                    <span class="story-card-subtitle">
+                    Introduction:
+                    </span>This project</div>
+                <div class="story-card-buttons">
+                    <button onclick="jumpBackward(this)" id="story-button-back" class="mdc-button mdc-button--raised mdc-button--dense">
+                        Back
+                    </button>
+                    <button onclick="jumpFoward(this)" id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
+                        Next
+                    </button>
+                </div>
+            </div>
+            <div id="story-card-2" class="mdc-card" style="display:none">
+                <div class="story-card-title">
+                    <span class="story-card-subtitle">
+                    Introduction:
+                    </span>Going forward</div>
+                <div class="story-card-buttons">
+                    <button onclick="jumpBackward(this)" id="story-button-back" class="mdc-button mdc-button--raised mdc-button--dense">
+                        Back
+                    </button>
+                    <button onclick="animateMap(this)" id="story-button-next" class="mdc-button mdc-button--raised mdc-button--dense">
+                        Next
+                    </button>
+                </div>
+            </div>
+            <div id="map" class="mdc-card" style="display:none"></div>
         </div>
     </div>
     <script type="text/javascript" src="{{ url_for('static', filename='thisCampus.js') }}"></script>

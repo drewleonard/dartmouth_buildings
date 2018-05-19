@@ -5,9 +5,10 @@
 var startDate = 1765,
     endDate = 2000,
     thisDate = startDate,
-    thisDateEnd;
+    thisDateEnd = endDate,
+    numYears = 10;
 
-var stepTime = 500;
+var stepTime = 200;
 
 currentStoryIndex = 0;
 
@@ -40,6 +41,8 @@ var map = new L.Map("map", {
     center: new L.LatLng(43.7043222, -72.2875),
     zoom: 16
 });
+
+tiles.addTo(map);
 
 // Add feature layer to map object
 var featureLayer = new L.GeoJSON();
@@ -155,6 +158,14 @@ function createSidebarStory(key) {
 }
 
 /**
+ * REMOVE YEARS FROM SIDEBAR
+ */
+
+function removeSidebarYears() {
+    $("#sidebar-year-container").empty();
+}
+
+/**
  * POPULATE SIDEBAR WITH YEARS
  */
 
@@ -173,22 +184,22 @@ function populateSidebarYears(yearStart, yearEnd) {
         // Record sidebar height
         var sidebarHeight = $("#sidebar").height();
 
-        var $thisYearDivContainer = $("<div/>")
-            .attr("id", "sidebar-year-item")
-            .addClass("sidebar-year-item")
-            .html("<div></div>");
+        // var $thisYearDivContainer = $("<div/>")
+        //     .attr("id", "sidebar-year-item")
+        //     .addClass("sidebar-year-item")
+        //     .html("<div></div>");
 
-        // if (i == thisDate) {
-        //     var $thisYearDivContainer = $("<div/>")
-        //         .attr("id", "current-year-item")
-        //         .addClass("current-year-item")
-        //         .html("<div></div>");
-        // } else {
-        //     var $thisYearDivContainer = $("<div/>")
-        //         .attr("id", "sidebar-year-item")
-        //         .addClass("sidebar-year-item")
-        //         .html("<div></div>");
-        // }
+        if (i == thisDate) {
+            var $thisYearDivContainer = $("<div/>")
+                .attr("id", "current-year-item")
+                .addClass("current-year-item")
+                .html("<div></div>");
+        } else {
+            var $thisYearDivContainer = $("<div/>")
+                .attr("id", "sidebar-year-item")
+                .addClass("sidebar-year-item")
+                .html("<div></div>");
+        }
 
         var $thisYearDivIcon = $("<div/>")
             .attr("id", "year-div-icon")
@@ -211,7 +222,7 @@ function populateSidebarYears(yearStart, yearEnd) {
 
 }
 
-populateSidebarYears(thisDate, endDate);
+populateSidebarYears(thisDate, thisDate + numYears);
 
 /**
  * ANIMATE MAP ON JUMP
@@ -239,7 +250,8 @@ function animateMap(thisParent) {
     currentStoryIndex++;
 
     // Find next year to jump to
-    thisNextYear = Object.keys(storyDict).sort();
+    thisDateEnd = Object.keys(storyDict).sort()[currentStoryIndex];
+    step();
 
 }
 
@@ -275,12 +287,8 @@ function jumpFoward(thisParent) {
     currentStoryItem.find("#item-title").removeClass("item-title-current");
     currentStoryItem.find("#item-title").addClass("item-title");
 
-    console.log(currentStoryItem);
-
     // Set new currentStoryItem
     currentStoryItem = currentStoryItem.next();
-
-    console.log(currentStoryItem);
 
     // Add classing to next story item
     currentStoryItem.removeClass("story-div-item");
@@ -339,6 +347,8 @@ function jumpBackward(thisParent) {
 
 function step() {
 
+    window.dispatchEvent(new Event('resize'));
+
     // console.log("Step: " + thisDate);
 
     map.removeLayer(featureLayer);
@@ -390,8 +400,11 @@ function step() {
 
     map.addLayer(featureLayer);
 
+    removeSidebarYears();
+    populateSidebarYears(thisDate, thisDate + numYears);
+
     thisDate++;
-    if (thisDate < endDate) {
+    if (thisDate <= thisDateEnd) {
         setTimeout(step, stepTime);
     }
 

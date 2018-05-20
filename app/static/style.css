@@ -25,6 +25,12 @@ body {
     background-color: green;
 }
 
+.website-title.mdc-toolbar__title {
+    text-transform: uppercase;
+}
+
+
+
 #site-container-bottom-test {
     flex-grow: 1;
     padding: 20px;

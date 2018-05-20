@@ -4,6 +4,9 @@
  * 2. Edit timeline sidebar
  *     => UI
  *     => Controls
+ *
+ * 3. Style all main cards (stories + map) the same
+ *     => border-redius
  */
 
 /**

@@ -310,6 +310,8 @@ function storyToMapBackward() {
 
 function storyToStoryForward() {
 
+
+
     $thisParent = $("#story-card-" + currentStoryIndex.toString());
     $nextParent = $("#story-card-" + (currentStoryIndex + 1).toString());
     currentStoryIndex++;

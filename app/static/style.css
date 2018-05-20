@@ -1,6 +1,6 @@
 html,
 body {
-    background-color: #F5F5F5;
+    background-color: #f6f9fc;
     font-size: 20px;
     font-family: 'Google Sans', sans-serif;
     margin: 0;
@@ -27,7 +27,7 @@ body {
 
 #site-container-bottom-test {
     flex-grow: 1;
-    padding: 10px;
+    padding: 20px;
     display: flex;
 }
 
@@ -188,12 +188,23 @@ body {
     color: #FFFFFF;
 }
 
+.map-card.mdc-card {
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+}
+
+.central-story-card.mdc-card {
+    border-radius: 5px;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+}
+
 #map {
     flex-grow: 1;
     background-color: #fdf6e3;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+    /* padding-left: 10px; */
 }
 
 #map-button-story-container {
@@ -212,4 +223,65 @@ body {
 .animate-opacity {
     opacity: .9;
     fill-opacity: 0.25;
+}
+
+#sidebar-story-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.sidebar-story-card-active.mdc-card,
+.sidebar-story-card.mdc-card {
+    border-radius: 5px;
+    margin: 0px 20px 0px 0px;
+    height: 20vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    /* color: #0080ff; */
+}
+
+.sidebar-story-card-active.mdc-card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.sidebar-story-card.mdc-card {
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    opacity: 0.65;
+    color: grey;
+}
+
+.sidebar-story-card-title {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.sidebar-story-card-items.mdc-list {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.sidebar-story-card-item.mdc-list-item,
+.sidebar-story-card-item-active.mdc-list-item {
+    margin: 5px 0 5px 0;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+}
+
+.sidebar-story-card-item-active.mdc-list-item {
+    color: #0080ff;
+    background-color: rgb(0, 128, 255, 0.1);
+}
+
+.sidebar-story-card-item-text {
+    padding-left: 10px;
 }

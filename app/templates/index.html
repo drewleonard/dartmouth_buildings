@@ -21,6 +21,7 @@
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -35,10 +36,34 @@
             </header>
         </div>
         <div id="site-container-bottom-test">
-            <div id="sidebar" class="mdc-card">
+            <!-- <div id="sidebar" class="mdc-card">
                 <div id="sidebar-year-container"></div>
+            </div> -->
+            <div id="sidebar-story-container">
+                <div id="sidebar-story-card" class="sidebar-story-card-active mdc-card">
+                    <div class="sidebar-story-card-title">Introduction</div>
+                    <div class="sidebar-story-card-items mdc-list">
+                        <div class="sidebar-story-card-item-active mdc-list-item">
+                            <i class="material-icons md-18">check_box</i>
+                            <div class="sidebar-story-card-item-text">This project</div>
+                        </div>
+                        <div class="sidebar-story-card-item mdc-list-item">
+                            <i class="material-icons md-18">check_box_outline_blank</i>
+                            <div class="sidebar-story-card-item-text">Going forward</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar-story-card" class="sidebar-story-card mdc-card">
+                    <div class="sidebar-story-card-title">First Story</div>
+                </div>
+                <div id="sidebar-story-card" class="sidebar-story-card mdc-card">
+                    <div class="sidebar-story-card-title">Second Story</div>
+                </div>
+                <div id="sidebar-story-card" class="sidebar-story-card mdc-card">
+                    <div class="sidebar-story-card-title">Third Story</div>
+                </div>
             </div>
-            <div id="story-card-1" class="mdc-card">
+            <div id="story-card-1" class="central-story-card mdc-card">
                 <div class="story-card-title">
                     <span class="story-card-subtitle">
                     Introduction:
@@ -122,7 +147,7 @@
                     </button>
                 </div>
             </div>
-            <div id="map" class="mdc-card" style="display:none">
+            <div id="map" class="map-card mdc-card" style="display:none">
                 <div id="map-button-story-container">
                     <button onclick="mapToStoryForward()" id="map-button-story" class="mdc-button mdc-button--raised mdc-button--dense" style="display:none">
                         Story

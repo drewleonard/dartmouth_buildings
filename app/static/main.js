@@ -36,18 +36,11 @@ const storyDict = {
             "2": "Going forward"
         }
     },
-    1800: {
+    1990: {
         "title": "Second Story",
         "items": {
             "1": "2nd project",
             "2": "2nd forward"
-        }
-    },
-    1825: {
-        "title": "Third Story",
-        "items": {
-            "1": "3rd project",
-            "2": "3rd forward"
         }
     }
 };
@@ -62,13 +55,27 @@ var currentStoryItem;
 var tiles = new L.StamenTileLayer("toner-lite");
 var map = new L.Map("map", {
     center: new L.LatLng(43.7043222, -72.2875),
-    zoom: 16
+    zoom: 15
 });
 
-// tiles.addTo(map);
+tiles.addTo(map);
 
 // Add feature layer to map object
 var featureLayer = new L.GeoJSON();
+var onEachFeature = function(feature, layer) {
+    layer.setStyle(campusStyle);
+    layer.on('click', mapClick);
+}
+featureLayer = L.geoJson(meacham, {
+    onEachFeature: onEachFeature,
+});
+
+// function that is called when line is clicked
+function mapClick(e) { // e is a leaflet Event object
+    console.log(e.target.feature.properties.Name);
+}
+
+map.addLayer(featureLayer);
 
 /**
  * STYLING OPTIONS
@@ -102,148 +109,148 @@ var highlightStyle = {
  * CREATE SIDERBAR STORIES
  */
 
-function createStoryItem(number, title) {
+// function createStoryItem(number, title) {
 
-    if (number == 1) {
+//     if (number == 1) {
 
-        var $thisStoryDivItem = $("<div/>")
-            .attr("id", "story-div-item")
-            .addClass("story-div-item-current")
-            .html("<div></div>");
+//         var $thisStoryDivItem = $("<div/>")
+//             .attr("id", "story-div-item")
+//             .addClass("story-div-item-current")
+//             .html("<div></div>");
 
-        var $thisItemNumber = $("<div/>")
-            .attr("id", "item-number")
-            .addClass("item-number-current")
-            .html("<div>" + number + "</div>");
+//         var $thisItemNumber = $("<div/>")
+//             .attr("id", "item-number")
+//             .addClass("item-number-current")
+//             .html("<div>" + number + "</div>");
 
-        var $thisItemTitle = $("<div/>")
-            .attr("id", "item-title")
-            .addClass("item-title-current")
-            .html("<div>" + title + "</div>");
+//         var $thisItemTitle = $("<div/>")
+//             .attr("id", "item-title")
+//             .addClass("item-title-current")
+//             .html("<div>" + title + "</div>");
 
-        currentStoryItem = $thisStoryDivItem;
+//         currentStoryItem = $thisStoryDivItem;
 
-    } else {
+//     } else {
 
-        var $thisStoryDivItem = $("<div/>")
-            .attr("id", "story-div-item")
-            .addClass("story-div-item")
-            .html("<div></div>");
+//         var $thisStoryDivItem = $("<div/>")
+//             .attr("id", "story-div-item")
+//             .addClass("story-div-item")
+//             .html("<div></div>");
 
-        var $thisItemNumber = $("<div/>")
-            .attr("id", "item-number")
-            .addClass("item-number")
-            .html("<div>" + number + "</div>");
+//         var $thisItemNumber = $("<div/>")
+//             .attr("id", "item-number")
+//             .addClass("item-number")
+//             .html("<div>" + number + "</div>");
 
-        var $thisItemTitle = $("<div/>")
-            .attr("id", "item-title")
-            .addClass("item-title")
-            .html("<div>" + title + "</div>");
+//         var $thisItemTitle = $("<div/>")
+//             .attr("id", "item-title")
+//             .addClass("item-title")
+//             .html("<div>" + title + "</div>");
 
-    }
+//     }
 
-    $thisStoryDivItem.append($thisItemNumber);
-    $thisStoryDivItem.append($thisItemTitle);
+//     $thisStoryDivItem.append($thisItemNumber);
+//     $thisStoryDivItem.append($thisItemTitle);
 
-    return $thisStoryDivItem;
+//     return $thisStoryDivItem;
 
-}
+// }
 
-function createStoryTitle(title) {
+// function createStoryTitle(title) {
 
-    // Story title
-    var $thisStoryDivTitle = $("<div/>")
-        .attr("id", "story-div-title")
-        .addClass("story-div-title")
-        .html("<div>" + title + "</div>");
+//     // Story title
+//     var $thisStoryDivTitle = $("<div/>")
+//         .attr("id", "story-div-title")
+//         .addClass("story-div-title")
+//         .html("<div>" + title + "</div>");
 
-    // Add story title to container
-    return $thisStoryDivTitle;
+//     // Add story title to container
+//     return $thisStoryDivTitle;
 
-}
+// }
 
-function createSidebarStory(key) {
+// function createSidebarStory(key) {
 
-    // Story container
-    var $thisStoryDiv = $("<div/>")
-        .attr("id", "story-div")
-        .addClass("story-div")
+//     // Story container
+//     var $thisStoryDiv = $("<div/>")
+//         .attr("id", "story-div")
+//         .addClass("story-div")
 
-        .html("<div></div>");
+//         .html("<div></div>");
 
-    $thisStoryDiv.append(createStoryTitle(storyDict[key]["title"]));
+//     $thisStoryDiv.append(createStoryTitle(storyDict[key]["title"]));
 
-    for (var itemKey in storyDict[key]["items"]) {
-        $thisStoryDiv.append(createStoryItem(itemKey, storyDict[key]["items"][itemKey]));
-    }
+//     for (var itemKey in storyDict[key]["items"]) {
+//         $thisStoryDiv.append(createStoryItem(itemKey, storyDict[key]["items"][itemKey]));
+//     }
 
-    return $thisStoryDiv;
+//     return $thisStoryDiv;
 
-}
+// }
 
 /**
  * REMOVE YEARS FROM SIDEBAR
  */
 
-function removeSidebarYears() {
-    $("#sidebar-year-container").empty();
-}
+// function removeSidebarYears() {
+//     $("#sidebar-year-container").empty();
+// }
 
 /**
  * POPULATE SIDEBAR WITH YEARS
  */
 
-function populateSidebarYears(yearStart, yearEnd, thisDateEnd) {
+// function populateSidebarYears(yearStart, yearEnd, thisDateEnd) {
 
-    // console.log(yearStart);
+//     // console.log(yearStart);
 
-    for (i = yearStart; i <= yearEnd; i++) {
+//     for (i = yearStart; i <= yearEnd; i++) {
 
-        // Add story if available
-        for (var key in storyDict) {
-            if (i == key) {
-                $("#sidebar-year-container")
-                    .append(createSidebarStory(key));
-            }
-        }
+//         // Add story if available
+//         for (var key in storyDict) {
+//             if (i == key) {
+//                 $("#sidebar-year-container")
+//                     .append(createSidebarStory(key));
+//             }
+//         }
 
-        // Record sidebar height
-        var sidebarHeight = $("#sidebar").height();
+//         // Record sidebar height
+//         var sidebarHeight = $("#sidebar").height();
 
-        if (i == thisDate && yearStart !== parseInt(thisDateEnd)) {
-            var $thisYearDivContainer = $("<div/>")
-                .attr("id", "current-year-item")
-                .addClass("current-year-item")
-                .html("<div></div>");
-        } else {
-            var $thisYearDivContainer = $("<div/>")
-                .attr("id", "sidebar-year-item")
-                .addClass("sidebar-year-item")
-                .html("<div></div>");
-        }
+//         if (i == thisDate && yearStart !== parseInt(thisDateEnd)) {
+//             var $thisYearDivContainer = $("<div/>")
+//                 .attr("id", "current-year-item")
+//                 .addClass("current-year-item")
+//                 .html("<div></div>");
+//         } else {
+//             var $thisYearDivContainer = $("<div/>")
+//                 .attr("id", "sidebar-year-item")
+//                 .addClass("sidebar-year-item")
+//                 .html("<div></div>");
+//         }
 
-        var $thisYearDivIcon = $("<div/>")
-            .attr("id", "year-div-icon")
-            .addClass("year-div-icon")
-            .html("<div></div>");
+//         var $thisYearDivIcon = $("<div/>")
+//             .attr("id", "year-div-icon")
+//             .addClass("year-div-icon")
+//             .html("<div></div>");
 
-        var $thisYearDivYear = $("<div/>")
-            .attr("id", "year-div-year")
-            .addClass("year-div-year")
-            .html("<div>" + i + "</div>");
+//         var $thisYearDivYear = $("<div/>")
+//             .attr("id", "year-div-year")
+//             .addClass("year-div-year")
+//             .html("<div>" + i + "</div>");
 
-        $thisYearDivContainer.append($thisYearDivIcon);
-        $thisYearDivContainer.append($thisYearDivYear);
-        $("#sidebar-year-container").append($thisYearDivContainer);
+//         $thisYearDivContainer.append($thisYearDivIcon);
+//         $thisYearDivContainer.append($thisYearDivYear);
+//         $("#sidebar-year-container").append($thisYearDivContainer);
 
-        // Set sidebar height
-        $("#sidebar").height(sidebarHeight);
+//         // Set sidebar height
+//         $("#sidebar").height(sidebarHeight);
 
-    }
+//     }
 
-}
+// }
 
-populateSidebarYears(thisDate, thisDate + numYears, startDate);
+// populateSidebarYears(thisDate, thisDate + numYears, startDate);
 
 /**
  * Increment primary index (whole stories)
@@ -433,73 +440,75 @@ function storyToMapBackward() {
  * ANIMATION OVER YEARS
  */
 
-function step() {
+// function step() {
 
-    // Resize window due to fix hidden display issues
-    window.dispatchEvent(new Event('resize'));
+//     // Resize window due to fix hidden display issues
+//     window.dispatchEvent(new Event('resize'));
 
-    // console.log("Step: " + thisDate);
+//     console.log("Step: " + thisDate);
 
-    map.removeLayer(featureLayer);
+//     map.removeLayer(featureLayer);
 
-    var onEachFeature = function(feature, layer) {
-        if (thisDate == feature.properties.dateAddedStart) {
+//     var onEachFeature = function(feature, layer) {
+//         if (thisDate == feature.properties.dateAddedStart) {
 
-            var thisOpacity = 0,
-                thisFillOpacity = 0;
+//             var thisOpacity = 0,
+//                 thisFillOpacity = 0;
 
-            var thisSetStyle = 0,
-                setStyleEnd = 100;
+//             var thisSetStyle = 0,
+//                 setStyleEnd = 1000;
 
-            function stepStyle() {
+//             function stepStyle() {
 
-                var campusStyleFade = {
-                    color: "#dc322f",
-                    fillColor: "#dc322f",
-                    weight: 3,
-                    opacity: thisOpacity,
-                    fillOpacity: thisFillOpacity,
-                    className: "campus"
-                }
+//                 var campusStyleFade = {
+//                     color: "#dc322f",
+//                     fillColor: "#dc322f",
+//                     weight: 3,
+//                     opacity: thisOpacity,
+//                     fillOpacity: thisFillOpacity,
+//                     className: "campus"
+//                 }
 
-                thisOpacity = thisOpacity + (0.95 / 100);
-                thisFillOpacity = thisFillOpacity + (0.25 / 100);
+//                 thisOpacity = thisOpacity + (0.95 / 1000);
+//                 thisFillOpacity = thisFillOpacity + (0.25 / 1000);
 
-                layer.setStyle(campusStyleFade);
+//                 layer.setStyle(campusStyleFade);
 
-                thisSetStyle++;
-                if (thisSetStyle < setStyleEnd) {
-                    setTimeout(stepStyle, 10)
-                }
+//                 thisSetStyle++;
+//                 if (thisSetStyle < setStyleEnd) {
+//                     setTimeout(stepStyle, 1)
+//                 }
 
-            }
+//             }
 
-            stepStyle();
+//             stepStyle();
 
-        } else if (thisDate > feature.properties.dateAddedStart) {
-            layer.setStyle(campusStyle);
-        } else {
-            layer.setStyle(hiddenStyle);
-        };
-    };
+//         } else if (thisDate > feature.properties.dateAddedStart) {
+//             layer.setStyle(campusStyle);
+//         } else {
+//             layer.setStyle(hiddenStyle);
+//         };
+//     };
 
-    featureLayer = L.geoJson(thisCampus, {
-        onEachFeature: onEachFeature
-    });
+//     featureLayer = L.geoJson(meacham, {
+//         onEachFeature: onEachFeature,
+//     });
 
-    map.addLayer(featureLayer);
+//     featureLayer.on('click', function(e) { console.log(e) });
 
-    removeSidebarYears();
-    populateSidebarYears(thisDate, thisDate + numYears, thisDateEnd);
+//     map.addLayer(featureLayer);
 
-    thisDate++;
-    if (thisDate <= thisDateEnd) {
-        setTimeout(step, stepTime);
-    } else {
-        $("#map-button-story").show();
-    }
+//     removeSidebarYears();
+//     populateSidebarYears(thisDate, thisDate + numYears, thisDateEnd);
 
-}
+//     thisDate++;
+//     if (thisDate <= thisDateEnd) {
+//         setTimeout(step, stepTime);
+//     } else {
+//         $("#map-button-story").show();
+//     }
+
+// }
 
 /**
  * MATERIAL DESIGN BUTTON

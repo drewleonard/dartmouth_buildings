@@ -83,7 +83,7 @@
                     <div class="sidebar-story-card-title">Third Story</div>
                 </div>
             </div>
-            <div id="story-card-1" class="central-story-card mdc-card">
+            <!-- <div id="story-card-1" class="central-story-card mdc-card">
                 <div class="story-card-title">
                     <span class="story-card-subtitle">
                     Introduction:
@@ -166,8 +166,8 @@
                         Next
                     </button>
                 </div>
-            </div>
-            <div id="map" class="map-card mdc-card" style="display:none">
+            </div> -->
+            <div id="map" class="map-card mdc-card">
                 <div id="map-button-story-container">
                     <button onclick="mapToStoryForward()" id="map-button-story" class="mdc-button mdc-button--raised mdc-button--dense" style="display:none">
                         Story
@@ -176,6 +176,7 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='meacham.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='thisCampus.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}" charset="utf-8"></script>
 </body>

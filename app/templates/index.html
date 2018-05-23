@@ -28,10 +28,20 @@
     <div id="site-container-test">
         <div id="site-container-top-test">
             <header id="top-container" class="mdc-toolbar mdc-toolbar--fixed">
-                <div class="mdc-toolbar__row">
-                    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                <div class="mdc-toolbar__row toolbar_container">
+                    <section class="mdc-toolbar__section mdc-toolbar__section--align-start mdc-toolbar__section--shrink-to-fit">
                         <span class="website-title mdc-toolbar__title">GEOG 53 Project</span>
                     </section>
+                    <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit toolbar-buttons">
+                        <!-- <button id="toolbar-button" class="mdc-button mdc-button--dense"></button> -->
+                        <button id="toolbar-button" class="mdc-button mdc-button--dense">Story Mode</button>
+                    </section>
+                    <!-- <div id="toolbar-timeline-container" class="toolbar-timeline-container">
+                        <div id="toolbar-timeline" class="toolbar-timeline">
+                            <div id="toolbar-timeline-year-first" class="toolbar-timeline-year">1769</div>
+                            <div id="toolbar-timeline-year-last" class="toolbar-timeline-year">2018</div>
+                        </div>
+                    </div> -->
                 </div>
             </header>
         </div>
@@ -40,16 +50,26 @@
                 <div id="sidebar-year-container"></div>
             </div> -->
             <div id="sidebar-story-container">
-                <div id="sidebar-story-card" class="sidebar-story-card-active mdc-card">
-                    <div class="sidebar-story-card-title">Introduction</div>
-                    <div class="sidebar-story-card-items mdc-list">
-                        <div class="sidebar-story-card-item-active mdc-list-item">
-                            <i class="material-icons md-18">check_box</i>
-                            <div class="sidebar-story-card-item-text">This project</div>
-                        </div>
-                        <div class="sidebar-story-card-item mdc-list-item">
-                            <i class="material-icons md-18">check_box_outline_blank</i>
-                            <div class="sidebar-story-card-item-text">Going forward</div>
+                <div id="overlay">
+                    <div id="sidebar-story-card-1" class="sidebar-story-card-active sidebar-story-card mdc-card">
+                        <div class="sidebar-story-card-title">Introduction</div>
+                        <div class="sidebar-story-card-items mdc-list">
+                            <div id="sidebar-story-item-1" class="sidebar-story-card-item-active sidebar-story-card-item mdc-list-item">
+                                <i class="material-icons md-18">check_box_outline_blank</i>
+                                <div class="sidebar-story-card-item-text">This project</div>
+                            </div>
+                            <div id="sidebar-story-item-2" class="sidebar-story-card-item mdc-list-item">
+                                <i class="material-icons md-18">check_box_outline_blank</i>
+                                <div class="sidebar-story-card-item-text">Going forward</div>
+                            </div>
+                            <div id="sidebar-story-item-2" class="sidebar-story-card-item-active sidebar-story-card-item mdc-list-item">
+                                <i class="material-icons md-18">check_box_outline_blank</i>
+                                <div class="sidebar-story-card-item-text">This project</div>
+                            </div>
+                            <div id="sidebar-story-item-3" class="sidebar-story-card-item mdc-list-item">
+                                <i class="material-icons md-18">check_box_outline_blank</i>
+                                <div class="sidebar-story-card-item-text">Going forward</div>
+                            </div>
                         </div>
                     </div>
                 </div>

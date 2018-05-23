@@ -4,9 +4,11 @@
  * 2. Edit timeline sidebar
  *     => UI
  *     => Controls
- *
  * 3. Style all main cards (stories + map) the same
  *     => border-redius
+ * 4. Develop other pages
+ *     => about page
+ *     => landing page
  */
 
 /**
@@ -23,8 +25,8 @@ var stepTime = 50,
     slideTime = 100,
     slideDelay = 25;
 
-var currentStoryIndex = 1, // current story pane
-    masterStoryIndex = 1; // current story
+var secondaryIndex = 1, // current story pane
+    primaryIndex = 1; // current story
 
 const storyDict = {
     1765: {
@@ -244,13 +246,121 @@ function populateSidebarYears(yearStart, yearEnd, thisDateEnd) {
 populateSidebarYears(thisDate, thisDate + numYears, startDate);
 
 /**
+ * Increment primary index (whole stories)
+ */
+function incrementPrimaryIndex() {
+    primaryIndex++;
+}
+
+/**
+ * Decrement primary index (whole stories)
+ */
+function decrementPrimaryIndex() {
+    primaryIndex--;
+}
+
+/**
+ * Increment secondary index (substories)
+ */
+function incrementSecondaryIndex() {
+    secondaryIndex++;
+}
+
+/**
+ * Decrement secondary index (substories)
+ */
+function decrementSecondaryIndex() {
+    secondaryIndex--;
+}
+
+/**
+ * Return story card item div reference
+ * @param  {int} secondaryIndex Story card index
+ * @param  {int} offset         Number to offset div
+ * @return {div}                Story card div
+ */
+function getPrimaryItem(secondaryIndex, offset) {
+    secondaryIndex += offset;
+    return $("#story-card-" + secondaryIndex.toString());
+}
+
+/**
+ * Return sidebar item div reference
+ * @param  {int} secondaryIndex Sidebar item index
+ * @param  {int} offset         Number to offset div
+ * @return {div}                Sidebar item div
+ */
+function getSecondaryItem(secondaryIndex, offset) {
+    secondaryIndex += offset;
+    return $("#sidebar-story-item-" + secondaryIndex.toString());
+}
+
+/**
+ * Slide forward between story cards
+ */
+function storyToStoryForward() {
+
+    $thisPrimary = getPrimaryItem(secondaryIndex, 0);
+    $nextPrimary = getPrimaryItem(secondaryIndex, 1);
+
+    $thisSecondary = getSecondaryItem(secondaryIndex, 0);
+    $nextSecondary = getSecondaryItem(secondaryIndex, 1);
+
+    $thisPrimary.toggle("slide", {
+        direction: "right"
+    }, slideTime)
+
+    setTimeout(function() {
+        $nextPrimary.toggle("slide", {
+            direction: "left"
+        }, slideTime)
+    }, slideTime + slideDelay);
+
+    $thisSecondary.removeClass("sidebar-story-card-item-active");
+    $thisSecondary.find("i").replaceWith("<i class='material-icons md-18'>check_box</i>");
+    $nextSecondary.addClass("sidebar-story-card-item-active");
+
+    incrementSecondaryIndex();
+
+}
+
+/**
+ * Slide backward between story cards
+ */
+function storyToStoryBackward() {
+
+    $thisPrimary = getPrimaryItem(secondaryIndex, 0);
+    $prevPrimary = getPrimaryItem(secondaryIndex, -1);
+
+    $thisSecondary = getSecondaryItem(secondaryIndex, 0);
+    $prevSecondary = getSecondaryItem(secondaryIndex, -1);
+
+    $thisPrimary.toggle("slide", {
+        direction: "left"
+    }, slideTime)
+
+    setTimeout(function() {
+        $prevPrimary.toggle("slide", {
+            direction: "right"
+        }, slideTime)
+    }, slideTime + slideDelay);
+
+    $thisSecondary.removeClass("sidebar-story-card-item-active");
+    $prevSecondary.addClass("sidebar-story-card-item-active");
+    $prevSecondary.find("i").replaceWith("<i class='material-icons md-18'>check_box_outline_blank</i>");
+
+    decrementSecondaryIndex();
+
+}
+
+/**
  * ANIMATE MAP ON JUMP
  */
 
 function storyToMapForward() {
 
-    // $thisParent = $(thisParent).parent().parent();
-    $thisParent = $("#story-card-" + currentStoryIndex.toString());
+    // Slide current card out for map
+    $thisParent = $("#story-card-" + secondaryIndex.toString());
 
     $thisParent.toggle("slide", {
         direction: "right"
@@ -262,17 +372,29 @@ function storyToMapForward() {
         }, slideTime)
     }, slideTime + slideDelay);
 
+    $thisSidebarItem = $("#sidebar-story-item-" + secondaryIndex.toString());
+    $thisSidebarItem.removeClass("sidebar-story-card-item-active");
+    $thisSidebarItem.addClass("sidebar-story-card-item");
+
+    $thisSidebarItem.find("i").replaceWith("<i class='material-icons md-18'>check_box</i>");
+
+    // Depress current sidebar story card
+    $thisSidebarCard = $("#sidebar-story-card-" + primaryIndex.toString());
+    $thisSidebarCard.removeClass("sidebar-story-card-active");
+    $thisSidebarCard.addClass("sidebar-story-card");
+
     // Find next year to jump to
-    thisDateEnd = Object.keys(storyDict).sort()[masterStoryIndex];
+    thisDateEnd = Object.keys(storyDict).sort()[primaryIndex];
     step();
 
 }
 
 function mapToStoryForward() {
 
-    masterStoryIndex++;
-    currentStoryIndex++;
-    $thisParent = $("#story-card-" + currentStoryIndex.toString());
+    incrementPrimaryIndex();
+    incrementSecondaryIndex();
+
+    $thisParent = getPrimaryItem(secondaryIndex, 0);
 
     $("#map").toggle("slide", {
         direction: "right"
@@ -289,11 +411,11 @@ function mapToStoryForward() {
 function storyToMapBackward() {
 
     // $thisParent = $(thisParent).parent().parent();
-    $thisParent = $("#story-card-" + currentStoryIndex.toString());
+    $thisParent = $("#story-card-" + secondaryIndex.toString());
 
-    // Set the masterStoryIndex and currentStoryIndex
-    masterStoryIndex--;
-    currentStoryIndex--;
+    // Set the primaryIndex and secondaryIndex
+    primaryIndex--;
+    secondaryIndex--;
 
     $thisParent.toggle("slide", {
         direction: "left"
@@ -304,86 +426,6 @@ function storyToMapBackward() {
             direction: "right"
         }, slideTime)
     }, slideTime + slideDelay);
-
-}
-
-/**
- * MOVE BETWEEN STORY CARDS
- */
-
-function storyToStoryForward() {
-
-
-
-    $thisParent = $("#story-card-" + currentStoryIndex.toString());
-    $nextParent = $("#story-card-" + (currentStoryIndex + 1).toString());
-    currentStoryIndex++;
-
-    $thisParent.toggle("slide", {
-        direction: "right"
-    }, slideTime)
-
-    setTimeout(function() {
-        $nextParent.toggle("slide", {
-            direction: "left"
-        }, slideTime)
-    }, slideTime + slideDelay);
-
-    // Remove classing from current story item
-    currentStoryItem.removeClass("story-div-item-current");
-    currentStoryItem.addClass("story-div-item");
-    currentStoryItem.find("#item-number").removeClass("item-number-current");
-    currentStoryItem.find("#item-number").addClass("item-number");
-    currentStoryItem.find("#item-title").removeClass("item-title-current");
-    currentStoryItem.find("#item-title").addClass("item-title");
-
-    // Set new currentStoryItem
-    currentStoryItem = currentStoryItem.next();
-
-    // Add classing to next story item
-    currentStoryItem.removeClass("story-div-item");
-    currentStoryItem.addClass("story-div-item-current");
-    currentStoryItem.find("#item-number").removeClass("item-number");
-    currentStoryItem.find("#item-number").addClass("item-number-current");
-    currentStoryItem.find("#item-title").removeClass("item-title");
-    currentStoryItem.find("#item-title").addClass("item-title-current");
-
-}
-
-function storyToStoryBackward() {
-
-    $thisParent = $("#story-card-" + currentStoryIndex.toString());
-    $prevParent = $("#story-card-" + (currentStoryIndex - 1).toString());
-    currentStoryIndex--;
-
-    $thisParent.toggle("slide", {
-        direction: "left"
-    }, slideTime)
-
-    setTimeout(function() {
-        $prevParent.toggle("slide", {
-            direction: "right"
-        }, slideTime)
-    }, slideTime + slideDelay);
-
-    // Remove classing from current story item
-    currentStoryItem.removeClass("story-div-item-current");
-    currentStoryItem.addClass("story-div-item");
-    currentStoryItem.find("#item-number").removeClass("item-number-current");
-    currentStoryItem.find("#item-number").addClass("item-number");
-    currentStoryItem.find("#item-title").removeClass("item-title-current");
-    currentStoryItem.find("#item-title").addClass("item-title");
-
-    // // Set new currentStoryItem
-    currentStoryItem = currentStoryItem.prev();
-
-    // Add classing to next story item
-    currentStoryItem.removeClass("story-div-item");
-    currentStoryItem.addClass("story-div-item-current");
-    currentStoryItem.find("#item-number").removeClass("item-number");
-    currentStoryItem.find("#item-number").addClass("item-number-current");
-    currentStoryItem.find("#item-title").removeClass("item-title");
-    currentStoryItem.find("#item-title").addClass("item-title-current");
 
 }
 
@@ -463,3 +505,5 @@ function step() {
  * MATERIAL DESIGN BUTTON
  */
 // const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
+// let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-drawer--temporary'));
+// document.querySelector('.menu').addEventListener('click', () => drawer.open = true);

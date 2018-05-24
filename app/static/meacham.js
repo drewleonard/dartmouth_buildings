@@ -6224,10 +6224,640 @@ var meacham = {
                 ]
             ]
         }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Sanborn Lane",
+            "dateAddedStart": 1799,
+            "dateAddedEnd": 1799,
+            "Description": "Professor Sanborn’s house stood on the southern corner of the Lane and gave it its name. Earlier it was called Cemetery Lane."
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [-72.2893899679184,
+                    43.70331225249421
+                ],
+                [-72.28948652744293,
+                    43.70330061824187
+                ],
+                [-72.28956699371338,
+                    43.70330061824187
+                ],
+                [-72.28967964649199,
+                    43.70329674015727
+                ],
+                [-72.28978157043456,
+                    43.703288983987285
+                ],
+                [-72.28987276554108,
+                    43.703288983987285
+                ],
+                [-72.28998005390167,
+                    43.70328122781631
+                ],
+                [-72.29008197784424,
+                    43.70328122781631
+                ],
+                [-72.29021072387695,
+                    43.70328122781631
+                ],
+                [-72.29032337665558,
+                    43.70328122781631
+                ],
+                [-72.29040384292603,
+                    43.70328122781631
+                ],
+                [-72.29047358036041,
+                    43.70328122781631
+                ],
+                [-72.29056477546692,
+                    43.703288983987285
+                ],
+                [-72.29066133499146,
+                    43.70328122781631
+                ],
+                [-72.2907418012619,
+                    43.70328122781631
+                ],
+                [-72.29083299636841,
+                    43.70327734973047
+                ],
+                [-72.29097247123718,
+                    43.703273471644344
+                ],
+                [-72.29104220867157,
+                    43.703273471644344
+                ],
+                [-72.29111731052399,
+                    43.70325795929736
+                ],
+                [-72.29118168354034,
+                    43.70324632503451
+                ],
+                [-72.29128897190094,
+                    43.70322693459138
+                ],
+                [-72.29138016700745,
+                    43.70320754414198
+                ],
+                [-72.2914606332779,
+                    43.703192031777945
+                ],
+                [-72.29152500629425,
+                    43.7031803975023
+                ],
+                [-72.29161083698273,
+                    43.70317264131728
+                ],
+                [-72.29168057441711,
+                    43.70316488513124
+                ],
+                [-72.29174494743347,
+                    43.70314549466177
+                ],
+                [-72.29179859161377,
+                    43.70312610418604
+                ],
+                [-72.29186832904816,
+                    43.70310671370405
+                ],
+                [-72.29192733764648,
+                    43.70306405462153
+                ],
+                [-72.29197025299072,
+                    43.70303690791686
+                ],
+                [-72.29201853275299,
+                    43.70296710204843
+                ],
+                [-72.29203999042511,
+                    43.70290505231935
+                ],
+                [-72.2920775413513,
+                    43.70283912441186
+                ],
+                [-72.29209363460541,
+                    43.702718902746795
+                ],
+                [-72.29209363460541,
+                    43.702614193358244
+                ],
+                [-72.29211509227753,
+                    43.702393139604034
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "School Street",
+            "dateAddedStart": 1843,
+            "dateAddedEnd": 1843,
+            "Description": "The Town opened the street above the school on the corner of West Wheelock Street, now the Christian Science Hall. The Town extended the street to the south in 1910."
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [-72.2914445400238,
+                    43.70013213949128
+                ],
+                [-72.29142844676971,
+                    43.700636314999315
+                ],
+                [-72.29142844676971,
+                    43.70105516527412
+                ],
+                [-72.29143381118774,
+                    43.701477890825316
+                ],
+                [-72.29143381118774,
+                    43.701729973450945
+                ],
+                [-72.29143917560577,
+                    43.70204022753513
+                ],
+                [-72.29145526885986,
+                    43.70222637921499
+                ],
+                [-72.29144990444183,
+                    43.70235823630518
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Scully-Fahey Field",
+            "dateAddedStart": 2000,
+            "dateAddedEnd": 2000,
+            "Description": "The artificial-turf field lies southeast of Thompson Arena and is host to the field-hockey and lacrosse teams. The field’s stands seat 1,500. The families of Alma and Donald Scully ¥49 and Helen and Peter Fahey ’68 donated the field in memory of long-time soccer and lacrosse coach Tom Dent."
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.278158332632458, 43.700367406444656, 0.0],
+                        [-72.278137042015061, 43.699765543702632, 0.0],
+                        [-72.278135814973723, 43.699730866227426, 0.0],
+                        [-72.278272251367198, 43.69972786900513, 0.0],
+                        [-72.278273736478312, 43.699762541497719, 0.0],
+                        [-72.278273737305881, 43.699763355152854, 0.0],
+                        [-72.278275653650724, 43.699763319697063, 0.0],
+                        [-72.278295767594216, 43.700331916876664, 0.0],
+                        [-72.278179848236988, 43.700334075310835, 0.0],
+                        [-72.27817989690385, 43.700335445850705, 0.0],
+                        [-72.278293295854013, 43.700333335105555, 0.0],
+                        [-72.278293781372071, 43.700347046810222, 0.0],
+                        [-72.278180381164717, 43.70034915846265, 0.0],
+                        [-72.278181011444872, 43.700366984494153, 0.0],
+                        [-72.278158332632458, 43.700367406444656, 0.0]
+                    ]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Shattuck Observatory",
+            "dateAddedStart": 1854,
+            "dateAddedEnd": 1854,
+            "Description": "Ammi Young designed the observatory, his last building at Dartmouth. George C. Shattuck, M.D., LL. D. of Boston, class of 1803, gave the building.886 The building had a wood and copper dome until around 1958 when it went to Smithsonian and was lost, according to one account. The dome bearings that workers removed at that time were six pre-Civil War cannonballs.887 The current dome is a modern steel one."
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.285673466176078, 43.705143087078064, 0.0],
+                        [-72.285608917435397, 43.705142339447818, 0.0],
+                        [-72.285610125861041, 43.705088196694696, 0.0],
+                        [-72.285511286816643, 43.705087085646447, 0.0],
+                        [-72.28551230809164, 43.705039345169403, 0.0],
+                        [-72.285611905709814, 43.705040633922259, 0.0],
+                        [-72.285613349689683, 43.704985027286959, 0.0],
+                        [-72.285677139600594, 43.704985596311126, 0.0],
+                        [-72.285676488255035, 43.705033102569864, 0.0],
+                        [-72.285683608517459, 43.705032612176645, 0.0],
+                        [-72.285690736837793, 43.705033025404639, 0.0],
+                        [-72.285697658458488, 43.705034330815984, 0.0],
+                        [-72.285704162047509, 43.705036488152231, 0.0],
+                        [-72.285710050910069, 43.705039432774051, 0.0],
+                        [-72.285715145451547, 43.70504307384752, 0.0],
+                        [-72.285719290685904, 43.705047300604107, 0.0],
+                        [-72.285722361244495, 43.705051986813743, 0.0],
+                        [-72.285724263820399, 43.705056987171304, 0.0],
+                        [-72.285724941047633, 43.705062152576772, 0.0],
+                        [-72.285724370195894, 43.705067323841774, 0.0],
+                        [-72.285722570753123, 43.705072345149482, 0.0],
+                        [-72.285719596972697, 43.705077063194977, 0.0],
+                        [-72.285715539197284, 43.705081335278592, 0.0],
+                        [-72.285710520155703, 43.705085031126181, 0.0],
+                        [-72.285704692537166, 43.705088038302591, 0.0],
+                        [-72.285698234065762, 43.705090265838727, 0.0],
+                        [-72.285691340075331, 43.705091646071764, 0.0],
+                        [-72.285684221055874, 43.705092137358797, 0.0],
+                        [-72.285677091478675, 43.705091723237146, 0.0],
+                        [-72.285674951498848, 43.705091503509664, 0.0],
+                        [-72.285673466176078, 43.705143087078064, 0.0]
+                    ]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Sherman House",
+            "dateAddedStart": 1883,
+            "dateAddedEnd": 1883,
+            "Description": "Professor Frank A. Sherman had his house built at 37 North Main. Today the building stands on the corner of Maynard and North Main, though the house predates Maynard Street by nine years. Sherman still owned the house in 1905. In its original guise, the house was a rather conventional two-story building with a steeply-pitched roof and jerkin-headed gables. By 1928 the Sigma Phi Epsilon Fraternity had bought the house and had hired Jens Larson to design a new appearance: as it stands today the house’s upper stories wear a rather Tudor half-timbered skin, with leaded windows and a porch of carefully haphazard brick. The building was in private hands again by 1950 and the College now owns it."
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.288431953786542, 43.707686259352329, 169.611389382780033],
+                        [-72.288342770899945, 43.707646133532748, 169.611389382780033],
+                        [-72.288343105623895, 43.70764574648458, 169.611389382780033],
+                        [-72.288275614590361, 43.707614960508394, 169.611389382780033],
+                        [-72.288285677388131, 43.707603347153565, 169.611389382780033],
+                        [-72.288261385837103, 43.707592282455373, 169.611389382780033],
+                        [-72.288270118357218, 43.707582210946335, 169.611389382780033],
+                        [-72.288205549630902, 43.707552769033576, 169.611389382780033],
+                        [-72.288246795141788, 43.707505162643464, 169.611389382780033],
+                        [-72.288311374937621, 43.707534598172529, 169.611389382780033],
+                        [-72.288321425382819, 43.707522992082112, 169.611389382780033],
+                        [-72.288345705815644, 43.70753406312862, 169.611389382780033],
+                        [-72.288355779687393, 43.707522443406809, 169.611389382780033],
+                        [-72.288408607764978, 43.707546531609935, 169.611389382780033],
+                        [-72.288406850151915, 43.707548983045719, 169.611389382780033],
+                        [-72.288454621840984, 43.707570753163182, 0.0],
+                        [-72.288446560040114, 43.707580050582415, 0.0],
+                        [-72.288462034375044, 43.707587106615918, 169.611389382780033],
+                        [-72.288475115839873, 43.707572009774069, 169.611389382780033],
+                        [-72.288502330878231, 43.707584419419852, 169.611389382780033],
+                        [-72.288495286824016, 43.707592548422163, 169.611389382780033],
+                        [-72.288508093388941, 43.707598387674402, 169.611389382780033],
+                        [-72.288431953786542, 43.707686259352329, 169.611389382780033]
+                    ]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Sigma Alpha Epsilon House",
+            "dateAddedStart": 1931,
+            "dateAddedEnd": 1931,
+            "Description": "The brick building with the giant- order portico of four slim columns stands at 38 College Street. The 1904 Chi Tau Kappa Fraternity became a chapter of Sigma Alpha Epsilon in 1908894 and occupied a former residence on this site; the fraternity replace it with this building between 1928 and 1931."
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-72.2879147529602,
+                        43.70577090716144
+                    ],
+                    [-72.28760361671448,
+                        43.70577478508599
+                    ],
+                    [-72.28760361671448,
+                        43.70589887853932
+                    ],
+                    [-72.28792011737823,
+                        43.70589500062278
+                    ],
+                    [-72.2879147529602,
+                        43.70577090716144
+                    ]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Sigma Delta House",
+            "dateAddedStart": 1936,
+            "dateAddedEnd": 1937,
+            "Description": "The Phi Gamma Delta Fraternity had Alfred Hoyt Granger of Chicago design the house at 10 West Wheelock to replace the former dwelling that the fraternity had occupied on that site.896 Wells, Hudson & Granger was the local architectural firm of Jens Larson’s former partner and the College Superintendent of Buildings, Harry Wells. The fraternity went local in 1965 as Phoenix and later folded. The College bought the house and rented it for use by the first sorority at Dartmouth, the 1977 Sigma Kappa, which went local to become Sigma Delta in 1988.897"
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.291047252889598, 43.70211275784812, 169.855229870457464],
+                        [-72.291045564402864, 43.702087058502769, 0.0],
+                        [-72.291194644384504, 43.702081845431486, 0.0],
+                        [-72.291196351543192, 43.702107544672629, 0.0],
+                        [-72.2912952276845, 43.702104087273163, 169.855229870457464],
+                        [-72.291302461543424, 43.702218173336398, 169.855229870457464],
+                        [-72.291054738699543, 43.702226659837542, 169.855229870457464],
+                        [-72.291047252889598, 43.70211275784812, 169.855229870457464]
+                    ]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Sigma Nu House",
+            "dateAddedStart": 1925,
+            "dateAddedEnd": 1925,
+            "Description": "Jens Larson designed the house at 12 Webster Avenue, numbered 10 on a 1928 map, for the organization as it moved out of its first house on North Main Street. The house has its entrance at the east end and originally had fourteen bedrooms on the second floor and three on the third. Builders completed the house in September of 1925 at a cost of 45 cents per cubic foot, with a total volume of approximately 94,800 cubic feet (Architectural Forum, December 1925). As a local fraternity the organization called itself Sigma Nu Delta between 1961 and 1985 and then returned to the national organization."
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-72.29245841503143,
+                        43.706317692047705
+                    ],
+                    [-72.2921633720398,
+                        43.70624013421136
+                    ],
+                    [-72.29209899902344,
+                        43.70636810458752
+                    ],
+                    [-72.29240477085114,
+                        43.70644178437713
+                    ],
+                    [-72.29245841503143,
+                        43.706317692047705
+                    ]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Sigma Phi Epsilon",
+            "dateAddedStart": 1896,
+            "dateAddedEnd": 1896,
+            "Description": "Thomas W.D. Worthen had the house built by at 11 Webster Avenue in 1896.899 Worthen was also a moving force behind Occom Pond. By 1931 C.R. Baillie owned the house, and it remained in private hands at least through 1950. By 1961 the 1909 Sigma Phi Epsilon Fraternity had purchased the house.900 The organization is descended from the local Omicron Pi Sigma of 1908.901"
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-72.29253351688385,
+                        43.706821815537936
+                    ],
+                    [-72.29221701622009,
+                        43.70675201407679
+                    ],
+                    [-72.29214191436768,
+                        43.706891616917815
+                    ],
+                    [-72.2924530506134,
+                        43.70696917391123
+                    ],
+                    [-72.29253351688385,
+                        43.706821815537936
+                    ]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Silsby Hall",
+            "dateAddedStart": 1927,
+            "dateAddedEnd": 1928,
+            "Description": "Jens Larson designed the building that bears the name of the donor’s grandfather, the Rev. Ozias Silsby, 1785.902 The College revealed the name of the donor, T. Julien Silsby of Brookline, Ma., a year after he died.903 The building cost $468,000904 and contains classrooms, offices and laboratories that replace the demolished Butterfield Museum."
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.290163091472849, 43.705467497153826, 0.0],
+                        [-72.290163679281335, 43.705481594364251, 0.0],
+                        [-72.290166108031471, 43.705481541512917, 0.0],
+                        [-72.290174956510498, 43.705693625938736, 0.0],
+                        [-72.290170581629326, 43.705693731709296, 0.0],
+                        [-72.289971031916608, 43.705699079167005, 0.0],
+                        [-72.289948066528368, 43.705699569824965, 0.0],
+                        [-72.289941797816596, 43.705699746218087, 0.0],
+                        [-72.289938291786171, 43.705615706476806, 0.0],
+                        [-72.289918237764411, 43.705616258658999, 0.0],
+                        [-72.289917371690763, 43.705579849456214, 0.0],
+                        [-72.289936769814773, 43.705579220744902, 0.0],
+                        [-72.289933022659909, 43.70548939039886, 0.0],
+                        [-72.289980038364135, 43.705488358164793, 0.0],
+                        [-72.289979326906106, 43.705471304014409, 0.0],
+                        [-72.289785073192192, 43.705475569190888, 0.0],
+                        [-72.289780408703407, 43.705363753452708, 0.0],
+                        [-72.289972780345721, 43.705359530049812, 0.0],
+                        [-72.289972034006951, 43.70534162372774, 0.0],
+                        [-72.290115590131876, 43.705338471831311, 0.0],
+                        [-72.290116344479458, 43.705356548221012, 0.0],
+                        [-72.290304328703684, 43.705352420196078, 0.0],
+                        [-72.290308997243457, 43.705464293494622, 0.0],
+                        [-72.290163091472849, 43.705467497153826, 0.0]
+                    ]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Fayerweather Hall South",
+            "dateAddedStart": 1907,
+            "dateAddedEnd": 1910,
+            "Description": "Charles Rich designed the dormitory to flank the earlier Fayerweather Hall in a pattern mimicking that of Dartmouth Row. The hall cost $35,686 to build917 and stands on the site of the Burke house, which was already long-gone as it had burned in 1856.918 Students under the leadership of Fred Harris founded the Dartmouth Outing Club on 17 December 1909919 in room 4. Later that month, however, the uilding burned to its brick skeleton. Students saved themselves by jumping from windows into the deep snow920; Fred Harris injured his knee doing so. The College rebuilt the building in 1910, again to Rich’s designs. The hall became a barracks in 1918922 and was one of ten Navy V-12 dormitories (operated as the ship “U.S.S. South Fayerweather”) during W.W.II."
+        },
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.286469408892131, 43.70345818664449, 0.0],
+                        [-72.286468796866998, 43.703476694404671, 0.0],
+                        [-72.286467220942825, 43.703476666947495, 0.0],
+                        [-72.286464411992242, 43.703561674439676, 0.0],
+                        [-72.286466506728388, 43.703561722485347, 0.0],
+                        [-72.286466324912439, 43.703567195867855, 0.0],
+                        [-72.286464230417195, 43.703567171222581, 0.0],
+                        [-72.286463700821585, 43.703583203356025, 0.0],
+                        [-72.286306726028116, 43.703580943811694, 0.0],
+                        [-72.286306181430774, 43.703597089433948, 0.0],
+                        [-72.286259326767194, 43.703596274149618, 0.0],
+                        [-72.286268244172405, 43.703326159431853, 0.0],
+                        [-72.286356668155193, 43.703327697120166, 0.0],
+                        [-72.286366652713241, 43.703319481196353, 0.0],
+                        [-72.286441314078331, 43.703320780211115, 0.0],
+                        [-72.286450769875259, 43.703328437998024, 0.0],
+                        [-72.286450754298798, 43.703329334547483, 0.0],
+                        [-72.286539179650475, 43.703330883788034, 0.0],
+                        [-72.286534935035519, 43.703459326318246, 0.0],
+                        [-72.286469408892131, 43.70345818664449, 0.0]
+                    ]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
     }]
 }
 
-// var meachamCampusTemplate = {
+// var meachamCampusTemplate = ,{
 //         "type": "Feature",
 //         "properties": {
 //             "Name": ,
@@ -6239,4 +6869,4 @@ var meacham = {
 //             "type": ,
 //             "coordinates": []
 //         }
-//     },
+//     }

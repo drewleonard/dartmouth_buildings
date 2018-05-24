@@ -2348,6 +2348,211 @@ var meacham = {
                 ]
             ]
         }
+    } {
+        "type": "Feature",
+        "properties": {
+            "Name": "East Wheelock Street",
+            "dateAddedStart": 1770,
+            "dateAddedEnd": 1770,
+            "Description": "The street runs east from the Green. By 1879 residents knew it as West Wheelock Street, though it had earlier been named Hanover Street since it runs to Hanover Center."
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [-72.28932559490204,
+                    43.702400895889916
+                ],
+                [-72.2885262966156,
+                    43.70247070241764
+                ],
+                [-72.28824734687805,
+                    43.702505605651005
+                ],
+                [-72.28775918483734,
+                    43.7025715339253
+                ],
+                [-72.28576898574829,
+                    43.70300976119991
+                ],
+                [-72.2850501537323,
+                    43.70322693459138
+                ],
+                [-72.28367686271666,
+                    43.703599230003555
+                ],
+                [-72.28229284286499,
+                    43.703948254852676
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": ,
+            "dateAddedStart": ,
+            "dateAddedEnd": ,
+            "Description":
+        },
+        "geometry": {
+            "type": ,
+            "coordinates": []
+        }
     }]
 }
 

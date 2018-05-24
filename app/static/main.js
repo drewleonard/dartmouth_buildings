@@ -52,6 +52,15 @@ var currentStoryItem;
  */
 
 // Add tile layer to map object
+// 
+var campusStyle = {
+    color: "#dc322f",
+    fillColor: "#dc322f",
+    weight: 3,
+    opacity: 0.95,
+    fillOpacity: 0.25,
+};
+
 var tiles = new L.StamenTileLayer("toner-lite");
 var map = new L.Map("map", {
     center: new L.LatLng(43.7043222, -72.2875),
@@ -80,14 +89,6 @@ map.addLayer(featureLayer);
 /**
  * STYLING OPTIONS
  */
-
-var campusStyle = {
-    color: "#dc322f",
-    fillColor: "#dc322f",
-    weight: 3,
-    opacity: 0.95,
-    fillOpacity: 0.25,
-};
 
 var hiddenStyle = {
     color: "#fdf6e3",

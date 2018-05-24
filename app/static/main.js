@@ -11,6 +11,20 @@
  *     => landing page
  */
 
+// for (i = 1765; i < 2015; i++) {
+//     $.each(meacham, function(key, value) {
+//         if (value.length === 175) {
+//             for (val in value) {
+//                 if (value[val].properties.dateAddedStart === i) {
+//                     console.log(value[val].properties.dateAddedStart);
+//                     console.log(value[val].properties.Name);
+//                 }
+//             }
+//         }
+//     });
+// }
+
+
 /**
  * GLOBAL SETTINGS
  */

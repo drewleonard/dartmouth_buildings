@@ -2388,142 +2388,449 @@ var meacham = {
     }, {
         "type": "Feature",
         "properties": {
-            "Name": ,
-            "dateAddedStart": ,
-            "dateAddedEnd": ,
-            "Description":
+            "Name": "Epsilon Kappa Theta House",
+            "dateAddedStart": 1896,
+            "dateAddedEnd": 1896,
+            "Description": "rchitects Dwight & Chandler designed the house at 15 Webster Avenue for W.M. Patten,401 who owned it at least through 1931. The M.H.M.H. Nurses’ School leased the builiding from its owner in 1942,402 and the house was still in private hands in 1950. The Tau Epsilon Phi Fraternity, founded in 1950,403 occupied the house by 1961. In 1969 that organization became The Harold Parmington Foundation, later transforming into Delta Psi Delta, which failed in 1990. Both organizations were co-ed and local. The alumni of these three organizations founded the 15 Webster Avenue Award for community service performed by C.F.S. organizations. The local Epsilon Kappa Theta Sorority, which was the national Kappa Alpha Theta until around 1991, now occupies the house, which the College owns."
         },
         "geometry": {
-            "type": ,
-            "coordinates": []
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.293340271351582, 43.707092289238233, 0.0],
+                        [-72.293399654735381, 43.707105314303071, 0.0],
+                        [-72.29335536982542, 43.707210537953046, 0.0],
+                        [-72.293318477174566, 43.707202510030726, 0.0],
+                        [-72.293300268984979, 43.707245590640177, 0.0],
+                        [-72.293257306516125, 43.707235766143206, 0.0],
+                        [-72.293264684840636, 43.707217985422119, 0.0],
+                        [-72.293195946117109, 43.707202450884267, 0.0],
+                        [-72.293212428248481, 43.707163038515198, 0.0],
+                        [-72.293228094366114, 43.707166426889202, 0.0],
+                        [-72.29323695201056, 43.707145345624163, 0.0],
+                        [-72.293197533333, 43.707136966083439, 0.0],
+                        [-72.293183742336282, 43.707120032255339, 0.0],
+                        [-72.293194835547851, 43.707095829916348, 0.0],
+                        [-72.293217187271537, 43.707087477204958, 0.0],
+                        [-72.293229449535531, 43.707054489223786, 0.0],
+                        [-72.293227366949367, 43.707053713983349, 0.0],
+                        [-72.29322340200568, 43.707051732173881, 0.0],
+                        [-72.293219970654775, 43.707049281205855, 0.0],
+                        [-72.293217179131275, 43.707046435202365, 0.0],
+                        [-72.293215111459745, 43.707043280109033, 0.0],
+                        [-72.293213829454487, 43.707039913694139, 0.0],
+                        [-72.293213373857299, 43.707036435641555, 0.0],
+                        [-72.293213756958991, 43.707032953891677, 0.0],
+                        [-72.293214968680942, 43.707029572907231, 0.0],
+                        [-72.293216970399811, 43.707026396407365, 0.0],
+                        [-72.293219702316691, 43.707023520126647, 0.0],
+                        [-72.293223082206978, 43.707021030921958, 0.0],
+                        [-72.293227005411055, 43.707019005872468, 0.0],
+                        [-72.293231353453251, 43.707017505931908, 0.0],
+                        [-72.293235995292008, 43.707016576821751, 0.0],
+                        [-72.29324078852288, 43.707016245424491, 0.0],
+                        [-72.293245589350803, 43.707016524229239, 0.0],
+                        [-72.293246957403781, 43.707016716544153, 0.0],
+                        [-72.293252364109051, 43.70700333624653, 0.0],
+                        [-72.293316549031118, 43.707017433112121, 0.0],
+                        [-72.293309897731973, 43.707032466454315, 0.0],
+                        [-72.293362178742498, 43.70704391126025, 0.0],
+                        [-72.293366188597915, 43.707045916220331, 0.0],
+                        [-72.293369658705856, 43.707048394873475, 0.0],
+                        [-72.293372482840866, 43.707051273996818, 0.0],
+                        [-72.293374574468629, 43.707054464958539, 0.0],
+                        [-72.293375870543102, 43.707057870897295, 0.0],
+                        [-72.293376331515731, 43.707061387622524, 0.0],
+                        [-72.293375943882609, 43.707064909900687, 0.0],
+                        [-72.293374718915572, 43.707068328762148, 0.0],
+                        [-72.293372694015503, 43.707071542294514, 0.0],
+                        [-72.293366512127022, 43.707076968476429, 0.0],
+                        [-72.293362544503793, 43.707079017175921, 0.0],
+                        [-72.293353450693502, 43.707081474708403, 0.0],
+                        [-72.293344951048283, 43.707081655419266, 0.0],
+                        [-72.293340271351582, 43.707092289238233, 0.0]
+                    ]
+                ]
+            ]
         }
     }, {
         "type": "Feature",
         "properties": {
-            "Name": ,
-            "dateAddedStart": ,
-            "dateAddedEnd": ,
-            "Description":
+            "Name": "Fairbanks North",
+            "dateAddedStart": 1925,
+            "dateAddedEnd": 1925,
+            "Description": "The College purchased the building in the fall of 1953 from the Cardigan Mountain School, which had acquired the Clark property in the spring. Dartmouth renamed the building for Professor Arthur Fairbanks, director of the Boston MFA between 1907 and 1925.408 In 1953 the College installed a 98-seat theater that became the home of the film society (Dartmouth Film Society, 4). The College moved the building to its current site to make way for the Computation Center in 1963."
         },
         "geometry": {
-            "type": ,
-            "coordinates": []
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.29099831940556, 43.703582307052955, 172.700025400052482],
+                        [-72.291156505091664, 43.70358144291248, 172.700025400052482],
+                        [-72.291158384604969, 43.703762497855976, 172.700025400052482],
+                        [-72.291136326774023, 43.703762618367541, 172.700025400052482],
+                        [-72.291136910542292, 43.7038188548498, 172.700025400052482],
+                        [-72.291024730609337, 43.703819467672531, 172.700025400052482],
+                        [-72.291024146945915, 43.703763231189072, 172.700025400052482],
+                        [-72.291000198442831, 43.703763362001879, 172.700025400052482],
+                        [-72.290999591069024, 43.70370483858165, 172.700025400052482],
+                        [-72.290957366117411, 43.703705069212596, 172.700025400052482],
+                        [-72.290956692370145, 43.703640145790487, 172.700025400052482],
+                        [-72.290998917276184, 43.703639915160053, 172.700025400052482],
+                        [-72.29099831940556, 43.703582307052955, 172.700025400052482]
+                    ]
+                ]
+            ]
         }
     }, {
         "type": "Feature",
         "properties": {
-            "Name": ,
-            "dateAddedStart": ,
-            "dateAddedEnd": ,
-            "Description":
+            "Name": "Fairbanks South",
+            "dateAddedStart": 1903,
+            "dateAddedEnd": 1904,
+            "Description": "Beta Theta Pi Fraternity built the house in 1903-4 to designs prepared in 1893 by fraternity alumnus and soon College architect Charles Alonzo Rich. The building is currently occupied by the William Jewett Tucker Foundation."
         },
         "geometry": {
-            "type": ,
-            "coordinates": []
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.290974999781497, 43.703582656741531, 172.700025400052482],
+                        [-72.290974711496474, 43.703554877803796, 172.700025400052482],
+                        [-72.290990939702311, 43.703554789165402, 172.700025400052482],
+                        [-72.290990442708107, 43.703506900310586, 172.700025400052482],
+                        [-72.290960507206592, 43.703507063816225, 172.700025400052482],
+                        [-72.290959525056479, 43.703412421922771, 172.700025400052482],
+                        [-72.291031753489222, 43.703412027403374, 0.0],
+                        [-72.291031625704505, 43.703399715209144, 0.0],
+                        [-72.291033511401992, 43.703399704908655, 172.700025400052482],
+                        [-72.291033142245453, 43.703364136347389, 172.700025400052482],
+                        [-72.291101968922263, 43.703363760365455, 172.700025400052482],
+                        [-72.291102338119487, 43.703399328926267, 0.0],
+                        [-72.291104223816944, 43.703399318624605, 0.0],
+                        [-72.291104351616525, 43.703411630818664, 172.700025400052482],
+                        [-72.291176320762887, 43.703411237624401, 172.700025400052482],
+                        [-72.291177300656599, 43.703505629310023, 172.700025400052482],
+                        [-72.291118845172903, 43.703505948678114, 0.0],
+                        [-72.291119027404378, 43.70352350435445, 0.0],
+                        [-72.291128455911121, 43.703523452844365, 172.700025400052482],
+                        [-72.291128929164159, 43.703581593570661, 172.700025400052482],
+                        [-72.290974999781497, 43.703582656741531, 172.700025400052482]
+                    ]
+                ]
+            ]
         }
     }, {
         "type": "Feature",
         "properties": {
-            "Name": ,
-            "dateAddedStart": ,
-            "dateAddedEnd": ,
-            "Description":
+            "Name": "Fairchild Physical Sciences Center",
+            "dateAddedStart": 1972,
+            "dateAddedEnd": 1974,
+            "Description": "Architects Shepley, Bulfinch, Richardson and Abbot of Boston, including James F. Clapp, Jr., Partner-in-charge and project architect George Balich designed the building. . The four-story building holds classrooms, offices and laboratories for the geography and physical science departments,409 and connects to both Steele and Wilder in the form of a glass-and-concrete tower. The later Burke adjoins Fairchild to the north. Fairchild building incorporates a “flexible” modular system that the Ford Foundation and the Toronto school system developed. The building stands on sites once occupied by the 1811 Medical School Building; the Lord House, which had moved there in 1920; and the Professors Lord House, also moved there in 1920. The College remodeled the building in 1983."
         },
         "geometry": {
-            "type": ,
-            "coordinates": []
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.286105794889977, 43.705947851183325, 0.0],
+                        [-72.286302849759437, 43.705679598844426, 0.0],
+                        [-72.286274780917822, 43.705668366983062, 0.0],
+                        [-72.286288508726884, 43.705649757529592, 0.0],
+                        [-72.286293598445369, 43.705648465347238, 0.0],
+                        [-72.286283143302512, 43.705630065292823, 0.0],
+                        [-72.286251444105702, 43.70563954469764, 0.0],
+                        [-72.286226809612288, 43.70563373780066, 0.0],
+                        [-72.286287242227473, 43.70549355992803, 0.0],
+                        [-72.286503559298268, 43.705548497131879, 0.0],
+                        [-72.286495859565449, 43.705566205360199, 0.0],
+                        [-72.286488929248662, 43.705568277988185, 0.0],
+                        [-72.286498117037112, 43.705584327626497, 0.0],
+                        [-72.286536188633065, 43.705572941460147, 0.0],
+                        [-72.286535086159631, 43.705574436146364, 0.0],
+                        [-72.286560543042199, 43.705584316711004, 0.0],
+                        [-72.286487877818701, 43.705683095969995, 0.0],
+                        [-72.286670043987996, 43.705753560547116, 0.0],
+                        [-72.286633407809589, 43.705803228632419, 0.0],
+                        [-72.286599315647777, 43.705789993574392, 0.0],
+                        [-72.286564697372654, 43.705837431132963, 0.0],
+                        [-72.286614316767896, 43.705857620493134, 0.0],
+                        [-72.286413118073042, 43.7061303862518, 0.0],
+                        [-72.286293081185065, 43.706083895236794, 0.0],
+                        [-72.286121520988928, 43.70601725366447, 0.0],
+                        [-72.286157623417168, 43.705968231283926, 0.0],
+                        [-72.286105794889977, 43.705947851183325, 0.0]
+                    ]
+                ]
+            ]
         }
     }, {
         "type": "Feature",
         "properties": {
-            "Name": ,
-            "dateAddedStart": ,
-            "dateAddedEnd": ,
-            "Description":
+            "Name": "Fayerweather Hall",
+            "dateAddedStart": 1899,
+            "dateAddedEnd": 1900,
+            "Description": "The dormitory stands on the site of the outhouses that stood behind Dartmouth Hall, including one called the Little College.413 College architect Charles Rich designed the building to be “built in Colonial design, of red brick with granite trimmings;” it is 120’ long and 52’ deep and is divided by brick walls into three sections; it originally contained an “unusual number of single rooms” and originally accommodated 81 students.”414 The hall cost $44,060 to build415 and bears the name of the New York leather merchant Mr. Daniel D. Fayerweather, who had no particular connection to the College but included it in his will with a number of other institutions that also posess Fayerweather Halls today, including the University of Virginia, Amherst College and Harvard University. Though Emerson notes that the building “represents a part of his bequest to the College,”416 the building seems to have been built with College funds like the other dormitories and simply named in honor of Mr. Fayerweather’s gift, which went to cover College deficits. Fayerweather became a barracks in 1918."
         },
         "geometry": {
-            "type": ,
-            "coordinates": []
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.286297796865455, 43.70390687612678, 0.0],
+                        [-72.286300801966121, 43.703797164390885, 0.0],
+                        [-72.286297021089169, 43.703797110181661, 0.0],
+                        [-72.2862981831463, 43.703754667607953, 0.0],
+                        [-72.286279595174079, 43.703754399345293, 0.0],
+                        [-72.286280260427063, 43.703730092178276, 0.0],
+                        [-72.286298848391766, 43.7037303604409, 0.0],
+                        [-72.28629993756536, 43.703690598655996, 0.0],
+                        [-72.286303718435605, 43.703690652865163, 0.0],
+                        [-72.286306181430774, 43.703597089433948, 0.0],
+                        [-72.286306726028116, 43.703580943811694, 0.0],
+                        [-72.286463700821585, 43.703583203356025, 0.0],
+                        [-72.286500798485235, 43.703583738442923, 0.0],
+                        [-72.286497794996237, 43.703693450179188, 0.0],
+                        [-72.286501575866765, 43.703693504381803, 0.0],
+                        [-72.286500576797593, 43.70372995704021, 0.0],
+                        [-72.286520425470385, 43.703730243632073, 0.0],
+                        [-72.286519506234058, 43.703763847151109, 0.0],
+                        [-72.286499661281226, 43.703763561438997, 0.0],
+                        [-72.286498658506957, 43.703800015917153, 0.0],
+                        [-72.286494878870343, 43.703799961707766, 0.0],
+                        [-72.286491874114333, 43.70390967254658, 0.0],
+                        [-72.286297796865455, 43.70390687612678, 0.0]
+                    ]
+                ]
+            ]
         }
     }, {
         "type": "Feature",
         "properties": {
-            "Name": ,
-            "dateAddedStart": ,
-            "dateAddedEnd": ,
-            "Description":
+            "Name": "Fire and Skoal House",
+            "dateAddedStart": 1893,
+            "dateAddedEnd": 1896,
+            "Description": "C.H. Richardson and Edwin Chase occupied the building by 1896. W.H. Moore owned the building by 1931, and the College has owned it since before 1984, when the Fire & Skoal Senior Society, founded in 1975, moved into the building."
         },
         "geometry": {
-            "type": ,
-            "coordinates": []
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.281261500050888, 43.700623451528351, 0.0],
+                        [-72.281203845191399, 43.70063071092671, 0.0],
+                        [-72.281198551472315, 43.700606048784501, 0.0],
+                        [-72.281163049998653, 43.700610263841817, 0.0],
+                        [-72.281146963769302, 43.700540849944552, 0.0],
+                        [-72.281125060388476, 43.700543711093552, 0.0],
+                        [-72.281119016831838, 43.700519602018296, 0.0],
+                        [-72.281141425726744, 43.700516920866228, 0.0],
+                        [-72.281140894687354, 43.700514363934012, 0.0],
+                        [-72.281150212908614, 43.700513398473319, 0.0],
+                        [-72.281142310675179, 43.700480154723166, 0.0],
+                        [-72.281225396814563, 43.700470014324274, 0.0],
+                        [-72.281240161079907, 43.700533399478232, 0.0],
+                        [-72.281254765194078, 43.70053167473467, 0.0],
+                        [-72.281261879014934, 43.700561813888832, 0.0],
+                        [-72.281247527962677, 43.70056353727265, 0.0],
+                        [-72.281261500050888, 43.700623451528351, 0.0]
+                    ]
+                ]
+            ]
         }
     }, {
         "type": "Feature",
         "properties": {
-            "Name": ,
-            "dateAddedStart": ,
-            "dateAddedEnd": ,
-            "Description":
+            "Name": "Foley House",
+            "dateAddedStart": 1931,
+            "dateAddedEnd": 1931,
+            "Description": "The first owner of the house at 20 West Street built or moved it there after 1931; by 1984-5 the College owned the building and used it as the Outward Bound House. Now it serves as a “place for consensual decision-making,” living, etc., and holds ten students in four single and three doubles.427 The Foley House organization had previously occupied the house at 9 Webster Avenue, now Kappa Delta Epsilon Sorority, since Foley was descended from the Delta Upsilon Fraternity."
         },
         "geometry": {
-            "type": ,
-            "coordinates": []
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.29431030036551, 43.700607676058944, 0.0],
+                        [-72.294300798455382, 43.700575554488118, 0.0],
+                        [-72.294232194140648, 43.700586236025465, 0.0],
+                        [-72.294231409703144, 43.700583583338585, 0.0],
+                        [-72.294205349743876, 43.700587640800528, 0.0],
+                        [-72.294187707865021, 43.700528001199423, 0.0],
+                        [-72.294213858217631, 43.700523929744186, 0.0],
+                        [-72.294213037770206, 43.700521154845923, 0.0],
+                        [-72.294281385628366, 43.700510513430991, 0.0],
+                        [-72.294290288836251, 43.70050046751544, 0.0],
+                        [-72.294312221766234, 43.700497051941262, 0.0],
+                        [-72.294326029862688, 43.700503493494125, 0.0],
+                        [-72.294329723329795, 43.700502917871923, 0.0],
+                        [-72.294338438924555, 43.700493083598218, 0.0],
+                        [-72.294358621722395, 43.700489940444839, 0.0],
+                        [-72.294371549679298, 43.700495971895236, 0.0],
+                        [-72.29437238169281, 43.700498784531625, 0.0],
+                        [-72.294404198569424, 43.700493831352212, 0.0],
+                        [-72.294431466109089, 43.700586013032073, 0.0],
+                        [-72.294399852061531, 43.700590791392443, 0.0],
+                        [-72.294400645500161, 43.700593473730883, 0.0],
+                        [-72.294392127373243, 43.700603090908963, 0.0],
+                        [-72.2943702018338, 43.700606504657721, 0.0],
+                        [-72.294357065848644, 43.700600394243828, 0.0],
+                        [-72.29431030036551, 43.700607676058944, 0.0]
+                    ]
+                ]
+            ]
         }
     }, {
         "type": "Feature",
         "properties": {
-            "Name": ,
-            "dateAddedStart": ,
-            "dateAddedEnd": ,
-            "Description":
+            "Name": "F.O.M. Warehouse",
+            "dateAddedStart": 1927,
+            "dateAddedEnd": 1944,
+            "Description": "Lying on the northwest corner of Lebanon and Crosby Streets, the F.O.M. Warehouse occupies land owned by the N.H. College of Agriculture and the Mechanic Arts until 1892. The whole block, especially in the area to the northwest of the warehouse, had been home to industrial and workshop functions since the 1870s when the College Gasworks occupied the center of the block. By 1894 Sanborn maps show the block housing a machine shop south of Hallgarten Hall, formerly of the N.H.C.A.M.A.; the College’s Heating Plant; a print shop; and a collection of five lumber sheds strung out to the southeast of the Heating Plant – all still to the northwest of the site of the F.O.M. Warehouse. By 1912 a narrow one-story garage stood near the corner of Crosby Street, aligned north-south. This building would last until some time between 1927 and 1944 when the Warehouse would occupy its site. Meanwhile the College built a ca. 1904-1912 lumber shed of frame construction running east-west that forms the oldest part of the Warehouse today. A later block of one-story sheds midway up Crosby Street forms the northern portion of the Warehouse and dates to between 1912 and 1922. The College built the angled Warehouse itself as a lumber shed and it first appears on Sanborn maps of 1944."
         },
         "geometry": {
-            "type": ,
-            "coordinates": []
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.285637289833701, 43.701749692232731, 0.0],
+                        [-72.285624960175412, 43.701751953359526, 0.0],
+                        [-72.285623393369022, 43.701746657757774, 0.0],
+                        [-72.285570544723043, 43.701755540451522, 0.0],
+                        [-72.285571582156294, 43.701758460947225, 0.0],
+                        [-72.285518735371426, 43.701767526320239, 0.0],
+                        [-72.285463021505493, 43.701595907333065, 0.0],
+                        [-72.285470318929853, 43.701594587933648, 0.0],
+                        [-72.28543035839877, 43.701483970189955, 0.0],
+                        [-72.285720246633531, 43.701187942284278, 0.0],
+                        [-72.286018566071562, 43.701147918617266, 0.0],
+                        [-72.286016333782854, 43.701200420739369, 0.0],
+                        [-72.285779942506011, 43.701232061499447, 0.0],
+                        [-72.285550674515747, 43.70146594394182, 0.0],
+                        [-72.285637289833701, 43.701749692232731, 0.0]
+                    ]
+                ]
+            ]
         }
     }, {
         "type": "Feature",
         "properties": {
-            "Name": ,
-            "dateAddedStart": ,
-            "dateAddedEnd": ,
-            "Description":
+            "Name": "Sherman House",
+            "dateAddedStart": 1843,
+            "dateAddedEnd": 1843,
+            "Description": "To be added."
         },
         "geometry": {
-            "type": ,
-            "coordinates": []
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.288431953786542, 43.707686259352329, 169.611389382780033],
+                        [-72.288342770899945, 43.707646133532748, 169.611389382780033],
+                        [-72.288343105623895, 43.70764574648458, 169.611389382780033],
+                        [-72.288275614590361, 43.707614960508394, 169.611389382780033],
+                        [-72.288285677388131, 43.707603347153565, 169.611389382780033],
+                        [-72.288261385837103, 43.707592282455373, 169.611389382780033],
+                        [-72.288270118357218, 43.707582210946335, 169.611389382780033],
+                        [-72.288205549630902, 43.707552769033576, 169.611389382780033],
+                        [-72.288246795141788, 43.707505162643464, 169.611389382780033],
+                        [-72.288311374937621, 43.707534598172529, 169.611389382780033],
+                        [-72.288321425382819, 43.707522992082112, 169.611389382780033],
+                        [-72.288345705815644, 43.70753406312862, 169.611389382780033],
+                        [-72.288355779687393, 43.707522443406809, 169.611389382780033],
+                        [-72.288408607764978, 43.707546531609935, 169.611389382780033],
+                        [-72.288406850151915, 43.707548983045719, 169.611389382780033],
+                        [-72.288454621840984, 43.707570753163182, 0.0],
+                        [-72.288446560040114, 43.707580050582415, 0.0],
+                        [-72.288462034375044, 43.707587106615918, 169.611389382780033],
+                        [-72.288475115839873, 43.707572009774069, 169.611389382780033],
+                        [-72.288502330878231, 43.707584419419852, 169.611389382780033],
+                        [-72.288495286824016, 43.707592548422163, 169.611389382780033],
+                        [-72.288508093388941, 43.707598387674402, 169.611389382780033],
+                        [-72.288431953786542, 43.707686259352329, 169.611389382780033]
+                    ]
+                ]
+            ]
         }
     }, {
         "type": "Feature",
         "properties": {
-            "Name": ,
-            "dateAddedStart": ,
-            "dateAddedEnd": ,
-            "Description":
+            "Name": "French Hall",
+            "dateAddedStart": 1958,
+            "dateAddedEnd": 1962,
+            "Description": "The four-story dormitory forms one third of the River Cluster. Funds from the U.S. Housing and Home Finance Administration helped construct French Hall."
         },
         "geometry": {
-            "type": ,
-            "coordinates": []
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.297077267650891, 43.704287185568134, 0.0],
+                        [-72.297029377940888, 43.704288180538214, 0.0],
+                        [-72.297028687128801, 43.704270444066083, 0.0],
+                        [-72.296959876517278, 43.70427173799505, 0.0],
+                        [-72.296958580479213, 43.7042443111593, 0.0],
+                        [-72.296974710728264, 43.704243855884883, 0.0],
+                        [-72.296967650340065, 43.704075267630195, 0.0],
+                        [-72.296909672280776, 43.704051811208657, 0.0],
+                        [-72.296843939950222, 43.704082351010143, 0.0],
+                        [-72.296841833585773, 43.703977564445765, 0.0],
+                        [-72.296962759253859, 43.703921297966041, 0.0],
+                        [-72.296963935506952, 43.703985486822191, 0.0],
+                        [-72.297021613772273, 43.70400437253921, 0.0],
+                        [-72.297215094538643, 43.703919174477086, 0.0],
+                        [-72.297205903297666, 43.703908251586839, 0.0],
+                        [-72.297246560475344, 43.703890652439824, 0.0],
+                        [-72.297283835025283, 43.703935255638008, 0.0],
+                        [-72.297302655496097, 43.70392692160631, 0.0],
+                        [-72.297326651293787, 43.703955321275231, 0.0],
+                        [-72.297068172132867, 43.704068860149093, 0.0],
+                        [-72.297077267650891, 43.704287185568134, 0.0]
+                    ]
+                ]
+            ]
         }
     }, {
         "type": "Feature",
         "properties": {
-            "Name": ,
-            "dateAddedStart": ,
-            "dateAddedEnd": ,
-            "Description":
+            "Name": "Friends of Dartmouth Rowing Boathouse",
+            "dateAddedStart": 1987,
+            "dateAddedEnd": 1987,
+            "Description": "The Boathouse stands on the River north of the Bridge and stores 30 boats for the various rowing crews. The building cost $780,000 and was designed by C. Stuart White, Jr., of Banwell Architects of Hanover."
         },
         "geometry": {
-            "type": ,
-            "coordinates": []
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [-72.297545610533575, 43.70586699576203, 128.138176276350691],
+                        [-72.297327202065119, 43.705691160998505, 128.138176276350691],
+                        [-72.297395812905506, 43.705646521728617, 128.138176276350691],
+                        [-72.297356148535656, 43.705614551576296, 128.138176276350691],
+                        [-72.297434772862417, 43.70556327305561, 128.138176276350691],
+                        [-72.29747469608624, 43.705595790791904, 128.138176276350691],
+                        [-72.297537542516167, 43.705554475686021, 128.138176276350691],
+                        [-72.297571105825028, 43.70558154169597, 128.138176276350691],
+                        [-72.297593639166905, 43.705566603150388, 128.138176276350691],
+                        [-72.297778997070253, 43.705716101291685, 128.138176276350691],
+                        [-72.29769586404224, 43.705770331049912, 128.138176276350691],
+                        [-72.297706798735874, 43.705779231726844, 128.138176276350691],
+                        [-72.297616158251358, 43.705838806955668, 128.138176276350691],
+                        [-72.297603952794574, 43.705828815205678, 128.138176276350691],
+                        [-72.297545610533575, 43.70586699576203, 128.138176276350691]
+                    ]
+                ]
+            ]
         }
     }, {
         "type": "Feature",
         "properties": {
-            "Name": ,
-            "dateAddedStart": ,
-            "dateAddedEnd": ,
-            "Description":
+            "Name": "Fuller Boathouse",
+            "dateAddedStart": 1940,
+            "dateAddedEnd": 1940,
+            "Description": "The boathouse provides storage for crew boats next to the Friends Boathouse."
         },
         "geometry": {
             "type": ,

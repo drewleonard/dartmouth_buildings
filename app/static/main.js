@@ -9,6 +9,8 @@
  * 4. Develop other pages
  *     => about page
  *     => landing page
+ * 5. FIX ALL DESCRIPTIONS
+ * 6. Add "similar to" for other examples of stories
  */
 
 // for (i = 1765; i < 2015; i++) {
@@ -77,11 +79,11 @@ var campusStyle = {
 
 var tiles = new L.StamenTileLayer("toner-lite");
 var map = new L.Map("map", {
-    center: new L.LatLng(43.7043222, -72.2875),
-    zoom: 15
+    center: new L.LatLng(43.7053222, -72.2875),
+    zoom: 16
 });
 
-tiles.addTo(map);
+// tiles.addTo(map);
 
 // Add feature layer to map object
 var featureLayer = new L.GeoJSON();

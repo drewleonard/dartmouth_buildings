@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #f6f9fc;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+.container-site {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container-top {
+    height: 70px;
+    background-color: green;
+}
+
+.mdc-toolbar__row {
+    background-color: #2962FF;
+}
+
+.website-title.mdc-toolbar__title {
+    text-transform: uppercase;
+}
+
+.container-bottom-map {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+}

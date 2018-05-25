@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>GEOG 53</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../static/style2.css">
+    <!-- Leaflet styling and script -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <!-- Stamen script -->
+    <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Material Design Components -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Roboto typeface -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-site">
+        <div class="container-top">
+            <header class="mdc-toolbar mdc-toolbar--fixed">
+                <div class="mdc-toolbar__row">
+                    <section class="mdc-toolbar__section mdc-toolbar__section--align-start mdc-toolbar__section--shrink-to-fit">
+                        <span class="website-title mdc-toolbar__title">Geog 53 Project</span>
+                    </section>
+                </div>
+            </header>
+        </div>
+        <div class="container-bottom-map">
+            <div id="map" class="mdc-card">
+            </div>
+        </div>
+    </div>
+    <!-- main JS -->
+    <script type="text/javascript" src="{{ url_for('static', filename='main2.js') }}" charset="utf-8"></script>
+    <!-- Meacham script (geoJSON obect) -->
+    <script type="text/javascript" src="{{ url_for('static', filename='meacham.js') }}"></script>
+</body>
+
+</html>

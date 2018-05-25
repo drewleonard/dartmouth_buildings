@@ -1,5 +1,9 @@
 :root {
     --primary-color: #f6f9fc;
+    --primary-font-color: #ffffff;
+    --background-color: #2962FF;
+    --primary-font-size: 20px;
+    --mdc-button-container-fill-color: red;
 }
 
 html,
@@ -10,7 +14,7 @@ body {
     padding: 0;
     background-color: var(--primary-color);
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: var(--primary-font-size);
     scroll-behavior: smooth;
 }
 
@@ -26,15 +30,33 @@ body {
 }
 
 .mdc-toolbar__row {
-    background-color: #2962FF;
+    background-color: var(--background-color);
 }
 
 .website-title.mdc-toolbar__title {
     text-transform: uppercase;
 }
 
-.container-bottom-map {
+.container-bottom-map,
+.container-bottom-story {
     flex-grow: 1;
     padding: 20px;
     display: flex;
 }
+
+.map.mdc-card {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.story-container-left {
+    width: 275px;
+    margin: 0 10px 0 0;
+    padding: 15px;
+    font: 12px;
+    background-color: red;
+}
+
+.story-container-right {}

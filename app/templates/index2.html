@@ -24,6 +24,7 @@
 
 <body>
     <div class="container-site">
+        <!-- Top container (toolbar) -->
         <div class="container-top">
             <header class="mdc-toolbar mdc-toolbar--fixed">
                 <div class="mdc-toolbar__row">
@@ -33,15 +34,20 @@
                 </div>
             </header>
         </div>
-        <div class="container-bottom-map">
-            <div id="map" class="mdc-card">
-            </div>
+        <!-- Bottom container (map mode) -->
+        <div class="container-bottom-map" style="display:none">
+            <div id="map" class="map mdc-card"></div>
+        </div>
+        <!-- Bottom container (story mode) -->
+        <div class="container-bottom-story">
+            <div class="story-container-left"></div>
+            <div class="story-container-right"></div>
         </div>
     </div>
-    <!-- main JS -->
-    <script type="text/javascript" src="{{ url_for('static', filename='main2.js') }}" charset="utf-8"></script>
     <!-- Meacham script (geoJSON obect) -->
     <script type="text/javascript" src="{{ url_for('static', filename='meacham.js') }}"></script>
+    <!-- main JS -->
+    <script type="text/javascript" src="{{ url_for('static', filename='main2.js') }}" charset="utf-8"></script>
 </body>
 
 </html>

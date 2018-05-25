@@ -13,18 +13,18 @@
  * 6. Add "similar to" for other examples of stories
  */
 
-// for (i = 1765; i < 2015; i++) {
-//     $.each(meacham, function(key, value) {
-//         if (value.length === 175) {
-//             for (val in value) {
-//                 if (value[val].properties.dateAddedStart === i) {
-//                     console.log(value[val].properties.dateAddedStart);
-//                     console.log(value[val].properties.Name);
-//                 }
-//             }
-//         }
-//     });
-// }
+for (i = 1765; i < 2015; i++) {
+    $.each(meacham, function(key, value) {
+        if (value.length === 175) {
+            for (val in value) {
+                if (value[val].properties.dateAddedStart === i) {
+                    console.log(value[val].properties.dateAddedStart);
+                    console.log(value[val].properties.Name);
+                }
+            }
+        }
+    });
+}
 
 
 /**
@@ -83,7 +83,7 @@ var map = new L.Map("map", {
     zoom: 16
 });
 
-// tiles.addTo(map);
+tiles.addTo(map);
 
 // Add feature layer to map object
 var featureLayer = new L.GeoJSON();

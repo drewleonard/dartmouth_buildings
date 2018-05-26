@@ -123,6 +123,7 @@ body {
     display: flex;
     overflow-x: auto;
     flex-wrap: nowrap;
+    overflow: visible;
     /* padding: 20px 20px 20px 0px; */
 }
 
@@ -141,10 +142,19 @@ body {
 }
 
 .story-card-primary-active.story-card-primary.mdc-card {
-    box-shadow: var(--box-shadow--elevated);
+    /* box-shadow: var(--box-shadow--elevated); */
 }
 
-.story-card-image {
-    max-width: auto;
+.story-card-image-container {
+    /* padding: 5px; */
+    flex-grow: 1;
+}
+
+.story-card-image.mdc-card {
     height: 100%;
+    max-width: 99%;
+    /* overflow: visible; */
+    /* opacity: .25; */
+    box-shadow: var(--box-shadow--elevated);
+    /* padding: 25px; */
 }

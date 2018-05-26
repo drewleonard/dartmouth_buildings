@@ -82,7 +82,7 @@ function activateStory(card) {
 function togglePrimaryCardContainer(cardIndex) {
     // Find and slide out currently active card container
     $(".story-container-right .story-container-items--active")
-        .toggle("fast");
+        .toggle();
     // Inactivate currently active card container
     $(".story-container-right .story-container-items--active")
         .toggleClass('story-container-items--active');
@@ -90,8 +90,10 @@ function togglePrimaryCardContainer(cardIndex) {
     $(".story-container-items").eq(cardIndex + 1).toggleClass('story-container-items--active');
     // Slide in new container with index
     setTimeout(function() {
-        $(".story-container-items").eq(cardIndex + 1).toggle("fast");
-    }, 500);
+        $(".story-container-items").eq(cardIndex + 1).toggle();
+    }, 200);
+
+    // $(".story-container-items").eq(cardIndex + 1).css('width', '100%');
 }
 
 /**

@@ -52,7 +52,6 @@ var storyCardItems;
  * @param  {div} card 		Selected secondary card div
  */
 function activateStory(card) {
-
     // If card selected is not already selected
     if ($(card).index() !== cardIndex) {
 
@@ -69,12 +68,10 @@ function activateStory(card) {
 
         // Find story card items
         storyCardItems = $(card).find(".mdc-list-item");
-
         // Activate first story card item
         toggleSecondaryCardItem(storyCardItems[0]);
 
     }
-
 }
 
 /**
@@ -83,18 +80,16 @@ function activateStory(card) {
  */
 function togglePrimaryCardContainer(cardIndex) {
     // Find and slide out currently active card container
-    $(".story-container-right")
-        .find(".story-container-items--active")
-        .slideToggle();
+    $(".story-container-right .story-container-items--active")
+        .toggle("slow");
     // Inactivate currently active card container
-    $(".story-container-right")
-        .find(".story-container-items--active")
+    $(".story-container-right .story-container-items--active")
         .toggleClass('story-container-items--active');
     // Activate new card container with index
     $(".story-container-items").eq(cardIndex + 1).toggleClass('story-container-items--active');
     // Slide in new container with index
     setTimeout(function() {
-        $(".story-container-items").eq(cardIndex + 1).slideToggle();
+        $(".story-container-items").eq(cardIndex + 1).toggle("slow");
     }, 500);
 }
 
@@ -108,10 +103,8 @@ function toggleSecondaryStoryCard(card) {
         .removeClass("story-card-secondary-item-active");
     $(".story-container-left .story-card-secondary-icon")
         .replaceWith("<i class='story-card-secondary-icon material-icons md-18'>check_box_outline_blank</i>");
-
     // Inactivate currently selected card
-    $(".story-container-left")
-        .find(".story-card-secondary--active")
+    $(".story-container-left .story-card-secondary--active")
         .toggleClass("story-card-secondary--active");
     // Activate selected secondary card
     $(card).toggleClass("story-card-secondary--active");

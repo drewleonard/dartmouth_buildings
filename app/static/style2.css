@@ -3,7 +3,8 @@
     --primary-font-color: #ffffff;
     --background-color: #2962FF;
     --primary-font-size: 20px;
-    --mdc-button-container-fill-color: red;
+    --box-shadow--unelevated: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    --box-shadow--elevated: 0 10px 20px rgba(0, 0, 0, 0.23), 0 6px 6px rgba(0, 0, 0, 0.27);
 }
 
 html,
@@ -52,11 +53,33 @@ body {
 }
 
 .story-container-left {
-    width: 275px;
-    margin: 0 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.story-card-secondary.mdc-card {
+    border-radius: 5px;
+    margin: 0px 20px 20px 0px;
+    flex-grow: 1;
+    flex-basis: 0;
     padding: 15px;
-    font: 12px;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow--unelevated);
+    opacity: 0.65;
+    color: grey;
+}
+
+.story-card-secondary.mdc-card:last-child {
+    margin: 0px 20px 0px 0px;
+}
+
+.story-card-secondary-raised.story-card-secondary.mdc-card {
+    box-shadow: var(--box-shadow--elevated);
+    opacity: 1;
+    color: #000000;
 }
 
 .story-container-right {}

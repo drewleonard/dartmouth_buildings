@@ -152,7 +152,7 @@ body {
 
 .story-card-image.mdc-card {
     height: 100%;
-    max-width: 99%;
+    max-width: 100%;
     /* overflow: visible; */
     /* opacity: .25; */
     box-shadow: var(--box-shadow--elevated);

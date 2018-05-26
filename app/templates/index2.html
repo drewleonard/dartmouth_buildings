@@ -41,17 +41,42 @@
         <!-- Bottom container (story mode) -->
         <div class="container-bottom-story">
             <div class="story-container-left">
-                <div class="story-card-secondary-raised story-card-secondary mdc-card"></div>
-                <div class="story-card-secondary mdc-card"></div>
-                <div class="story-card-secondary mdc-card"></div>
+                <!-- Secondary story card one -->
+                <div onclick="selectSecondaryStoryCard(this)" class="story-card-secondary mdc-card ">
+                    <div class="story-card-secondary-title ">
+                        philanthropy
+                    </div>
+                    <div class="story-card-secondary-items mdc-list ">
+                        <div class="story-card-secondary-item mdc-list-item ">
+                            <i class="story-card-secondary-icon material-icons md-18 ">check_box_outline_blank</i>
+                            <div class="story-card-secondary-item-title ">Bankrolling</div>
+                        </div>
+                        <div class="story-card-secondary-item mdc-list-item ">
+                            <i class="story-card-secondary-icon material-icons md-18 ">check_box_outline_blank</i>
+                            <div class="story-card-secondary-item-title ">Memorial</div>
+                        </div>
+                        <div class="story-card-secondary-item mdc-list-item ">
+                            <i class="story-card-secondary-icon material-icons md-18 ">check_box_outline_blank</i>
+                            <div class="story-card-secondary-item-title ">Splitting</div>
+                        </div>
+                        <div class="story-card-secondary-item mdc-list-item ">
+                            <i class="story-card-secondary-icon material-icons md-18 ">check_box_outline_blank</i>
+                            <div class="story-card-secondary-item-title ">Direction</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Secondary story card two -->
+                <div class="story-card-secondary mdc-card "></div>
+                <!-- Secondary story card two -->
+                <div class="story-card-secondary mdc-card "></div>
             </div>
-            <div class="story-container-right"></div>
+            <div class="story-container-right "></div>
         </div>
     </div>
     <!-- Meacham script (geoJSON obect) -->
-    <script type="text/javascript" src="{{ url_for('static', filename='meacham.js') }}"></script>
+    <script type="text/javascript " src="{{ url_for( 'static', filename='meacham.js' ) }} "></script>
     <!-- main JS -->
-    <script type="text/javascript" src="{{ url_for('static', filename='main2.js') }}" charset="utf-8"></script>
+    <script type="text/javascript " src="{{ url_for( 'static', filename='main2.js' ) }} " charset="utf-8 "></script>
 </body>
 
 </html>

@@ -39,3 +39,11 @@ var featureLayer = new L.GeoJSON(meacham, {
 });
 
 map.addLayer(featureLayer);
+
+/**
+ * Clicking secondary story card
+ * @param {div} card 	Selected secondary card div
+ */
+function selectSecondaryStoryCard(card) {
+    var items = $(card).find(".mdc-list-item");
+}

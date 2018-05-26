@@ -16,7 +16,7 @@ var campusStyle = {
 };
 
 // New map variable
-var map = new L.Map("map", {
+var map = new L.Map("other-map", {
     center: new L.LatLng(lat, long),
     zoom: zoom
 });
@@ -93,7 +93,10 @@ function togglePrimaryCardContainer(cardIndex) {
         $(".story-container-items").eq(cardIndex + 1).toggle();
     }, 200);
 
-    // $(".story-container-items").eq(cardIndex + 1).css('width', '100%');
+    setTimeout(function() {
+        window.dispatchEvent(new Event('resize'));
+    }, 200);
+
 }
 
 /**

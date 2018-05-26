@@ -75,7 +75,8 @@ function activateStory(card) {
 }
 
 /**
- * [togglePrimaryCardContainer description]
+ * Sliding out and deactivating currently active story,
+ * & sliding in and activating newly-selected story
  * @param  {int} cardIndex 		Index of selected secondary card
  */
 function togglePrimaryCardContainer(cardIndex) {

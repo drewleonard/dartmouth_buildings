@@ -124,7 +124,6 @@ body {
     overflow-x: auto;
     flex-wrap: nowrap;
     overflow: visible;
-    /* padding: 20px 20px 20px 0px; */
 }
 
 .story-container-items {
@@ -139,22 +138,16 @@ body {
 .story-card-primary.mdc-card {
     max-width: auto;
     height: 100%;
+    flex-grow: 1;
+    /* flex: 1 1 auto; */
 }
 
 .story-card-primary-active.story-card-primary.mdc-card {
     /* box-shadow: var(--box-shadow--elevated); */
 }
 
-.story-card-image-container {
-    /* padding: 5px; */
-    flex-grow: 1;
-}
-
 .story-card-image.mdc-card {
-    height: 100%;
+    height: auto;
     max-width: 100%;
-    /* overflow: visible; */
-    /* opacity: .25; */
     box-shadow: var(--box-shadow--elevated);
-    /* padding: 25px; */
 }

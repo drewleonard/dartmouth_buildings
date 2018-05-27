@@ -279,17 +279,18 @@ function captionImage() {
     captionDiv.append(titleDiv);
     captionDiv.append(textDiv);
     captionDiv.append(citationDiv);
-    $(".story-container-items--active .story-container-item--active .story-container-item-image")
-        .append(captionDiv);
-    var topPos = $(".story-container-items--active .story-container-item--active .story-container-item-image").offset()["top"],
-        leftPos = $(".story-container-items--active .story-container-item--active .story-container-item-image").offset()["left"],
-        imgWidth = $(".story-container-items--active .story-container-item--active .story-container-item-image").width(),
-        imgHeight = $(".story-container-items--active .story-container-item--active .story-container-item-image").height(),
-        captionHeight = $(".story-container-items--active .story-container-item--active .image-caption").height(),
+    var $activeImage = $(".story-container-items--active .story-container-item--active .story-container-item-image");
+    $activeImage.append(captionDiv);
+    $imageCaption = $(".story-container-items--active .story-container-item--active .image-caption");
+    var topPos = $activeImage.offset()["top"],
+        leftPos = $activeImage.offset()["left"],
+        imgWidth = $activeImage.width(),
+        imgHeight = $activeImage.height(),
+        captionHeight = $imageCaption.height(),
         captionWidth = imgWidth - 10;
     console.log(imgWidth, captionWidth);
-    $(".story-container-items--active .story-container-item--active .image-caption").width(captionWidth);
-    $(".story-container-items--active .story-container-item--active .image-caption").offset({
+    $imageCaption.width(captionWidth);
+    $imageCaption.offset({
         top: topPos + imgHeight - captionHeight - 5,
         left: leftPos + imgWidth - captionWidth - 5
     });
@@ -313,15 +314,16 @@ function mapImage() {
         .attr("id", "this-image-map")
         .addClass("image-map")
         .html("<div></div>");
-    $(".story-container-items--active .story-container-item--active .story-container-item-image")
-        .append(mapDiv);
-    var topPos = $(".story-container-items--active .story-container-item--active .story-container-item-image").offset()["top"],
-        leftPos = $(".story-container-items--active .story-container-item--active .story-container-item-image").offset()["left"],
-        imgWidth = $(".story-container-items--active .story-container-item--active .story-container-item-image").width(),
-        imgHeight = $(".story-container-items--active .story-container-item--active .story-container-item-image").height();
-    $(".story-container-items--active .story-container-item--active .image-map").width(imgWidth);
-    $(".story-container-items--active .story-container-item--active .image-map").height(imgHeight);
-    $(".story-container-items--active .story-container-item--active .image-map").offset({
+    var $activeImage = $(".story-container-items--active .story-container-item--active .story-container-item-image");
+    $activeImage.append(mapDiv);
+    var $imageMap = $(".story-container-items--active .story-container-item--active .image-map");
+    var topPos = $activeImage.offset()["top"],
+        leftPos = $activeImage.offset()["left"],
+        imgWidth = $activeImage.width(),
+        imgHeight = $activeImage.height();
+    $imageMap.width(imgWidth);
+    $imageMap.height(imgHeight);
+    $imageMap.offset({
         top: topPos,
         left: leftPos
     });

@@ -27,8 +27,8 @@ ground_truth = {
         "w": 5888,
         "h": 4688,
         "title": "In memory of: Dick Hall. Dick's House, 1929.",
-        "caption": "To be added.",
-        "citation:": "To be added.",
+        "caption": "Many campus buildings bear namesakes of passed-away members of the Dartmouth College community. In 1927, Edward and Sally Hall gifted funds to build an infirmary in memory of their son, Richard (Dick) Hall '27, who passed away prior to graduating.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
         "shape-names": ["Dick Hall's House"]
     },
     "pest-house-1": {

@@ -45,7 +45,7 @@ ground_truth = {
         "w": 4865,
         "h": 3597,
         "title": "Double dipping: Webster Hall's namesakes. Webster Hall, 1907.",
-        "caption": "Many students know the pictured building as Rauner Special Collections Library, but that name applies to the building's interior-library only. The building itself is Webster Hall, circa 1999, philanthropist Bruce Rauner '78 and others donated funds to convert its interior from an auditorium to a library that houses the College's special collections.",
+        "caption": "Many students know the building pictured as Rauner Special Collections Library, but that name applies to the building's interior-library only. The building itself is Webster Hall, circa 1999, philanthropist Bruce Rauner '78 and others donated funds to convert its interior from an auditorium to a library that houses the College's special collections.",
         "citation": "Image: Dartmouth Digital Collections.",
         "shape-names": ["Webster Hall"]
     },
@@ -192,7 +192,6 @@ function toggleSecondaryStoryCard(card) {
  * @param  {div} item 		div to toggle 'active' class of
  */
 function toggleSecondaryCardItem(item) {
-
     $(item).toggleClass("story-card-secondary-item-active");
     if ($(item).attr("class").split(' ').includes("story-card-secondary-item-active")) {
         $(item)
@@ -260,7 +259,7 @@ function scaleWidth(container) {
  * Caption images across the bottom
  */
 function captionImage() {
-    var id = $(".story-container-item--active").attr("id"),
+    var id = $(".story-container-items--active .story-container-item--active").attr("id"),
         text = ground_truth[id]["caption"],
         title = ground_truth[id]["title"],
         citation = ground_truth[id]["citation"];
@@ -280,16 +279,17 @@ function captionImage() {
     captionDiv.append(titleDiv);
     captionDiv.append(textDiv);
     captionDiv.append(citationDiv);
-    $(".story-container-item--active .story-container-item-image")
+    $(".story-container-items--active .story-container-item--active .story-container-item-image")
         .append(captionDiv);
-    var topPos = $(".story-container-item--active .story-container-item-image").offset()["top"],
-        leftPos = $(".story-container-item--active .story-container-item-image").offset()["left"],
-        imgWidth = $(".story-container-item--active .story-container-item-image").width(),
-        imgHeight = $(".story-container-item--active .story-container-item-image").height(),
-        captionHeight = $(".story-container-item--active .image-caption").height(),
+    var topPos = $(".story-container-items--active .story-container-item--active .story-container-item-image").offset()["top"],
+        leftPos = $(".story-container-items--active .story-container-item--active .story-container-item-image").offset()["left"],
+        imgWidth = $(".story-container-items--active .story-container-item--active .story-container-item-image").width(),
+        imgHeight = $(".story-container-items--active .story-container-item--active .story-container-item-image").height(),
+        captionHeight = $(".story-container-items--active .story-container-item--active .image-caption").height(),
         captionWidth = imgWidth - 10;
-    $(".story-container-item--active .image-caption").width(captionWidth);
-    $(".story-container-item--active .image-caption").offset({
+    console.log(imgWidth, captionWidth);
+    $(".story-container-items--active .story-container-item--active .image-caption").width(captionWidth);
+    $(".story-container-items--active .story-container-item--active .image-caption").offset({
         top: topPos + imgHeight - captionHeight - 5,
         left: leftPos + imgWidth - captionWidth - 5
     });
@@ -307,21 +307,21 @@ function uncaptionImage() {
  * Called when mousing over map button
  */
 function mapImage() {
-    var id = $(".story-container-item--active").attr("id"),
+    var id = $(".story-container-items--active .story-container-item--active").attr("id"),
         shapeNames = ground_truth[id]["shape-names"];
     var mapDiv = $("<div/>")
         .attr("id", "this-image-map")
         .addClass("image-map")
         .html("<div></div>");
-    $(".story-container-item--active .story-container-item-image")
+    $(".story-container-items--active .story-container-item--active .story-container-item-image")
         .append(mapDiv);
-    var topPos = $(".story-container-item--active .story-container-item-image").offset()["top"],
-        leftPos = $(".story-container-item--active .story-container-item-image").offset()["left"],
-        imgWidth = $(".story-container-item--active .story-container-item-image").width(),
-        imgHeight = $(".story-container-item--active .story-container-item-image").height();
-    $(".story-container-item--active .image-map").width(imgWidth);
-    $(".story-container-item--active .image-map").height(imgHeight);
-    $(".story-container-item--active .image-map").offset({
+    var topPos = $(".story-container-items--active .story-container-item--active .story-container-item-image").offset()["top"],
+        leftPos = $(".story-container-items--active .story-container-item--active .story-container-item-image").offset()["left"],
+        imgWidth = $(".story-container-items--active .story-container-item--active .story-container-item-image").width(),
+        imgHeight = $(".story-container-items--active .story-container-item--active .story-container-item-image").height();
+    $(".story-container-items--active .story-container-item--active .image-map").width(imgWidth);
+    $(".story-container-items--active .story-container-item--active .image-map").height(imgHeight);
+    $(".story-container-items--active .story-container-item--active .image-map").offset({
         top: topPos,
         left: leftPos
     });

@@ -12,21 +12,29 @@ ground_truth = {
         "h": 3130,
         "title": "Bankrolling the campus: Gold Coast. Gold Coast, undated.",
         "caption": "The Gold Coast dormitory cluster was built during the early years of the Great Depression (1928-9) by trustees John Gile, John Lord, and Frank Streeter. Gold Coast's philanthropic history is typical of many College buildings: donors gave money in return for the vanity of their namesakes attached to campus spaces. The cluster's name comes from its' rooms reputations as the most expensive to rent on campus.",
-        "citation": "Image: see Dartmouth Digital Collections. Caption: see Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com."
+        "citation": "Image: Dartmouth Digital Collections. Caption: see Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
+        "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"],
     },
     "gold-coast-2": {
         "w": 2538,
         "h": 2046,
-        "title": "Bankrolling the campus: Gold Coast.  Room prices, 1930. ",
+        "title": "Bankrolling the campus: Gold Coast. Room prices, 1930. ",
         "caption": "1: Caption for gold-coast-2",
         "citation": "citation"
     },
     "dicks-house-1": {
-        "w": 5211,
-        "h": 3287,
-        "title": "In memory of: Dick Hall. Dick's House, undated.",
-        "caption": "Dick's House caption.",
-        "citation:": "Dick's House citation."
+        "w": 5888,
+        "h": 4688,
+        "title": "In memory of: Dick Hall. Dick's House, 1929.",
+        "caption": "To be added.",
+        "citation:": "To be added."
+    },
+    "pest-house-1": {
+        "w": 4982,
+        "h": 3032,
+        "title": "Pest House",
+        "caption": "To be added.",
+        "citation": "To be added."
     }
 }
 
@@ -46,6 +54,14 @@ var campusStyle = {
     opacity: 0.95,
     fillOpacity: 0.25,
 };
+
+var hiddenStyle = {
+    olor: "#dc322f",
+    fillColor: "#dc322f",
+    weight: 0,
+    opacity: 0,
+    fillOpacity: 0
+}
 
 // New map variable
 var map = new L.Map("map", {
@@ -155,6 +171,7 @@ function toggleSecondaryStoryCard(card) {
  * @param  {div} item 		div to toggle 'active' class of
  */
 function toggleSecondaryCardItem(item) {
+
     $(item).toggleClass("story-card-secondary-item-active");
     if ($(item).attr("class").split(' ').includes("story-card-secondary-item-active")) {
         $(item)
@@ -262,4 +279,48 @@ function captionImage() {
  */
 function uncaptionImage() {
     $(".story-container-item--active .image-caption").remove();
+}
+
+function mapImage() {
+    var id = $(".story-container-item--active").attr("id"),
+        shapeNames = ground_truth[id]["shape-names"];
+    var mapDiv = $("<div/>")
+        .attr("id", "this-image-map")
+        .addClass("image-map")
+        .html("<div></div>");
+    $(".story-container-item--active .story-container-item-image")
+        .append(mapDiv);
+    var topPos = $(".story-container-item--active .story-container-item-image").offset()["top"],
+        leftPos = $(".story-container-item--active .story-container-item-image").offset()["left"],
+        imgWidth = $(".story-container-item--active .story-container-item-image").width(),
+        imgHeight = $(".story-container-item--active .story-container-item-image").height();
+    $(".story-container-item--active .image-map").width(imgWidth);
+    $(".story-container-item--active .image-map").height(imgHeight);
+    $(".story-container-item--active .image-map").offset({
+        top: topPos,
+        left: leftPos
+    });
+    var map = new L.Map("this-image-map", {
+        center: new L.LatLng(lat, long),
+        zoom: zoom
+    });
+    var tiles = new L.StamenTileLayer("toner-lite");
+    tiles.addTo(map);
+
+    function onEachFeature(feature, layer) {
+        if (shapeNames.includes(feature.properties.Name)) {
+            layer.setStyle(campusStyle);
+        } else {
+            layer.setStyle(hiddenStyle);
+        }
+    }
+    var featureLayer = new L.GeoJSON(meacham, {
+        onEachFeature: onEachFeature,
+    });
+    map.addLayer(featureLayer);
+
+}
+
+function removeMapImage() {
+    $(".story-container-item--active .image-map").remove();
 }

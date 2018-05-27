@@ -1,6 +1,8 @@
 /**
  * TODO:
  * 1. Place buttons on first open of story
+ * 2. Find other Rauner names
+ * 3. Add tooltip for unavailable map
  */
 
 /**
@@ -38,6 +40,22 @@ ground_truth = {
         "caption": "Beyond memorializing their son, Sally and Edward Hall built Dick's House to provide students good, comfortable, and convenient health care. Previously, students recieved care in the Isolation Hospital: nicknamed Pest House and remembered for its poor conditions. In this context, Isolation Hospital's Dr. Kingsford claimed that 'Dick's House was the best thing that ever happened to Dartmouth College.'",
         "citation": "Image: Dartmouth Digital Collections. Caption: Dartmouth Alumni Magazine, May 1948 and April 1967.",
         "shape-names": []
+    },
+    "webster-1": {
+        "w": 4865,
+        "h": 3597,
+        "title": "Double dipping: Webster Hall's namesakes. Webster Hall, 1907.",
+        "caption": "Many students know the pictured building as Rauner Special Collections Library, but that name applies to the building's interior-library only. The building itself is Webster Hall, circa 1999, philanthropist Bruce Rauner '78 and others donated funds to convert its interior from an auditorium to a library that houses the College's special collections.",
+        "citation": "Image: Dartmouth Digital Collections.",
+        "shape-names": ["Webster Hall"]
+    },
+    "rauner-1": {
+        "w": 6094,
+        "h": 4889,
+        "title": "Rauner Library's naming opportunities. Rauner Library design, undated.",
+        "caption": "Often, namesakes are attached to entire buildings, but the College offers philanthropic and naming opportunities at many levels. Rauner Library typifies this, with each of its component parts named for individual donors: The Freund Room for John Freund '54, for example. Dartmouth College sold namesakes for the reading room at $1,000,000, the exhibit gallery at $500,000, and seminar rooms for $250,000 (each), among other selections.",
+        "citation": "Image: Dartmouth Digital Collections",
+        "shape-names": ["Webster Hall"]
     }
 }
 
@@ -325,7 +343,6 @@ function mapImage() {
         onEachFeature: onEachFeature,
     });
     map.addLayer(featureLayer);
-
 }
 
 /**

@@ -193,12 +193,30 @@ function togglePrimaryCardContainer(cardIndex) {
         .toggle();
     // Inactivate currently active card container
     $(".story-container-right .story-container-items--active")
-        .toggleClass('story-container-items--active');
+        .removeClass('story-container-items--active');
     // Activate new card container with index
-    $(".story-container-items").eq(cardIndex + 1).toggleClass('story-container-items--active');
-    // Slide in new container with index
+    $(".story-container-right .story-container-items").eq(cardIndex + 1).addClass('story-container-items--active');
+    $(".story-container-right .story-container-items--active").children().each(function(index, value) {
+        if (index === 0) {
+            $(this).addClass("story-container-item--active");
+        } else {
+            $(this).removeClass("story-container-item--active");
+        }
+    });
+
     setTimeout(function() {
-        $(".story-container-items").eq(cardIndex + 1).toggle();
+        $(".story-container-right .story-container-items--active").children().each(function(index, value) {
+            if (index === 0) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        })
+    }, 200);
+
+    // Slide in new container with index	
+    setTimeout(function() {
+        $(".story-container-right .story-container-items").eq(cardIndex + 1).toggle();
         scaleWidth($(".story-container-items--active .story-container-item--active"));
     }, 200);
 
@@ -250,11 +268,12 @@ function stepForward() {
     var $thisSibling = $(".story-container-items--active .story-container-item--active"),
         $nextSibling = $thisSibling.next();
     // Slide out and deactivate current active story container item
-    $thisSibling.toggle();
+    $thisSibling.hide();
     $thisSibling.toggleClass("story-container-item--active");
     // Slide in and activate next story container item
-    $nextSibling.toggle();
+    // $nextSibling.show();
     $nextSibling.toggleClass("story-container-item--active");
+    $(".story-container-items--active .story-container-item--active").show();
     // Scale width of new container to preserve aspect ratio
     scaleWidth($nextSibling);
     // Secondary card (sidebar) activation and deactivation

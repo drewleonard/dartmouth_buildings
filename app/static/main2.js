@@ -16,7 +16,7 @@ var campusStyle = {
 };
 
 // New map variable
-var map = new L.Map("other-map", {
+var map = new L.Map("map", {
     center: new L.LatLng(lat, long),
     zoom: zoom
 });
@@ -93,6 +93,7 @@ function togglePrimaryCardContainer(cardIndex) {
         $(".story-container-items").eq(cardIndex + 1).toggle();
     }, 200);
 
+    // Resize window to load map tiles properly
     setTimeout(function() {
         window.dispatchEvent(new Event('resize'));
     }, 200);
@@ -131,4 +132,63 @@ function toggleSecondaryCardItem(item) {
             .find(".story-card-secondary-icon")
             .replaceWith("<i class='story-card-secondary-icon material-icons md-18'>check_box_outline_blank</i>");
     }
+}
+
+/**
+ * Use nav buttons to move forward in story
+ */
+function stepForward() {
+    // Get currently active story container item and next sibling
+    var $thisSibling = $(".story-container-items--active .story-container-item--active"),
+        $nextSibling = $thisSibling.next();
+    // Slide out and deactivate current active story container item
+    $thisSibling.toggle();
+    $thisSibling.toggleClass("story-container-item--active");
+    // Slide in and activate next story container item
+    $nextSibling.toggle();
+    $nextSibling.toggleClass("story-container-item--active");
+    // Scale width of new container to preserve aspect ratio
+    scaleWidth($nextSibling);
+}
+
+function stepBackward() {
+    // Get currently active story container item and previous sibling
+    var $thisSibling = $(".story-container-items--active .story-container-item--active"),
+        $prevSibling = $thisSibling.prev();
+    // Slide out and deactivate current active story container item
+    $thisSibling.toggle();
+    $thisSibling.toggleClass("story-container-item--active");
+    // Slide in and activate previous story container item
+    $prevSibling.toggle();
+    $prevSibling.toggleClass("story-container-item--active");
+    // Scale width of new container to preserve aspect ratio
+    scaleWidth($prevSibling);
+}
+
+/**
+ * Scale width of image container to preserve aspect ratio
+ * Relies on dictionary of ground truth image dimensions
+ * @param  {div} container 			image container
+ */
+function scaleWidth(container) {
+    var containerH = container.height(),
+        imgId = container.attr("id"),
+        imgW = dims[imgId]["w"],
+        imgH = dims[imgId]["h"];
+    var containerW = (imgW / imgH) * containerH;
+    if (containerW < ($(".story-container-item").width())) {
+        container.width(containerW + "px");
+    }
+    if (containerW >= ($(".story-container-item").width())) {
+        container.width($(".story-container-item").width() + "px");
+    }
+}
+
+/**
+ * Dictionary of image heights and widths
+ */
+
+dims = {
+    "gold-coast-half": { "w": 2934, "h": 3359 },
+    "gold-coast-full": { "w": 5829, "h": 3517 }
 }

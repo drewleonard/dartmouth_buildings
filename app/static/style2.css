@@ -123,46 +123,51 @@ body {
     display: flex;
     overflow-x: auto;
     flex-wrap: nowrap;
-    overflow: hidden;
+    overflow: visible;
     max-width: 100%;
 }
 
-.story-container-items--active.story-container-items {
+.story-container-items {
     flex-grow: 1;
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: center;
 }
 
-.other-map {
-    flex-grow: 1;
+.story-container-items--active.story-container-items {}
+
+.story-container-intro.mdc-card {
+    width: 100%;
     height: 100%;
+}
+
+.story-container-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.story-container-item-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1vw 0 1vw;
+    max-width: 100% !important;
+}
+
+.story-fab-container {
+    display: flex;
+}
+
+.story-fab.mdc-fab.material-icons {
+    align-self: flex-end;
+    background-color: var(--background-color);
 }
 
 .story-card-image.mdc-card {
-    margin-right: 10px;
     height: 100%;
-    max-width: 100%;
+    max-width: 100% !important;
     width: auto;
     box-shadow: var(--box-shadow--elevated);
-    opacity: 0.15;
-}
-
-.story-card-image--active.story-card-image.mdc-card {
-    opacity: 1;
-}
-
-.image-button-container {
-    width: auto;
-    margin-right: 10px;
-}
-
-.tooltip {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    opacity: 0.75;
-    position: fixed;
-    bottom: 27.5px;
-    left: 330px;
 }

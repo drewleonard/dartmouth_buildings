@@ -115,6 +115,49 @@
                 </div>
             </div>
             <div class="story-container-right ">
+                <!-- Introductory story container -->
+                <div class="story-container-items--active story-container-items mdc-card">Intro</div>
+                <!-- First story container -->
+                <div class="story-container-items" style="display:none">
+                    <div id="gold-coast-full" class="story-container-item--active story-container-item">
+                        <div class="story-fab-container">
+                            <button class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                <span class="mdc-fab__icon">
+							    navigate_before
+							</span>
+                            </button>
+                        </div>
+                        <div class="story-container-item-image">
+                            <img class="story-card-image mdc-card" alt="FYI, image alt text is required" src="{{url_for('static', filename='gold.jpg')}}" />
+                        </div>
+                        <div class="story-fab-container">
+                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                <span class="mdc-fab__icon">
+							    navigate_next
+							</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="gold-coast-half" class="story-container-item" style="display:none">
+                        <div class="story-fab-container">
+                            <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                <span class="mdc-fab__icon">
+							    navigate_before
+							</span>
+                            </button>
+                        </div>
+                        <div class="story-container-item-image">
+                            <img class="story-card-image mdc-card" alt="FYI, image alt text is required" src="{{url_for('static', filename='gold3.jpg')}}" />
+                        </div>
+                        <div class="story-fab-container">
+                            <button class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                <span class="mdc-fab__icon">
+							    navigate_next
+							</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <!-- First story container -->
                 <!-- <div class="story-container-items--active story-container-items">
                     <div class="test mdc-card">Zero</div>

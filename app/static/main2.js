@@ -139,7 +139,7 @@ function resizeWindowDelayed() {
 
 /**
  * Toggle into story mode
- * Used in toolbar icon click
+ * Used in toolbar icon event (click)
  */
 function toggleStoryMode() {
     if (!$(".container-bottom-story").hasClass("mode--active")) {
@@ -151,7 +151,10 @@ function toggleStoryMode() {
     resizeWindowDelayed();
 }
 
-/***/
+/**
+ * Toggle into map mode
+ * Used in toolbar icon event (click)
+ */
 function toggleMapMode() {
     if (!$(".container-bottom-map").hasClass("mode--active")) {
         $(".container-bottom-story").removeClass("mode--active");
@@ -196,6 +199,7 @@ function togglePrimaryCardContainer(cardIndex) {
         .removeClass('story-container-items--active');
     // Activate new card container with index
     $(".story-container-right .story-container-items").eq(cardIndex + 1).addClass('story-container-items--active');
+    // Activate first item, inactivate all others
     $(".story-container-right .story-container-items--active").children().each(function(index, value) {
         if (index === 0) {
             $(this).addClass("story-container-item--active");
@@ -203,7 +207,7 @@ function togglePrimaryCardContainer(cardIndex) {
             $(this).removeClass("story-container-item--active");
         }
     });
-
+    // Show first item, hide all others
     setTimeout(function() {
         $(".story-container-right .story-container-items--active").children().each(function(index, value) {
             if (index === 0) {
@@ -213,15 +217,12 @@ function togglePrimaryCardContainer(cardIndex) {
             }
         })
     }, 200);
-
     // Slide in new container with index	
     setTimeout(function() {
         $(".story-container-right .story-container-items").eq(cardIndex + 1).toggle();
         scaleWidth($(".story-container-items--active .story-container-item--active"));
     }, 200);
-
     resizeWindowDelayed();
-
 }
 
 /**

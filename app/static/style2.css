@@ -148,7 +148,7 @@ body {
 }
 
 .story-container-item-image {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -158,11 +158,20 @@ body {
 
 .story-fab-container {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .story-fab.mdc-fab.material-icons {
     align-self: flex-end;
     background-color: var(--background-color);
+    margin: 1vw 0 0 0;
+}
+
+.story-fab--text.mdc-fab.material-icons {
+    align-self: flex-end;
+    background-color: var(--background-color);
+    margin: 1vw 0 0 0;
 }
 
 .story-card-image.mdc-card {
@@ -170,4 +179,15 @@ body {
     max-width: 100% !important;
     width: auto;
     box-shadow: var(--box-shadow--elevated);
+}
+
+.image-caption {
+    position: absolute;
+    width: 0;
+    word-wrap: break-word;
+    background-color: #000000;
+    opacity: 0.50;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
 }

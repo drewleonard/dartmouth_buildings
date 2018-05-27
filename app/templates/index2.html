@@ -120,21 +120,26 @@
                 <!-- First story container -->
                 <div class="story-container-items" style="display:none">
                     <div id="gold-coast-full" class="story-container-item--active story-container-item">
-                        <div class="story-fab-container">
+                        <!-- <div class="story-fab-container">
                             <button class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
 							    navigate_before
 							</span>
                             </button>
-                        </div>
+                        </div> -->
                         <div class="story-container-item-image">
-                            <img class="story-card-image mdc-card" alt="FYI, image alt text is required" src="{{url_for('static', filename='gold.jpg')}}" />
+                            <img class="story-card-image mdc-card" alt="alt" src="{{url_for('static', filename='gold.jpg')}}" />
                         </div>
                         <div class="story-fab-container">
+                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                <span class="mdc-fab__icon">
+							    	short_text
+								</span>
+                            </button>
                             <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    navigate_next
-							</span>
+							    	navigate_next
+								</span>
                             </button>
                         </div>
                     </div>
@@ -147,9 +152,14 @@
                             </button>
                         </div>
                         <div class="story-container-item-image">
-                            <img class="story-card-image mdc-card" alt="FYI, image alt text is required" src="{{url_for('static', filename='gold3.jpg')}}" />
+                            <img class="story-card-image mdc-card" alt="alt" src="{{url_for('static', filename='gold3.jpg')}}" />
                         </div>
                         <div class="story-fab-container">
+                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                <span class="mdc-fab__icon">
+							    	short_text
+								</span>
+                            </button>
                             <button class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
 							    navigate_next
@@ -164,9 +174,9 @@
                 </div> -->
                 <!-- Second story container -->
                 <!-- <div class="story-container-items" style="display:none">
-                    <img class="story-card-image--active story-card-image mdc-card" alt="FYI, image alt text is required" src="{{url_for('static', filename='gold3.jpg')}}" />
-                    <img class="story-card-image mdc-card" alt="FYI, image alt text is required" src="{{url_for('static', filename='gold3.jpg')}}" />
-                    <img class="story-card-image mdc-card" alt="FYI, image alt text is required" src="{{url_for('static', filename='gold3.jpg')}}" />
+                    <img class="story-card-image--active story-card-image mdc-card" alt="alt" src="{{url_for('static', filename='gold3.jpg')}}" />
+                    <img class="story-card-image mdc-card" alt="alt" src="{{url_for('static', filename='gold3.jpg')}}" />
+                    <img class="story-card-image mdc-card" alt="alt" src="{{url_for('static', filename='gold3.jpg')}}" />
                     <div id="other-map" class="other-map"></div>
                 </div> -->
                 <!-- Third story container -->

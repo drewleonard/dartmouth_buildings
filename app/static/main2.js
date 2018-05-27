@@ -185,10 +185,42 @@ function scaleWidth(container) {
 }
 
 /**
+ * Caption images across the bottom
+ */
+function captionImage() {
+    var id = $(".story-container-item--active").attr("id"),
+        caption = dims[id]["caption"];
+    var captionDiv = $("<div/>")
+        .attr("id", "this-image-caption")
+        .addClass("image-caption")
+        .html("<div>" + "This is a caption. This is a caption. This is a caption. This is a caption. This is a caption. This is a caption. This is a caption. This is a caption. This is a caption. This is a caption." + "</div>");
+    $(".story-container-item--active .story-container-item-image")
+        .append(captionDiv);
+    var topPos = $(".story-container-item--active .story-container-item-image").offset()["top"],
+        leftPos = $(".story-container-item--active .story-container-item-image").offset()["left"],
+        imgWidth = $(".story-container-item--active .story-container-item-image").width(),
+        imgHeight = $(".story-container-item--active .story-container-item-image").height(),
+        captionHeight = $(".story-container-item--active .image-caption").height(),
+        captionWidth = imgWidth - 30;
+    $(".story-container-item--active .image-caption").width(captionWidth);
+    $(".story-container-item--active .image-caption").offset({
+        top: topPos + imgHeight - captionHeight - 25,
+        left: leftPos + imgWidth - captionWidth - 25
+    });
+}
+
+/**
+ * Remove image caption
+ */
+function uncaptionImage() {
+    $(".story-container-item--active .image-caption").remove();
+}
+
+/**
  * Dictionary of image heights and widths
  */
 
 dims = {
-    "gold-coast-half": { "w": 2934, "h": 3359 },
-    "gold-coast-full": { "w": 5829, "h": 3517 }
+    "gold-coast-half": { "w": 2934, "h": 3359, "caption": "1: Caption for gold-coast-half" },
+    "gold-coast-full": { "w": 5829, "h": 3517, "caption": "2: Caption for gold-coast-full" }
 }

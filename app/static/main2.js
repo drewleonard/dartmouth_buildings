@@ -56,6 +56,14 @@ ground_truth = {
         "caption": "Often, namesakes are attached to entire buildings, but the College offers philanthropic and naming opportunities at many levels. Rauner Library typifies this, with each of its component parts named for individual donors: The Freund Room for John Freund '54, for example. Dartmouth College sold namesakes for the reading room at $1,000,000, the exhibit gallery at $500,000, and seminar rooms for $250,000 (each), among other selections.",
         "citation": "Image: Dartmouth Digital Collections",
         "shape-names": ["Webster Hall"]
+    },
+    "thornton-1": {
+        "w": 6150,
+        "h": 4811,
+        "title": "Establishing direction: Sylvanus Thayer '07 (1807). Thornton Hall, 1884.",
+        "caption": "In many cases, the College requests gifts for upcoming or ongoing projects, and attaches donors' namesakes to buildings in return. The story behind the Thayer School of Engineering's funding is different: Sylvanus Thayer approached the College in 1867 with both $40,000 and hopes of establishing 'a School or Department of Architecture and Civil Engineering'. Rather than attaching his namesake to a building envisioned by the College, Thayer pioneered an additional direction for the College. Thayer did not fund any of the school's buildings, but his name remains attached the school itself, pointing to the significant and hands-on role he played in establishing the school. Pictured here is Thornton Hall, the original home of the Thayer School.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: Thayer School of Engineering at Dartmouth website.",
+        "shape-names": "Thornton Hall"
     }
 }
 
@@ -221,6 +229,9 @@ function stepForward() {
     scaleWidth($nextSibling);
 }
 
+/**
+ * Use nav buttons to move backward in story
+ */
 function stepBackward() {
     // Get currently active story container item and previous sibling
     var $thisSibling = $(".story-container-items--active .story-container-item--active"),

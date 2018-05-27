@@ -189,11 +189,20 @@ function scaleWidth(container) {
  */
 function captionImage() {
     var id = $(".story-container-item--active").attr("id"),
-        caption = dims[id]["caption"];
+        text = dims[id]["caption"],
+        title = dims[id]["title"];
     var captionDiv = $("<div/>")
         .attr("id", "this-image-caption")
         .addClass("image-caption")
-        .html("<div>" + "This is a caption. This is a caption. This is a caption. This is a caption. This is a caption. This is a caption. This is a caption. This is a caption. This is a caption. This is a caption." + "</div>");
+        .html("<div></div>");
+    var titleDiv = $("<div/>")
+        .addClass("image-caption-title")
+        .html("<div>" + title + "</div>");
+    var textDiv = $("<div/>")
+        .addClass("image-caption-text")
+        .html("<div>" + text + "</div>");
+    captionDiv.append(titleDiv);
+    captionDiv.append(textDiv);
     $(".story-container-item--active .story-container-item-image")
         .append(captionDiv);
     var topPos = $(".story-container-item--active .story-container-item-image").offset()["top"],
@@ -201,11 +210,11 @@ function captionImage() {
         imgWidth = $(".story-container-item--active .story-container-item-image").width(),
         imgHeight = $(".story-container-item--active .story-container-item-image").height(),
         captionHeight = $(".story-container-item--active .image-caption").height(),
-        captionWidth = imgWidth - 30;
+        captionWidth = imgWidth - 10;
     $(".story-container-item--active .image-caption").width(captionWidth);
     $(".story-container-item--active .image-caption").offset({
-        top: topPos + imgHeight - captionHeight - 25,
-        left: leftPos + imgWidth - captionWidth - 25
+        top: topPos + imgHeight - captionHeight - 5,
+        left: leftPos + imgWidth - captionWidth - 5
     });
 }
 
@@ -221,6 +230,16 @@ function uncaptionImage() {
  */
 
 dims = {
-    "gold-coast-half": { "w": 2934, "h": 3359, "caption": "1: Caption for gold-coast-half" },
-    "gold-coast-full": { "w": 5829, "h": 3517, "caption": "2: Caption for gold-coast-full" }
+    "gold-coast-half": {
+        "w": 2934,
+        "h": 3359,
+        "title": "The very first title.",
+        "caption": "1: Caption for gold-coast-half"
+    },
+    "gold-coast-full": {
+        "w": 5829,
+        "h": 3517,
+        "title": "The very second title.",
+        "caption": "2: Caption for gold-coast-full"
+    }
 }

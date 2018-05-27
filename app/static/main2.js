@@ -131,6 +131,12 @@ map.addLayer(featureLayer);
 var cardIndex;
 var storyCardItems;
 
+function resizeWindowDelayed() {
+    setTimeout(function() {
+        window.dispatchEvent(new Event('resize'));
+    }, 200);
+}
+
 /**
  * Toggle into story mode
  * Used in toolbar icon click
@@ -142,6 +148,7 @@ function toggleStoryMode() {
         $(".container-bottom-story").addClass("mode--active");
         $(".container-bottom-story").toggle();
     }
+    resizeWindowDelayed();
 }
 
 /***/
@@ -152,6 +159,7 @@ function toggleMapMode() {
         $(".container-bottom-map").addClass("mode--active");
         $(".container-bottom-map").toggle();
     }
+    resizeWindowDelayed();
 }
 
 /**
@@ -194,10 +202,7 @@ function togglePrimaryCardContainer(cardIndex) {
         scaleWidth($(".story-container-items--active .story-container-item--active"));
     }, 200);
 
-    // Resize window to load map tiles properly
-    setTimeout(function() {
-        window.dispatchEvent(new Event('resize'));
-    }, 200);
+    resizeWindowDelayed();
 
 }
 

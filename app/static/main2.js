@@ -32,11 +32,11 @@ ground_truth = {
         "shape-names": ["Dick Hall's House"]
     },
     "pest-house-1": {
-        "w": 4982,
-        "h": 3032,
-        "title": "Pest House",
-        "caption": "To be added.",
-        "citation": "To be added.",
+        "w": 4153,
+        "h": 2848,
+        "title": "Doing good: replacing Isolation Hospital. Isolation Hospital, undated.",
+        "caption": "Beyond memorializing their son, Sally and Edward Hall built Dick's House to provide students good, comfortable, and convenient health care. Previously, students recieved care in the Isolation Hospital: nicknamed Pest House and remembered for its poor conditions. In this context, Isolation Hospital's Dr. Kingsford claimed that 'Dick's House was the best thing that ever happened to Dartmouth College.'",
+        "citation": "Image: Dartmouth Digital Collections. Caption: Dartmouth Alumni Magazine, May 1948 and April 1967.",
         "shape-names": []
     }
 }

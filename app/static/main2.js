@@ -242,11 +242,11 @@ dims = {
         "caption": "1: Caption for gold-coast-half",
         "citation": "citation"
     },
-    "gold-coast-full": {
+    "gold-coast-1": {
         "w": 5829,
         "h": 3517,
-        "title": "The very second title.",
-        "caption": "2: Caption for gold-coast-full",
-        "citation": "citation"
+        "title": "Bankrolling the campus: Gold Coast",
+        "caption": "The Gold Coast dormitories were built during the early years of the Great Depression (1928-9) by trustees John Gile, John Lord, and Frank Streeter. Gold Coast's philanthropic history is typical of many College buildings: donors give money in return for the vanity of their namesakes attached to campus spaces. The cluster's name comes from its' rooms reputations as the most expensive on campus to rent.",
+        "citation": "Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com."
     }
 }

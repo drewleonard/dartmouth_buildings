@@ -1,4 +1,36 @@
 /**
+ * TODO:
+ * 1. Place buttons on first open of story
+ */
+
+/**
+ * Map of image labels to metadata
+ */
+ground_truth = {
+    "gold-coast-1": {
+        "w": 4299,
+        "h": 3130,
+        "title": "Bankrolling the campus: Gold Coast. Gold Coast, undated.",
+        "caption": "The Gold Coast dormitory cluster was built during the early years of the Great Depression (1928-9) by trustees John Gile, John Lord, and Frank Streeter. Gold Coast's philanthropic history is typical of many College buildings: donors gave money in return for the vanity of their namesakes attached to campus spaces. The cluster's name comes from its' rooms reputations as the most expensive to rent on campus.",
+        "citation": "Image: see Dartmouth Digital Collections. Caption: see Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com."
+    },
+    "gold-coast-2": {
+        "w": 2538,
+        "h": 2046,
+        "title": "Bankrolling the campus: Gold Coast.  Room prices, 1930. ",
+        "caption": "1: Caption for gold-coast-2",
+        "citation": "citation"
+    },
+    "dicks-house-1": {
+        "w": 5211,
+        "h": 3287,
+        "title": "In memory of: Dick Hall. Dick's House, undated.",
+        "caption": "Dick's House caption.",
+        "citation:": "Dick's House citation."
+    }
+}
+
+/**
  * Map for 'map mode'
  */
 
@@ -91,6 +123,7 @@ function togglePrimaryCardContainer(cardIndex) {
     // Slide in new container with index
     setTimeout(function() {
         $(".story-container-items").eq(cardIndex + 1).toggle();
+        scaleWidth($(".story-container-items--active .story-container-item--active"));
     }, 200);
 
     // Resize window to load map tiles properly
@@ -171,10 +204,11 @@ function stepBackward() {
  * @param  {div} container 			image container
  */
 function scaleWidth(container) {
+    console.log(container.attr("id"));
     var containerH = container.height(),
         imgId = container.attr("id"),
-        imgW = dims[imgId]["w"],
-        imgH = dims[imgId]["h"];
+        imgW = ground_truth[imgId]["w"],
+        imgH = ground_truth[imgId]["h"];
     var containerW = (imgW / imgH) * containerH;
     if (containerW < ($(".story-container-item").width())) {
         container.width(containerW + "px");
@@ -189,9 +223,9 @@ function scaleWidth(container) {
  */
 function captionImage() {
     var id = $(".story-container-item--active").attr("id"),
-        text = dims[id]["caption"],
-        title = dims[id]["title"],
-        citation = dims[id]["citation"];
+        text = ground_truth[id]["caption"],
+        title = ground_truth[id]["title"],
+        citation = ground_truth[id]["citation"];
     var captionDiv = $("<div/>")
         .attr("id", "this-image-caption")
         .addClass("image-caption")
@@ -228,25 +262,4 @@ function captionImage() {
  */
 function uncaptionImage() {
     $(".story-container-item--active .image-caption").remove();
-}
-
-/**
- * Dictionary of image heights and widths
- */
-
-dims = {
-    "gold-coast-1": {
-        "w": 4299,
-        "h": 3130,
-        "title": "Bankrolling the campus: Gold Coast.  Gold Coast, undated.",
-        "caption": "The Gold Coast dormitories were built during the early years of the Great Depression (1928-9) by trustees John Gile, John Lord, and Frank Streeter. Gold Coast's philanthropic history is typical of many College buildings: donors gave money in return for the vanity of their namesakes attached to campus spaces. The cluster's name comes from its' rooms reputations as the most expensive to rent on campus.",
-        "citation": "Image: see Dartmouth Digital Collections. Caption: see Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com."
-    },
-    "gold-coast-2": {
-        "w": 2538,
-        "h": 2046,
-        "title": "Bankrolling the campus: Gold Coast.  Room prices, 1930. ",
-        "caption": "1: Caption for gold-coast-2",
-        "citation": "citation"
-    }
 }

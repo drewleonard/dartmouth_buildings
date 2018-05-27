@@ -72,7 +72,7 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: var(--box-shadow--unelevated);
-    opacity: 0.50;
+    opacity: 0.25;
     color: grey;
     cursor: pointer;
 }
@@ -198,17 +198,17 @@ body {
     font-size: 24px;
     font-weight: 700;
     margin: 0 0 10px 0;
-    padding: 10px 10px 0 10px;
+    padding: 20px 20px 0 20px;
 }
 
 .image-caption-text {
     font-size: 16px;
-    padding: 0 10px 10px 10px;
+    padding: 0 20px 20px 20px;
 }
 
 .image-caption-citation {
     font-size: 12px;
     font-style: italic;
     font-weight: 300;
-    padding: 0 10px 10px 10px;
+    padding: 0 20px 20px 20px;
 }

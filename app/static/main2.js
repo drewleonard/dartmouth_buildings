@@ -12,15 +12,15 @@ ground_truth = {
         "h": 3130,
         "title": "Bankrolling the campus: Gold Coast. Gold Coast, undated.",
         "caption": "The Gold Coast dormitory cluster was built during the early years of the Great Depression (1928-9) by trustees John Gile, John Lord, and Frank Streeter. Gold Coast's philanthropic history is typical of many College buildings: donors gave money in return for the vanity of their namesakes attached to campus spaces. The cluster's name comes from its' rooms reputations as the most expensive to rent on campus.",
-        "citation": "Image: Dartmouth Digital Collections. Caption: see Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
         "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"]
     },
     "gold-coast-2": {
         "w": 2538,
         "h": 2046,
         "title": "Bankrolling the campus: Gold Coast. Room prices, 1930. ",
-        "caption": "1: Caption for gold-coast-2",
-        "citation": "citation",
+        "caption": "The Gold Coast cluster earned its reputation and attendant namesake for offering the most expensive rooms to rent on campus. Dartmouth's then-named Office of the Bursar mainted these prices in its annual 'Dormitory Floor Plans and Room Charges' publication.",
+        "citation": "Image: Dormitory Floor Plans and Room Charges, 1930. Caption: Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
         "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"]
     },
     "dicks-house-1": {
@@ -284,6 +284,10 @@ function uncaptionImage() {
     $(".story-container-item--active .image-caption").remove();
 }
 
+/**
+ * Map locations of buildings in images
+ * Called when mousing over map button
+ */
 function mapImage() {
     var id = $(".story-container-item--active").attr("id"),
         shapeNames = ground_truth[id]["shape-names"];
@@ -324,6 +328,10 @@ function mapImage() {
 
 }
 
+/**
+ * Remove maps from images
+ * Called when mousing out of map button
+ */
 function removeMapImage() {
     $(".story-container-item--active .image-map").remove();
 }

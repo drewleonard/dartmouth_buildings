@@ -15,7 +15,8 @@ ground_truth = {
         "title": "Bankrolling the campus: Gold Coast. Gold Coast, undated.",
         "caption": "The Gold Coast dormitory cluster was built during the early years of the Great Depression (1928-9) by trustees John Gile, John Lord, and Frank Streeter. Gold Coast's philanthropic history is typical of many College buildings: donors gave money in return for the vanity of their namesakes attached to campus spaces. The cluster's name comes from its' rooms reputations as the most expensive to rent on campus.",
         "citation": "Image: Dartmouth Digital Collections. Caption: Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
-        "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"]
+        "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"],
+        "story-item-number": 0
     },
     "gold-coast-2": {
         "w": 2538,
@@ -23,7 +24,8 @@ ground_truth = {
         "title": "Bankrolling the campus: Gold Coast. Room prices, 1930. ",
         "caption": "The Gold Coast cluster earned its reputation and attendant namesake for offering the most expensive rooms to rent on campus. Dartmouth's then-named Office of the Bursar mainted these prices in its annual 'Dormitory Floor Plans and Room Charges' publication.",
         "citation": "Image: Dormitory Floor Plans and Room Charges, 1930. Caption: Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
-        "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"]
+        "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"],
+        "story-item-number": 0
     },
     "dicks-house-1": {
         "w": 5888,
@@ -31,7 +33,8 @@ ground_truth = {
         "title": "In memory of: Dick Hall. Dick's House, 1929.",
         "caption": "Many campus buildings bear namesakes of passed-away members of the Dartmouth College community. In 1927, Edward and Sally Hall gifted funds to build an infirmary in memory of their son, Richard (Dick) Hall '27, who passed away prior to graduating.",
         "citation": "Image: Dartmouth Digital Collections. Caption: Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
-        "shape-names": ["Dick Hall's House"]
+        "shape-names": ["Dick Hall's House"],
+        "story-item-number": 1
     },
     "pest-house-1": {
         "w": 4153,
@@ -39,7 +42,8 @@ ground_truth = {
         "title": "Doing good: replacing Isolation Hospital. Isolation Hospital, undated.",
         "caption": "Beyond memorializing their son, Sally and Edward Hall built Dick's House to provide students good, comfortable, and convenient health care. Previously, students recieved care in the Isolation Hospital: nicknamed Pest House and remembered for its poor conditions. In this context, Isolation Hospital's Dr. Kingsford claimed that 'Dick's House was the best thing that ever happened to Dartmouth College.'",
         "citation": "Image: Dartmouth Digital Collections. Caption: Dartmouth Alumni Magazine, May 1948 and April 1967.",
-        "shape-names": []
+        "shape-names": [],
+        "story-item-number": 1
     },
     "webster-1": {
         "w": 4865,
@@ -47,7 +51,8 @@ ground_truth = {
         "title": "Double dipping: Webster Hall's namesakes. Webster Hall, 1907.",
         "caption": "Many students know the building pictured as Rauner Special Collections Library, but that name applies to the building's interior-library only. The building itself is Webster Hall, circa 1999, philanthropist Bruce Rauner '78 and others donated funds to convert its interior from an auditorium to a library that houses the College's special collections.",
         "citation": "Image: Dartmouth Digital Collections.",
-        "shape-names": ["Webster Hall"]
+        "shape-names": ["Webster Hall"],
+        "story-item-number": 2
     },
     "rauner-1": {
         "w": 6094,
@@ -55,7 +60,8 @@ ground_truth = {
         "title": "Rauner Library's naming opportunities. Rauner Library design, undated.",
         "caption": "Often, namesakes are attached to entire buildings, but the College offers philanthropic and naming opportunities at many levels. Rauner Library typifies this, with each of its component parts named for individual donors: The Freund Room for John Freund '54, for example. Dartmouth College sold namesakes for the reading room at $1,000,000, the exhibit gallery at $500,000, and seminar rooms for $250,000 (each), among other selections.",
         "citation": "Image: Dartmouth Digital Collections",
-        "shape-names": ["Webster Hall"]
+        "shape-names": ["Webster Hall"],
+        "story-item-number": 2
     },
     "thornton-1": {
         "w": 6150,
@@ -63,7 +69,8 @@ ground_truth = {
         "title": "Establishing direction: Sylvanus Thayer '07 (1807). Thornton Hall, 1884.",
         "caption": "In many cases, the College requests gifts for upcoming or ongoing projects, and attaches donors' namesakes to buildings in return. The story behind the Thayer School of Engineering's funding is different: Sylvanus Thayer approached the College in 1867 with both $40,000 and hopes of establishing 'a School or Department of Architecture and Civil Engineering'. Rather than attaching his namesake to a building envisioned by the College, Thayer pioneered an additional direction for the College. Thayer did not fund any of the school's buildings, but his name remains attached the school itself, pointing to the significant and hands-on role he played in establishing the school. Pictured here is Thornton Hall, the original home of the Thayer School.",
         "citation": "Image: Dartmouth Digital Collections. Caption: Thayer School of Engineering at Dartmouth website.",
-        "shape-names": "Thornton Hall"
+        "shape-names": ["Thornton Hall"],
+        "story-item-number": 3
     }
 }
 
@@ -143,10 +150,12 @@ function activateStory(card) {
         // & activate selected secondary card
         toggleSecondaryStoryCard(card);
 
+        toggleSecondaryCardItem(0);
+
         // Find story card items
-        storyCardItems = $(card).find(".mdc-list-item");
+        // storyCardItems = $(card).find(".mdc-list-item");
         // Activate first story card item
-        toggleSecondaryCardItem(storyCardItems[0]);
+        // toggleSecondaryCardItem(storyCardItems[0]);
 
     }
 }
@@ -187,7 +196,7 @@ function toggleSecondaryStoryCard(card) {
     $(".story-container-left .story-card-secondary-item-active")
         .removeClass("story-card-secondary-item-active");
     $(".story-container-left .story-card-secondary-icon")
-        .replaceWith("<i class='story-card-secondary-icon material-icons md-18'>check_box_outline_blank</i>");
+        .replaceWith("<i class='story-card-secondary-icon material-icons md-18'>radio_button_unchecked</i>");
     // Inactivate currently selected card
     $(".story-container-left .story-card-secondary--active")
         .toggleClass("story-card-secondary--active");
@@ -197,18 +206,20 @@ function toggleSecondaryStoryCard(card) {
 
 /**
  * Toggling 'active' class of secondary story card item
- * @param  {div} item 		div to toggle 'active' class of
+ * @param  {div} index 		index of list item to toggle
  */
-function toggleSecondaryCardItem(item) {
-    $(item).toggleClass("story-card-secondary-item-active");
-    if ($(item).attr("class").split(' ').includes("story-card-secondary-item-active")) {
-        $(item)
+function toggleSecondaryCardItem(index) {
+    $thisItem = $(".story-card-secondary--active .story-card-secondary-items").children().eq(index);
+    if (!$thisItem.hasClass("story-card-secondary-item-active")) {
+        $thisItem.addClass("story-card-secondary-item-active");
+        $thisItem
             .find(".story-card-secondary-icon")
-            .replaceWith("<i class='story-card-secondary-icon material-icons md-18'>check_box</i>");
+            .replaceWith("<i class='story-card-secondary-icon material-icons md-18'>radio_button_checked</i>");
     } else {
-        $(item)
+        $thisItem.removeClass("story-card-secondary-item-active");
+        $thisItem
             .find(".story-card-secondary-icon")
-            .replaceWith("<i class='story-card-secondary-icon material-icons md-18'>check_box_outline_blank</i>");
+            .replaceWith("<i class='story-card-secondary-icon material-icons md-18'>radio_button_unchecked</i>");
     }
 }
 
@@ -227,6 +238,12 @@ function stepForward() {
     $nextSibling.toggleClass("story-container-item--active");
     // Scale width of new container to preserve aspect ratio
     scaleWidth($nextSibling);
+    // Secondary card (sidebar) activation and deactivation
+    if (ground_truth[$nextSibling.attr("id")]["story-item-number"] !==
+        ground_truth[$thisSibling.attr("id")]["story-item-number"]) {
+        toggleSecondaryCardItem(ground_truth[$thisSibling.attr("id")]["story-item-number"]);
+        toggleSecondaryCardItem(ground_truth[$nextSibling.attr("id")]["story-item-number"]);
+    }
 }
 
 /**
@@ -244,6 +261,12 @@ function stepBackward() {
     $prevSibling.toggleClass("story-container-item--active");
     // Scale width of new container to preserve aspect ratio
     scaleWidth($prevSibling);
+    // Secondary card (sidebar) activation and deactivation
+    if (ground_truth[$prevSibling.attr("id")]["story-item-number"] !==
+        ground_truth[$thisSibling.attr("id")]["story-item-number"]) {
+        toggleSecondaryCardItem(ground_truth[$prevSibling.attr("id")]["story-item-number"]);
+        toggleSecondaryCardItem(ground_truth[$thisSibling.attr("id")]["story-item-number"]);
+    }
 }
 
 /**
@@ -252,7 +275,6 @@ function stepBackward() {
  * @param  {div} container 			image container
  */
 function scaleWidth(container) {
-    console.log(container.attr("id"));
     var containerH = container.height(),
         imgId = container.attr("id"),
         imgW = ground_truth[imgId]["w"],
@@ -299,7 +321,6 @@ function captionImage() {
         imgHeight = $activeImage.height(),
         captionHeight = $imageCaption.height(),
         captionWidth = imgWidth - 10;
-    console.log(imgWidth, captionWidth);
     $imageCaption.width(captionWidth);
     $imageCaption.offset({
         top: topPos + imgHeight - captionHeight - 5,

@@ -190,19 +190,24 @@ function scaleWidth(container) {
 function captionImage() {
     var id = $(".story-container-item--active").attr("id"),
         text = dims[id]["caption"],
-        title = dims[id]["title"];
+        title = dims[id]["title"],
+        citation = dims[id]["citation"];
     var captionDiv = $("<div/>")
         .attr("id", "this-image-caption")
         .addClass("image-caption")
-        .html("<div></div>");
-    var titleDiv = $("<div/>")
+        .html("<div></div>"),
+        titleDiv = $("<div/>")
         .addClass("image-caption-title")
-        .html("<div>" + title + "</div>");
-    var textDiv = $("<div/>")
+        .html("<div>" + title + "</div>"),
+        textDiv = $("<div/>")
         .addClass("image-caption-text")
-        .html("<div>" + text + "</div>");
+        .html("<div>" + text + "</div>"),
+        citationDiv = $("<div/>")
+        .addClass("image-caption-citation")
+        .html("<div>" + citation + "</div>");
     captionDiv.append(titleDiv);
     captionDiv.append(textDiv);
+    captionDiv.append(citationDiv);
     $(".story-container-item--active .story-container-item-image")
         .append(captionDiv);
     var topPos = $(".story-container-item--active .story-container-item-image").offset()["top"],
@@ -234,12 +239,14 @@ dims = {
         "w": 2934,
         "h": 3359,
         "title": "The very first title.",
-        "caption": "1: Caption for gold-coast-half"
+        "caption": "1: Caption for gold-coast-half",
+        "citation": "citation"
     },
     "gold-coast-full": {
         "w": 5829,
         "h": 3517,
         "title": "The very second title.",
-        "caption": "2: Caption for gold-coast-full"
+        "caption": "2: Caption for gold-coast-full",
+        "citation": "citation"
     }
 }

@@ -49,7 +49,7 @@ ground_truth = {
         "w": 4865,
         "h": 3597,
         "title": "Double dipping: Webster Hall's namesakes. Webster Hall, 1907.",
-        "caption": "Many students know the building pictured as Rauner Special Collections Library, but that name applies to the building's interior-library only. The building itself is Webster Hall, circa 1999, philanthropist Bruce Rauner '78 and others donated funds to convert its interior from an auditorium to a library that houses the College's special collections.",
+        "caption": "Many students know the building pictured as Rauner Special Collections Library, but that name applies to the building's interior-library only. The building itself is Webster Hall, and circa 1999, philanthropist Bruce Rauner '78 and others donated funds to convert its interior from an auditorium to a library that houses the College's special collections.",
         "citation": "Image: Dartmouth Digital Collections.",
         "shape-names": ["Webster Hall"],
         "story-item-number": 2
@@ -67,7 +67,7 @@ ground_truth = {
         "w": 6150,
         "h": 4811,
         "title": "Establishing direction: Sylvanus Thayer '07 (1807). Thornton Hall, 1884.",
-        "caption": "In many cases, the College requests gifts for upcoming or ongoing projects, and attaches donors' namesakes to buildings in return. The story behind the Thayer School of Engineering's funding is different: Sylvanus Thayer approached the College in 1867 with both $40,000 and hopes of establishing 'a School or Department of Architecture and Civil Engineering'. Rather than attaching his namesake to a building envisioned by the College, Thayer pioneered an additional direction for the College. Thayer did not fund any of the school's buildings, but his name remains attached the school itself, pointing to the significant and hands-on role he played in establishing the school. Pictured here is Thornton Hall, the original home of the Thayer School.",
+        "caption": "In many cases, the College requests gifts for upcoming or ongoing projects, and attaches donors' namesakes to buildings in return. The story behind the Thayer School of Engineering's funding is different: Sylvanus Thayer approached the College in 1867 with both $40,000 and hopes of establishing 'a School or Department of Architecture and Civil Engineering'. Rather than attaching his namesake to a building envisioned by the College, Thayer pioneered an additional direction for the College. Thayer did not fund any of the school's buildings, but his name remains attached the school itself, pointing to the significant and hands-on role he played in its founding. Pictured here is Thornton Hall, the original home of the Thayer School.",
         "citation": "Image: Dartmouth Digital Collections. Caption: Thayer School of Engineering at Dartmouth website.",
         "shape-names": ["Thornton Hall"],
         "story-item-number": 3
@@ -132,31 +132,45 @@ var cardIndex;
 var storyCardItems;
 
 /**
+ * Toggle into story mode
+ * Used in toolbar icon click
+ */
+function toggleStoryMode() {
+    if (!$(".container-bottom-story").hasClass("mode--active")) {
+        $(".container-bottom-map").removeClass("mode--active");
+        $(".container-bottom-map").toggle();
+        $(".container-bottom-story").addClass("mode--active");
+        $(".container-bottom-story").toggle();
+    }
+}
+
+/***/
+function toggleMapMode() {
+    if (!$(".container-bottom-map").hasClass("mode--active")) {
+        $(".container-bottom-story").removeClass("mode--active");
+        $(".container-bottom-story").toggle();
+        $(".container-bottom-map").addClass("mode--active");
+        $(".container-bottom-map").toggle();
+    }
+}
+
+/**
  * Clicking secondary story card to activate new story
  * @param  {div} card 		Selected secondary card div
  */
 function activateStory(card) {
     // If card selected is not already selected
     if ($(card).index() !== cardIndex) {
-
         // Assign card's index to cardIndex
         cardIndex = $(card).index();
-
         // Inactivate currently active card container
         // & activate new card container
         togglePrimaryCardContainer(cardIndex);
-
         // Inactivate currently active secondary card
         // & activate selected secondary card
         toggleSecondaryStoryCard(card);
-
+        // Activate first secondary story card (sidebar) item
         toggleSecondaryCardItem(0);
-
-        // Find story card items
-        // storyCardItems = $(card).find(".mdc-list-item");
-        // Activate first story card item
-        // toggleSecondaryCardItem(storyCardItems[0]);
-
     }
 }
 

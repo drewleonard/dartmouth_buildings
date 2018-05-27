@@ -32,15 +32,23 @@
                     <section class="mdc-toolbar__section mdc-toolbar__section--align-start mdc-toolbar__section--shrink-to-fit">
                         <span class="website-title mdc-toolbar__title">Geog 53 Project</span>
                     </section>
+                    <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+                        <i onclick="toggleMapMode()" class="toolbar-icon mdc-icon-toggle material-icons md-24" role="button">
+							map
+						</i>
+                        <i onclick="toggleStoryMode()" class="toolbar-icon mdc-icon-toggle material-icons md-24" role="button">
+							library_books
+						</i>
+                    </section>
                 </div>
             </header>
         </div>
         <!-- Bottom container (map mode) -->
-        <div class="container-bottom-map" style="display:none">
+        <div class="mode--active container-bottom-map">
             <div id="map" class="map mdc-card"></div>
         </div>
         <!-- Bottom container (story mode) -->
-        <div class="container-bottom-story">
+        <div class="container-bottom-story" style="display:none">
             <!-- Left story container (sidebar) -->
             <div class="story-container-left">
                 <!-- Secondary story card one -->

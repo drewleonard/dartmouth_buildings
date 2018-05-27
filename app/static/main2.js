@@ -13,28 +13,31 @@ ground_truth = {
         "title": "Bankrolling the campus: Gold Coast. Gold Coast, undated.",
         "caption": "The Gold Coast dormitory cluster was built during the early years of the Great Depression (1928-9) by trustees John Gile, John Lord, and Frank Streeter. Gold Coast's philanthropic history is typical of many College buildings: donors gave money in return for the vanity of their namesakes attached to campus spaces. The cluster's name comes from its' rooms reputations as the most expensive to rent on campus.",
         "citation": "Image: Dartmouth Digital Collections. Caption: see Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
-        "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"],
+        "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"]
     },
     "gold-coast-2": {
         "w": 2538,
         "h": 2046,
         "title": "Bankrolling the campus: Gold Coast. Room prices, 1930. ",
         "caption": "1: Caption for gold-coast-2",
-        "citation": "citation"
+        "citation": "citation",
+        "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"]
     },
     "dicks-house-1": {
         "w": 5888,
         "h": 4688,
         "title": "In memory of: Dick Hall. Dick's House, 1929.",
         "caption": "To be added.",
-        "citation:": "To be added."
+        "citation:": "To be added.",
+        "shape-names": ["Dick Hall's House"]
     },
     "pest-house-1": {
         "w": 4982,
         "h": 3032,
         "title": "Pest House",
         "caption": "To be added.",
-        "citation": "To be added."
+        "citation": "To be added.",
+        "shape-names": []
     }
 }
 

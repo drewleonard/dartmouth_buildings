@@ -235,18 +235,18 @@ function uncaptionImage() {
  */
 
 dims = {
-    "gold-coast-half": {
-        "w": 2934,
-        "h": 3359,
-        "title": "The very first title.",
-        "caption": "1: Caption for gold-coast-half",
-        "citation": "citation"
-    },
     "gold-coast-1": {
-        "w": 5829,
-        "h": 3517,
-        "title": "Bankrolling the campus: Gold Coast",
-        "caption": "The Gold Coast dormitories were built during the early years of the Great Depression (1928-9) by trustees John Gile, John Lord, and Frank Streeter. Gold Coast's philanthropic history is typical of many College buildings: donors give money in return for the vanity of their namesakes attached to campus spaces. The cluster's name comes from its' rooms reputations as the most expensive on campus to rent.",
-        "citation": "Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com."
+        "w": 4299,
+        "h": 3130,
+        "title": "Bankrolling the campus: Gold Coast.  Gold Coast, undated.",
+        "caption": "The Gold Coast dormitories were built during the early years of the Great Depression (1928-9) by trustees John Gile, John Lord, and Frank Streeter. Gold Coast's philanthropic history is typical of many College buildings: donors gave money in return for the vanity of their namesakes attached to campus spaces. The cluster's name comes from its' rooms reputations as the most expensive to rent on campus.",
+        "citation": "Image: see Dartmouth Digital Collections. Caption: see Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com."
+    },
+    "gold-coast-2": {
+        "w": 2538,
+        "h": 2046,
+        "title": "Bankrolling the campus: Gold Coast.  Room prices, 1930. ",
+        "caption": "1: Caption for gold-coast-2",
+        "citation": "citation"
     }
 }

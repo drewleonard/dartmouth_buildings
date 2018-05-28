@@ -463,19 +463,21 @@ function populateTooltip(e) {
 }
 
 function centerMap(e) {
-    console.log(e.target.getBounds());
-    mapModeMap.fitBounds(e.target.getBounds(), { padding: [150, 150] })
+    mapModeMap.fitBounds(
+        e.target.getBounds(), { padding: [150, 150] }
+    );
+}
 
-    // mapModeMap.setView(e.target.getLatLng(), 5);
+function highlightMap(e) {
+    featureLayer.setStyle(campusStyle);
+    e.target.setStyle(highlightStyle);
 }
 
 function onEachFeature(feature, layer) {
     layer.setStyle(campusStyle);
     layer.on('click', populateTooltip);
     layer.on('click', centerMap);
-    layer.on('click', function() {
-        layer.setStyle(highlightStyle);
-    });
+    layer.on('click', highlightMap);
 }
 
 var featureLayer = new L.GeoJSON(meacham, {

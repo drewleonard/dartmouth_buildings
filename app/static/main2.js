@@ -486,7 +486,8 @@ function addAnnotation(e) {
         .attr("id", "map-mode-annotation")
         .html("<div>" + e.target.feature.properties.Name + "</div>");
     $(".map-mode-map").append($thisAnnotation);
-    $(".map-mode-annotation").offset({ top: yPos + 25, left: xPos });
+    annotationW = $(".map-mode-map").find(".map-mode-annotation").width();
+    $(".map-mode-annotation").offset({ top: yPos + 25, left: (xPos - (0.50 * annotationW)) });
 }
 
 function removeAnnotation(e) {

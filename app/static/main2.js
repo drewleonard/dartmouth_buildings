@@ -472,12 +472,35 @@ function highlightMap(e) {
     featureLayer.setStyle(campusStyle);
     e.target.setStyle(highlightStyle);
 }
+var xPos, yPos;
+
+function addAnnotation(e) {
+    $(".map-mode-annotation").remove();
+
+    $(document).on("mousemove", function(event) {
+        xPos = event.pageX;
+        yPos = event.pageY;
+    });
+    var $thisAnnotation = $("<div/>")
+        .addClass("map-mode-annotation")
+        .attr("id", "map-mode-annotation")
+        .html("<div>" + e.target.feature.properties.Name + "</div>");
+    $(".map-mode-map").append($thisAnnotation);
+    $(".map-mode-annotation").offset({ top: yPos + 25, left: xPos });
+}
+
+function removeAnnotation(e) {
+    $(".map-mode-annotation").remove();
+    // $(".map-mode-map").remove("#map-mode-annotation")
+}
 
 function onEachFeature(feature, layer) {
     layer.setStyle(campusStyle);
     layer.on('click', populateTooltip);
     layer.on('click', centerMap);
     layer.on('click', highlightMap);
+    layer.on('mousemove', addAnnotation);
+    layer.on('mouseout', removeAnnotation);
 }
 
 var featureLayer = new L.GeoJSON(meacham, {

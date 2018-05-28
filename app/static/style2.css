@@ -51,7 +51,7 @@ body {
     display: flex;
 }
 
-.map.mdc-card {
+.map-mode-map.mdc-card {
     flex-grow: 1;
     display: flex;
     flex-direction: row;
@@ -223,7 +223,26 @@ body {
     font-size: 18px;
 }
 
-.image-map {
-    /* background-color: #000000; */
-    /* opacity: 0.50; */
+.map-mode-tooltip.mdc-card {
+    width: 400px;
+    position: absolute;
+    min-height: 100px;
+    margin: 10px 0 0 0;
+    font-family: 'Cambo', serif !important;
+    /* background-color: #f6f9fc; */
+    border: 1px solid black;
+}
+
+.map-mode-tooltip--title {
+    padding: 15px;
+    font-size: 32px;
+}
+
+.map-mode-tooltip--text {
+    padding: 0px 15px 15px 15px;
+    font-size: 16px;
+}
+
+.map-mode.leaflet-control-zoom.leaflet-bar.leaflet-control {
+    border: 1px solid grey;
 }

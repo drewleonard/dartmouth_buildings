@@ -3,6 +3,7 @@
  * 1. Place buttons on first open of story
  * 2. Find other Rauner names
  * 3. Add tooltip for unavailable map
+ * 4. Raise shadows on nav buttons
  */
 
 /**
@@ -14,7 +15,7 @@ ground_truth = {
         "h": 3130,
         "title": "Bankrolling the campus: Gold Coast. Gold Coast, undated.",
         "caption": "The Gold Coast dormitory cluster was built during the early years of the Great Depression (1928-9) by trustees John Gile, John Lord, and Frank Streeter. Gold Coast's philanthropic history is typical of many College buildings: donors gave money in return for the vanity of their namesakes attached to campus spaces. The cluster's name comes from its' rooms reputations as the most expensive to rent on campus.",
-        "citation": "Image: Dartmouth Digital Collections. Caption: Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
         "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"],
         "story-item-number": 0
     },
@@ -23,7 +24,7 @@ ground_truth = {
         "h": 2046,
         "title": "Bankrolling the campus: Gold Coast. Room prices, 1930. ",
         "caption": "The Gold Coast cluster earned its reputation and attendant namesake for offering the most expensive rooms to rent on campus. Dartmouth's then-named Office of the Bursar mainted these prices in its annual 'Dormitory Floor Plans and Room Charges' publication.",
-        "citation": "Image: Dormitory Floor Plans and Room Charges, 1930. Caption: Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
+        "citation": "Image: Dormitory Floor Plans and Room Charges, 1930. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
         "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"],
         "story-item-number": 0
     },
@@ -32,7 +33,7 @@ ground_truth = {
         "h": 4688,
         "title": "In memory of: Dick Hall. Dick's House, 1929.",
         "caption": "Many campus buildings bear namesakes of passed-away members of the Dartmouth College community. In 1927, Edward and Sally Hall gifted funds to build an infirmary in memory of their son, Richard (Dick) Hall '27, who passed away prior to graduating.",
-        "citation": "Image: Dartmouth Digital Collections. Caption: Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
         "shape-names": ["Dick Hall's House"],
         "story-item-number": 1
     },
@@ -41,7 +42,7 @@ ground_truth = {
         "h": 2848,
         "title": "Doing good: replacing Isolation Hospital. Isolation Hospital, undated.",
         "caption": "Beyond memorializing their son, Sally and Edward Hall built Dick's House to provide students good, comfortable, and convenient health care. Previously, students recieved care in the Isolation Hospital: nicknamed Pest House and remembered for its poor conditions. In this context, Isolation Hospital's Dr. Kingsford claimed that 'Dick's House was the best thing that ever happened to Dartmouth College.'",
-        "citation": "Image: Dartmouth Digital Collections. Caption: Dartmouth Alumni Magazine, May 1948 and April 1967.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Dartmouth Alumni Magazine, May 1948 and April 1967.",
         "shape-names": [],
         "story-item-number": 1
     },
@@ -68,7 +69,7 @@ ground_truth = {
         "h": 4811,
         "title": "Establishing direction: Sylvanus Thayer '07 (1807). Thornton Hall, 1884.",
         "caption": "In many cases, the College requests gifts for upcoming or ongoing projects, and attaches donors' namesakes to buildings in return. The story behind the Thayer School of Engineering's funding is different: Sylvanus Thayer approached the College in 1867 with both $40,000 and hopes of establishing 'a School or Department of Architecture and Civil Engineering'. Rather than attaching his namesake to a building envisioned by the College, Thayer pioneered an additional direction for the College. Thayer did not fund any of the school's buildings, but his name remains attached the school itself, pointing to the significant and hands-on role he played in its founding. Pictured here is Thornton Hall, the original home of the Thayer School.",
-        "citation": "Image: Dartmouth Digital Collections. Caption: Thayer School of Engineering at Dartmouth website.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Thayer School of Engineering at Dartmouth website.",
         "shape-names": ["Thornton Hall"],
         "story-item-number": 3
     }
@@ -86,7 +87,7 @@ var lat = 43.7053222,
 var campusStyle = {
     color: "#dc322f",
     fillColor: "#dc322f",
-    weight: 3,
+    weight: 2,
     opacity: 0.95,
     fillOpacity: 0.25,
 };
@@ -100,14 +101,14 @@ var hiddenStyle = {
 }
 
 // New map variable
-var map = new L.Map("map", {
+var mapModeMap = new L.Map("map-mode-map", {
     center: new L.LatLng(lat, long),
     zoom: zoom
 });
 
 // Add tiles to ap
 var tiles = new L.StamenTileLayer("toner-lite");
-tiles.addTo(map);
+tiles.addTo(mapModeMap);
 
 function mapClick(e) { // e is a leaflet Event object
     console.log(e.target.feature.properties.Name);
@@ -122,7 +123,7 @@ var featureLayer = new L.GeoJSON(meacham, {
     onEachFeature: onEachFeature,
 });
 
-map.addLayer(featureLayer);
+mapModeMap.addLayer(featureLayer);
 
 /**
  * Global variables
@@ -167,7 +168,7 @@ function toggleMapMode() {
 
 /**
  * Clicking secondary story card to activate new story
- * @param  {div} card 		Selected secondary card div
+ * @param  {div} card       Selected secondary card div
  */
 function activateStory(card) {
     // If card selected is not already selected
@@ -188,7 +189,7 @@ function activateStory(card) {
 /**
  * Sliding out and deactivating currently active story,
  * & sliding in and activating newly-selected story
- * @param  {int} cardIndex 		Index of selected secondary card
+ * @param  {int} cardIndex      Index of selected secondary card
  */
 function togglePrimaryCardContainer(cardIndex) {
     // Find and slide out currently active card container
@@ -217,7 +218,7 @@ function togglePrimaryCardContainer(cardIndex) {
             }
         })
     }, 200);
-    // Slide in new container with index	
+    // Slide in new container with index    
     setTimeout(function() {
         $(".story-container-right .story-container-items").eq(cardIndex + 1).toggle();
         scaleWidth($(".story-container-items--active .story-container-item--active"));
@@ -227,7 +228,7 @@ function togglePrimaryCardContainer(cardIndex) {
 
 /**
  * Toggling 'active' class of secondard story card
- * @param  {div} card 		card div to toggle 'active' class of
+ * @param  {div} card       card div to toggle 'active' class of
  */
 function toggleSecondaryStoryCard(card) {
     // Inactivate all items within secondary card 
@@ -244,7 +245,7 @@ function toggleSecondaryStoryCard(card) {
 
 /**
  * Toggling 'active' class of secondary story card item
- * @param  {div} index 		index of list item to toggle
+ * @param  {div} index      index of list item to toggle
  */
 function toggleSecondaryCardItem(index) {
     $thisItem = $(".story-card-secondary--active .story-card-secondary-items").children().eq(index);
@@ -311,7 +312,7 @@ function stepBackward() {
 /**
  * Scale width of image container to preserve aspect ratio
  * Relies on dictionary of ground truth image dimensions
- * @param  {div} container 			image container
+ * @param  {div} container          image container
  */
 function scaleWidth(container) {
     var containerH = container.height(),
@@ -425,3 +426,15 @@ function mapImage() {
 function removeMapImage() {
     $(".story-container-item--active .image-map").remove();
 }
+
+/***/
+function positionTooltipContainer() {
+    var $map = $(".map-mode-map"),
+        $tooltip = $(".map-mode-tooltip"),
+        mapW = $map.width(),
+        mapLeft = $map.offset()["left"],
+        tooltipW = $tooltip.width();
+    $tooltip.offset({ left: mapW - tooltipW + 10 });
+
+}
+positionTooltipContainer();

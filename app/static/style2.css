@@ -273,3 +273,31 @@ body {
     border-radius: 2px;
     font-family: 'Cambo', serif !important;
 }
+
+.campus-art {
+    height: 100%;
+    max-width: 100%;
+    opacity: 0.2;
+}
+
+.campus-art-text--one {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.75;
+    margin: -33vh 50px 50px 50px;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 32px;
+    font-family: 'Cambo', serif !important;
+}
+
+.campus-art-text--two {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.75;
+    margin: -23vh 50px 50px 100px;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 32px;
+    font-family: 'Cambo', serif !important;
+}

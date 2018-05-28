@@ -76,10 +76,9 @@ ground_truth = {
 }
 
 /**
- * Map for 'map mode'
+ * GLOBAL SETTINGS
  */
 
-// Map settings for 'map mode'
 var lat = 43.7053222,
     long = -72.2875,
     zoom = 16;
@@ -87,6 +86,14 @@ var lat = 43.7053222,
 var campusStyle = {
     color: "#dc322f",
     fillColor: "#dc322f",
+    weight: 2,
+    opacity: 0.95,
+    fillOpacity: 0.25,
+};
+
+var highlightStyle = {
+    color: "#2962FF",
+    fillColor: "#2962FF",
     weight: 2,
     opacity: 0.95,
     fillOpacity: 0.25,
@@ -100,30 +107,9 @@ var hiddenStyle = {
     fillOpacity: 0
 }
 
-// New map variable
-var mapModeMap = new L.Map("map-mode-map", {
-    center: new L.LatLng(lat, long),
-    zoom: zoom
-});
-
-// Add tiles to ap
-var tiles = new L.StamenTileLayer("toner-lite");
-tiles.addTo(mapModeMap);
-
-function mapClick(e) { // e is a leaflet Event object
-    console.log(e.target.feature.properties.Name);
-}
-
-function onEachFeature(feature, layer) {
-    layer.setStyle(campusStyle);
-    layer.on('click', mapClick);
-}
-
-var featureLayer = new L.GeoJSON(meacham, {
-    onEachFeature: onEachFeature,
-});
-
-mapModeMap.addLayer(featureLayer);
+/**
+ * STORY MODE
+ */
 
 /**
  * Global variables
@@ -427,7 +413,54 @@ function removeMapImage() {
     $(".story-container-item--active .image-map").remove();
 }
 
-/***/
+/**
+ * MAP MODE
+ */
+
+/**
+ * Map for 'map mode'
+ */
+
+// New map variable
+var mapModeMap = new L.Map("map-mode-map", {
+    center: new L.LatLng(lat, long),
+    zoom: zoom
+});
+
+// Add tiles to ap
+var tiles = new L.StamenTileLayer("toner-lite");
+tiles.addTo(mapModeMap);
+
+function mapClick(e) {
+    $(".map-mode-tooltip--title").html(e.target.feature.properties.Name);
+    $(".map-mode-tooltip--date").html("<span class='map-mode-tooltip--date-title'>Date built:&ensp;</span>" + e.target.feature.properties.dateAddedStart);
+    $(".map-mode-tooltip--description").html(e.target.feature.properties.Description);
+    if ($(".map-mode-tooltip--text") !== null) {
+        $(".map-mode-tooltip--text").remove();
+    }
+    if ($(".map-mode-tooltip--title-intro") !== null) {
+        $(".map-mode-tooltip--title-intro").remove();
+    }
+}
+
+function onEachFeature(feature, layer) {
+    layer.setStyle(campusStyle);
+    layer.on('click', mapClick);
+    layer.on('click', function(layer) {
+        layer.setStyle(highlightStyle);
+    });
+}
+
+var featureLayer = new L.GeoJSON(meacham, {
+    onEachFeature: onEachFeature,
+});
+
+mapModeMap.addLayer(featureLayer);
+
+/**
+ * Position map mode's tooltip container
+ * Happens on load (and maybe resize)
+ */
 function positionTooltipContainer() {
     var $map = $(".map-mode-map"),
         $tooltip = $(".map-mode-tooltip"),

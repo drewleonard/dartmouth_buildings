@@ -224,21 +224,35 @@ body {
 }
 
 .map-mode-tooltip.mdc-card {
-    width: 400px;
+    width: 450px;
     position: absolute;
     min-height: 100px;
     margin: 10px 0 0 0;
     font-family: 'Cambo', serif !important;
-    /* background-color: #f6f9fc; */
     border: 1px solid black;
 }
 
-.map-mode-tooltip--title {
+.map-mode-tooltip--title-intro {
     padding: 15px;
     font-size: 32px;
 }
 
-.map-mode-tooltip--text {
+.map-mode-tooltip--title {
+    padding: 15px 15px 5px 15px;
+    font-size: 32px;
+}
+
+.map-mode-tooltip--date {
+    font-size: 16px;
+    padding: 0px 15px 15px 15px;
+}
+
+.map-mode-tooltip--date-title {
+    font-weight: bold;
+}
+
+.map-mode-tooltip--text,
+.map-mode-tooltip--description {
     padding: 0px 15px 15px 15px;
     font-size: 16px;
 }

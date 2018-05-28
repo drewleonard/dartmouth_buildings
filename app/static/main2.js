@@ -431,22 +431,49 @@ var mapModeMap = new L.Map("map-mode-map", {
 var tiles = new L.StamenTileLayer("toner-lite");
 tiles.addTo(mapModeMap);
 
-function mapClick(e) {
-    $(".map-mode-tooltip--title").html(e.target.feature.properties.Name);
-    $(".map-mode-tooltip--date").html("<span class='map-mode-tooltip--date-title'>Date built:&ensp;</span>" + e.target.feature.properties.dateAddedStart);
-    $(".map-mode-tooltip--description").html(e.target.feature.properties.Description);
-    if ($(".map-mode-tooltip--text") !== null) {
-        $(".map-mode-tooltip--text").remove();
-    }
+function populateTooltip(e) {
+    var $thisTooltip = $(".map-mode-tooltip");
     if ($(".map-mode-tooltip--title-intro") !== null) {
         $(".map-mode-tooltip--title-intro").remove();
     }
+    if ($(".map-mode-tooltip--text") !== null) {
+        $(".map-mode-tooltip--text").remove();
+    }
+    if ($(".map-mode-tooltip").find(".map-mode-tooltip--title").length === 0) {
+        var thisDiv = $("<div/>")
+            .addClass("map-mode-tooltip--title")
+            .html("<div></div>");
+        $thisTooltip.append(thisDiv);
+    }
+    if ($(".map-mode-tooltip").find(".map-mode-tooltip--date").length === 0) {
+        var thisDiv = $("<div/>")
+            .addClass("map-mode-tooltip--date")
+            .html("<div></div>");
+        $thisTooltip.append(thisDiv);
+    }
+    if ($(".map-mode-tooltip").find(".map-mode-tooltip--description").length === 0) {
+        var thisDiv = $("<div/>")
+            .addClass("map-mode-tooltip--description")
+            .html("<div></div>");
+        $thisTooltip.append(thisDiv);
+    }
+    $(".map-mode-tooltip--title").html(e.target.feature.properties.Name);
+    $(".map-mode-tooltip--date").html("<span class='map-mode-tooltip--date-title'>Date built:&ensp;</span>" + e.target.feature.properties.dateAddedStart);
+    $(".map-mode-tooltip--description").html(e.target.feature.properties.Description);
+}
+
+function centerMap(e) {
+    console.log(e.target.getBounds());
+    mapModeMap.fitBounds(e.target.getBounds(), { padding: [150, 150] })
+
+    // mapModeMap.setView(e.target.getLatLng(), 5);
 }
 
 function onEachFeature(feature, layer) {
     layer.setStyle(campusStyle);
-    layer.on('click', mapClick);
-    layer.on('click', function(layer) {
+    layer.on('click', populateTooltip);
+    layer.on('click', centerMap);
+    layer.on('click', function() {
         layer.setStyle(highlightStyle);
     });
 }

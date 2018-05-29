@@ -13,7 +13,8 @@ ground_truth = {
     "gold-coast-1": {
         "w": 4299,
         "h": 3130,
-        "title": "Bankrolling the campus: Gold Coast. Gold Coast, undated.",
+        "title": "Bankrolling the campus: Gold Coast.",
+        "subtitle": "Gold Coast, undated.",
         "caption": "The Gold Coast dormitory cluster was built during the early years of the Great Depression (1928-9) by trustees John Gile, John Lord, and Frank Streeter. Gold Coast's philanthropic history is typical of many College buildings: donors gave money in return for the vanity of their namesakes attached to campus spaces. The cluster's name comes from its' rooms reputations as the most expensive to rent on campus.",
         "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
         "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"],
@@ -22,7 +23,8 @@ ground_truth = {
     "gold-coast-2": {
         "w": 2538,
         "h": 2046,
-        "title": "Bankrolling the campus: Gold Coast. Room prices, 1930. ",
+        "title": "Bankrolling the campus: Gold Coast.",
+        "subtitle": "Room Prices, 1930.",
         "caption": "The Gold Coast cluster earned its reputation and attendant namesake for offering the most expensive rooms to rent on campus. Dartmouth's then-named Office of the Bursar mainted these prices in its annual 'Dormitory Floor Plans and Room Charges' publication.",
         "citation": "Image: Dormitory Floor Plans and Room Charges, 1930. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
         "shape-names": ["Streeter Hall", "Gile Hall", "Lord Hall"],
@@ -31,7 +33,8 @@ ground_truth = {
     "dicks-house-1": {
         "w": 5888,
         "h": 4688,
-        "title": "In memory of: Dick Hall. Dick's House, 1929.",
+        "title": "In memory of: Dick Hall.",
+        "subtitle": "Dick's House, 1929.",
         "caption": "Many campus buildings bear namesakes of passed-away members of the Dartmouth College community. In 1927, Edward and Sally Hall gifted funds to build an infirmary in memory of their son, Richard (Dick) Hall '27, who passed away prior to graduating.",
         "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
         "shape-names": ["Dick Hall's House"],
@@ -40,7 +43,8 @@ ground_truth = {
     "pest-house-1": {
         "w": 4153,
         "h": 2848,
-        "title": "Doing good: replacing Isolation Hospital. Isolation Hospital, undated.",
+        "title": "Doing good: replacing Isolation Hospital.",
+        "subtitle": "Isolation Hospital, undated.",
         "caption": "Beyond memorializing their son, Sally and Edward Hall built Dick's House to provide students good, comfortable, and convenient health care. Previously, students recieved care in the Isolation Hospital: nicknamed Pest House and remembered for its poor conditions. In this context, Isolation Hospital's Dr. Kingsford claimed that 'Dick's House was the best thing that ever happened to Dartmouth College.'",
         "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Dartmouth Alumni Magazine, May 1948 and April 1967.",
         "shape-names": [],
@@ -49,7 +53,8 @@ ground_truth = {
     "webster-1": {
         "w": 4865,
         "h": 3597,
-        "title": "Double dipping: Webster Hall's namesakes. Webster Hall, 1907.",
+        "title": "Double dipping: Webster Hall's namesakes.",
+        "subtitle": "Webster Hall, 1907.",
         "caption": "Many students know the building pictured as Rauner Special Collections Library, but that name applies to the building's interior-library only. The building itself is Webster Hall, and circa 1999, philanthropist Bruce Rauner '78 and others donated funds to convert its interior from an auditorium to a library that houses the College's special collections.",
         "citation": "Image: Dartmouth Digital Collections.",
         "shape-names": ["Webster Hall"],
@@ -58,7 +63,8 @@ ground_truth = {
     "rauner-1": {
         "w": 6094,
         "h": 4889,
-        "title": "Rauner Library's naming opportunities. Rauner Library design, undated.",
+        "title": "Rauner Library's naming opportunities.",
+        "subtitle": "Rauner Library design, undated.",
         "caption": "Often, namesakes are attached to entire buildings, but the College offers philanthropic and naming opportunities at many levels. Rauner Library typifies this, with each of its component parts named for individual donors: The Freund Room for John Freund '54, for example. Dartmouth College sold namesakes for the reading room at $1,000,000, the exhibit gallery at $500,000, and seminar rooms for $250,000 (each), among other selections.",
         "citation": "Image: Dartmouth Digital Collections",
         "shape-names": ["Webster Hall"],
@@ -67,7 +73,8 @@ ground_truth = {
     "thornton-1": {
         "w": 6150,
         "h": 4811,
-        "title": "Establishing direction: Sylvanus Thayer '07 (1807). Thornton Hall, 1884.",
+        "title": "Establishing direction: Sylvanus Thayer '07 (1807).",
+        "subtitle": "Thornton Hall, 1884.",
         "caption": "In many cases, the College requests gifts for upcoming or ongoing projects, and attaches donors' namesakes to buildings in return. The story behind the Thayer School of Engineering's funding is different: Sylvanus Thayer approached the College in 1867 with both $40,000 and hopes of establishing 'a School or Department of Architecture and Civil Engineering'. Rather than attaching his namesake to a building envisioned by the College, Thayer pioneered an additional direction for the College. Thayer did not fund any of the school's buildings, but his name remains attached the school itself, pointing to the significant and hands-on role he played in its founding. Pictured here is Thornton Hall, the original home of the Thayer School.",
         "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Thayer School of Engineering at Dartmouth website.",
         "shape-names": ["Thornton Hall"],
@@ -76,7 +83,8 @@ ground_truth = {
     "dartmouth-hall-1": {
         "w": 5963,
         "h": 4647,
-        "title": "Becoming Dartmouth College: Dartmouth Hall. Dartmouth Hall, 1793.",
+        "title": "Becoming Dartmouth College: Dartmouth Hall.",
+        "subtitle": "Dartmouth Hall, 1793.",
         "caption": "The original Dartmouth Hall was the College's first main and long-standing building, and for decades housed all of the school's core educational and administrative facilities: the library, museum, classrooms, offices, and dormitories. During the years prior to Dartmouth Hall's construction, the College's educational role and future might have been uncertain. Without spaces to house the functions of a true liberal arts college, the school would be unable to grow and establish itself. As such, Dartmouth Hall symolizes the College's transition into its permanent education role. Early students referred to the building as 'The College', pointing to its multipurpose role.",
         "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
         "shape-names": ["Dartmouth Hall"],
@@ -85,7 +93,8 @@ ground_truth = {
     "nassau-hall-1": {
         "w": 5140,
         "h": 3212,
-        "title": "Nassau Hall: Dartmouth as a College. Nassau Hall, 1760.",
+        "title": "Nassau Hall: Dartmouth as a College.",
+        "subtitle": "Nassau Hall, 1760.",
         "caption": "In designing Dartmouth Hall, Dartmouth College founder Eleazar Wheelock had both specific ideas for the building's form and function. He wanted it to be practical and cheap, likely to maximize its utility in advancing the College's core education functions. In addition, he wanted Dartmouth Hall to resemble buildings of other Colleges, such as Princeton University's Nassau Hall (pictured above). In this case, campus growth represented the College's commitment to being a true educational institution.",
         "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
         "shape-names": [],
@@ -94,7 +103,8 @@ ground_truth = {
     "campus-1890": {
         "w": 3168,
         "h": 2553,
-        "title": "On the Verge of Expansion: The Tucker Era. The Green, 1890s.",
+        "title": "On the Verge of Expansion: The Tucker Era.",
+        "subtitle": "The Green, 1890s.",
         "caption": "If Eleazar Wheelock' construction of Dartmouth Hall established the College as an educational institution, President William J. Tucker (in office 1893 - 1909) would bring it into the national and modern context of U.S. higher education. By the 1890s, national college enrollment was growing but the College's small physical campus and educational resources put it at risk of becoming irrelevant relative to peer institutions. Without radical expansion, Dartmouth would remain a rural and relatively uninfluential school. Hover over the map button (left) to view the College's in 1890, with its current buildings highlighted blue.",
         "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
         "shape-names": [],
@@ -103,7 +113,8 @@ ground_truth = {
     "campus-1909": {
         "w": 6004,
         "h": 3895,
-        "title": "Dartmouth College under the National Spotlight. Campus, 1909.",
+        "title": "Dartmouth College under the National Spotlight.",
+        "subtitle": "Campus, 1909.",
         "caption": "During President William J. Tucker's incumbency (1893 - 1909), the College's campus and educational capacity expanded dramatically: 19 buildings were added, utilities infrastructure came online, revenues rose five times, enrollment tripled, and more. President Tucker commented, 'They are to be told only in terms of human values: the morale of the College, its renewed vitality, it quickening influence upon the undergraduates, its expanding influence across the Nation and across the seas.'",
         "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
         "shape-names": [],
@@ -359,6 +370,7 @@ function captionImage() {
     var id = $(".story-container-items--active .story-container-item--active").attr("id"),
         text = ground_truth[id]["caption"],
         title = ground_truth[id]["title"],
+        subtitle = ground_truth[id]["subtitle"],
         citation = ground_truth[id]["citation"];
     var captionDiv = $("<div/>")
         .attr("id", "this-image-caption")
@@ -367,6 +379,9 @@ function captionImage() {
         titleDiv = $("<div/>")
         .addClass("image-caption-title")
         .html("<div>" + title + "</div>"),
+        subtitleDiv = $("<div/>")
+        .addClass("image-caption-subtitle")
+        .html("<div>" + subtitle + "</div>"),
         textDiv = $("<div/>")
         .addClass("image-caption-text")
         .html("<div>" + text + "</div>"),
@@ -374,6 +389,7 @@ function captionImage() {
         .addClass("image-caption-citation")
         .html("<div>" + citation + "</div>");
     captionDiv.append(titleDiv);
+    captionDiv.append(subtitleDiv);
     captionDiv.append(textDiv);
     captionDiv.append(citationDiv);
     var $activeImage = $(".story-container-items--active .story-container-item--active .story-container-item-image");

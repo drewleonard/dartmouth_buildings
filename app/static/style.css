@@ -206,8 +206,15 @@ body {
 .image-caption-title {
     font-size: 24px;
     font-weight: 700;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
     padding: 20px 20px 0 20px;
+}
+
+.image-caption-subtitle {
+    font-size: 16px;
+    padding: 0 20px 10px 20px;
+    margin: 0 0 5px 0;
+    color: rgb(165, 215, 95, 1);
 }
 
 .image-caption-text {

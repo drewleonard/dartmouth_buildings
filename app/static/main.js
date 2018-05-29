@@ -139,8 +139,8 @@ var campusStyle = {
 };
 
 var highlightStyle = {
-    color: "#dc322f",
-    fillColor: "#dc322f",
+    color: "#00693e",
+    fillColor: "#00693e",
     weight: 2,
     opacity: 0.95,
     fillOpacity: 0.25,

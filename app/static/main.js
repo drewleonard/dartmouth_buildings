@@ -72,6 +72,24 @@ ground_truth = {
         "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Thayer School of Engineering at Dartmouth website.",
         "shape-names": ["Thornton Hall"],
         "story-item-number": 3
+    },
+    "dartmouth-hall-1": {
+        "w": 5963,
+        "h": 4647,
+        "title": "Becoming Dartmouth College: Dartmouth Hall. Dartmouth Hall, 1793.",
+        "caption": "The original Dartmouth Hall was the College's first main and long-standing building, and for decades housed all of the school's core educational and administrative facilities: the library, museum, classrooms, offices, and dormitories. During the years prior to Dartmouth Hall's construction, the College's educational role and future might have been uncertain. Without spaces to house the functions of a true liberal arts college, the school would be unable to grow and establish itself. As such, Dartmouth Hall symolizes the College's transition into its permanent education role. Early students referred to the building as 'The College', pointing to its multipurpose role.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
+        "shape-names": ["Dartmouth Hall"],
+        "story-item-number": 0
+    },
+    "nassau-hall-1": {
+        "w": 5140,
+        "h": 3212,
+        "title": "Nassau Hall: Dartmouth as a College. Nassau Hall, 1760.",
+        "caption": "In designing Dartmouth Hall, Dartmouth College founder Eleazar Wheelock had both specific ideas for the building's form and function. He wanted it to be practical and cheap, likely to maximize its utility in advancing the College's core education functions. In addition, he wanted Dartmouth Hall to resemble buildings of other Colleges, such as Princeton University's Nassau Hall (pictured above). In this case, campus growth represented the College's commitment to being a true educational institution.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
+        "shape-names": [],
+        "story-item-number": 0
     }
 }
 
@@ -84,16 +102,16 @@ var lat = 43.7053222,
     zoom = 16;
 
 var campusStyle = {
-    color: "#dc322f",
-    fillColor: "#dc322f",
+    color: "#2962FF",
+    fillColor: "#2962FF",
     weight: 2,
     opacity: 0.95,
     fillOpacity: 0.25,
 };
 
 var highlightStyle = {
-    color: "#2962FF",
-    fillColor: "#2962FF",
+    color: "#dc322f",
+    fillColor: "#dc322f",
     weight: 2,
     opacity: 0.95,
     fillOpacity: 0.25,
@@ -541,3 +559,23 @@ function positionTooltipContainer() {
 
 }
 positionTooltipContainer();
+
+function annotateToolbarIcon(e) {
+    var $tooltipText = e.target.getAttribute("tooltip"),
+        $icon = $(e.target);
+    if ($(".toolbar-icons").find(".toolbar-icon-tooltip").length !== 0) {
+        $(".toolbar-icon-tooltip").remove();
+    }
+    var thisDiv = $("<div/>")
+        .addClass("toolbar-icon-tooltip")
+        .html("<div>" + $tooltipText + "</div>");
+    $(".container-site").append(thisDiv);
+    var iconY = $(e.target).offset()["top"],
+        iconX = $(e.target).offset()["left"],
+        tooltipW = $(".toolbar-icon-tooltip").width();
+    $(".toolbar-icon-tooltip").offset({ top: iconY + 48, left: iconX - (tooltipW * 0.3) });
+}
+
+function unannotateToolbarIcon() {
+    $(".toolbar-icon-tooltip").remove();
+}

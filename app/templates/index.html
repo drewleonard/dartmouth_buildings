@@ -30,15 +30,15 @@
             <header class="mdc-toolbar mdc-toolbar--fixed">
                 <div class="mdc-toolbar__row">
                     <section class="mdc-toolbar__section mdc-toolbar__section--align-start mdc-toolbar__section--shrink-to-fit">
-                        <span class="website-title mdc-toolbar__title">Geog 53 Project</span>
+                        <span class="website-title mdc-toolbar__title">buildings of dartmouth</span>
                     </section>
-                    <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
-                        <i onclick="toggleMapMode()" class="toolbar-icon mdc-icon-toggle material-icons md-24" role="button">
-							map
-						</i>
-                        <i onclick="toggleStoryMode()" class="toolbar-icon mdc-icon-toggle material-icons md-24" role="button">
-							library_books
-						</i>
+                    <section class="toolbar-icons mdc-toolbar__section mdc-toolbar__section--align-end">
+                        <i tooltip="Map Mode" onmouseover="annotateToolbarIcon(event)" onmouseout="unannotateToolbarIcon()" onclick="toggleMapMode()" class="toolbar-icon mdc-icon-toggle material-icons md-24" role="button">
+                            map
+                        </i>
+                        <i tooltip="Story Mode" onmouseover="annotateToolbarIcon(event)" onmouseout="unannotateToolbarIcon()" onclick="toggleStoryMode()" class="toolbar-icon mdc-icon-toggle material-icons md-24" role="button">
+                            library_books
+                        </i>
                     </section>
                 </div>
             </header>
@@ -82,12 +82,12 @@
                 <!-- Secondary story card two -->
                 <div onclick="activateStory(this)" class="story-card-secondary mdc-card ">
                     <div class="story-card-secondary-title ">
-                        Campus Growth
+                        growth and direction
                     </div>
                     <div class="story-card-secondary-items mdc-list ">
                         <div class="story-card-secondary-item mdc-list-item ">
                             <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
-                            <div class="story-card-secondary-item-title ">Category 1</div>
+                            <div class="story-card-secondary-item-title ">Becoming Dartmouth College</div>
                         </div>
                         <div class="story-card-secondary-item mdc-list-item ">
                             <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
@@ -138,6 +138,7 @@
                 </div>
                 <!-- First story container -->
                 <div class="story-container-items" style="display:none">
+                    <!-- Story item one -- First story container -->
                     <div id="gold-coast-1" class="story-container-item">
                         <div class="story-container-item-image">
                             <img class="story-card-image mdc-card" alt="alt" src="/static/gold-coast-2.jpg" />
@@ -145,27 +146,28 @@
                         <div class="story-fab-container">
                             <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	map
-								</span>
+                                    map
+                                </span>
                             </button>
                             <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	short_text
-								</span>
+                                    short_text
+                                </span>
                             </button>
                             <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	navigate_next
-								</span>
+                                    navigate_next
+                                </span>
                             </button>
                         </div>
                     </div>
+                    <!-- Story item two -- First story container -->
                     <div id="gold-coast-2" class="story-container-item">
                         <div class="story-fab-container">
                             <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    navigate_before
-							</span>
+                                navigate_before
+                            </span>
                             </button>
                         </div>
                         <div class="story-container-item-image">
@@ -174,27 +176,28 @@
                         <div class="story-fab-container">
                             <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	map
-								</span>
+                                    map
+                                </span>
                             </button>
                             <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	short_text
-								</span>
+                                    short_text
+                                </span>
                             </button>
                             <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	navigate_next
-								</span>
+                                    navigate_next
+                                </span>
                             </button>
                         </div>
                     </div>
+                    <!-- Story item three -- First story container -->
                     <div id="dicks-house-1" class="story-container-item">
                         <div class="story-fab-container">
                             <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    navigate_before
-							</span>
+                                navigate_before
+                            </span>
                             </button>
                         </div>
                         <div class="story-container-item-image">
@@ -203,27 +206,28 @@
                         <div class="story-fab-container">
                             <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	map
-								</span>
+                                    map
+                                </span>
                             </button>
                             <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	short_text
-								</span>
+                                    short_text
+                                </span>
                             </button>
                             <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	navigate_next
-								</span>
+                                    navigate_next
+                                </span>
                             </button>
                         </div>
                     </div>
+                    <!-- Story item four -- First story container -->
                     <div id="pest-house-1" class="story-container-item">
                         <div class="story-fab-container">
                             <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    navigate_before
-							</span>
+                                navigate_before
+                            </span>
                             </button>
                         </div>
                         <div class="story-container-item-image">
@@ -232,27 +236,28 @@
                         <div class="story-fab-container">
                             <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	map
-								</span>
+                                    map
+                                </span>
                             </button>
                             <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	short_text
-								</span>
+                                    short_text
+                                </span>
                             </button>
                             <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	navigate_next
-								</span>
+                                    navigate_next
+                                </span>
                             </button>
                         </div>
                     </div>
+                    <!-- Story item five -- First story container -->
                     <div id="webster-1" class="story-container-item">
                         <div class="story-fab-container">
                             <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    navigate_before
-							</span>
+                                navigate_before
+                            </span>
                             </button>
                         </div>
                         <div class="story-container-item-image">
@@ -261,27 +266,28 @@
                         <div class="story-fab-container">
                             <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	map
-								</span>
+                                    map
+                                </span>
                             </button>
                             <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	short_text
-								</span>
+                                    short_text
+                                </span>
                             </button>
                             <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	navigate_next
-								</span>
+                                    navigate_next
+                                </span>
                             </button>
                         </div>
                     </div>
+                    <!-- Story item six -- First story container -->
                     <div id="rauner-1" class="story-container-item">
                         <div class="story-fab-container">
                             <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    navigate_before
-							</span>
+                                navigate_before
+                            </span>
                             </button>
                         </div>
                         <div class="story-container-item-image">
@@ -290,27 +296,28 @@
                         <div class="story-fab-container">
                             <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	map
-								</span>
+                                    map
+                                </span>
                             </button>
                             <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	short_text
-								</span>
+                                    short_text
+                                </span>
                             </button>
                             <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	navigate_next
-								</span>
+                                    navigate_next
+                                </span>
                             </button>
                         </div>
                     </div>
+                    <!-- Story item seven -- First story container -->
                     <div id="thornton-1" class="story-container-item">
                         <div class="story-fab-container">
                             <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    navigate_before
-							</span>
+                                navigate_before
+                            </span>
                             </button>
                         </div>
                         <div class="story-container-item-image">
@@ -319,23 +326,72 @@
                         <div class="story-fab-container">
                             <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	map
-								</span>
+                                    map
+                                </span>
                             </button>
                             <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	short_text
-								</span>
+                                    short_text
+                                </span>
                             </button>
                             <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
                                 <span class="mdc-fab__icon">
-							    	navigate_next
-								</span>
+                                    navigate_next
+                                </span>
                             </button>
                         </div>
                     </div>
                 </div>
                 <!-- Second story -->
+                <div class="story-container-items" style="display:none">
+                    <div id="dartmouth-hall-1" class="story-container-item">
+                        <div class="story-container-item-image">
+                            <img class="story-card-image mdc-card" alt="alt" src="/static/dartmouth-hall-1.jpg" />
+                        </div>
+                        <!-- Story item one -- Second story container -->
+                        <div class="story-fab-container">
+                            <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
+                                <span class="mdc-fab__icon">
+                                    map
+                                </span>
+                            </button>
+                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                <span class="mdc-fab__icon">
+                                    short_text
+                                </span>
+                            </button>
+                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                <span class="mdc-fab__icon">
+                                    navigate_next
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Story item two -- Second story container -->
+                    <div id="nassau-hall-1" class="story-container-item">
+                        <div class="story-container-item-image">
+                            <img class="story-card-image mdc-card" alt="alt" src="/static/nassau-hall-1.jpg" />
+                        </div>
+                        <div class="story-fab-container">
+                            <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
+                                <span class="mdc-fab__icon">
+                                    map
+                                </span>
+                            </button>
+                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                <span class="mdc-fab__icon">
+                                    short_text
+                                </span>
+                            </button>
+                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                <span class="mdc-fab__icon">
+                                    navigate_next
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Story item three -- Second story container -->
+                </div>
             </div>
         </div>
     </div>

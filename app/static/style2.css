@@ -247,10 +247,16 @@ body {
 
 .map-mode-tooltip--date {
     font-size: 16px;
+    padding: 10px 15px 5px 15px;
+}
+
+.map-mode-tooltip--namesake {
+    font-size: 16px;
     padding: 0px 15px 15px 15px;
 }
 
-.map-mode-tooltip--date-title {
+.map-mode-tooltip--date-title,
+.map-mode-tooltip--namesake-title {
     font-weight: bold;
 }
 

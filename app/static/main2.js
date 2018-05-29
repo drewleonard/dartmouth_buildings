@@ -107,6 +107,8 @@ var hiddenStyle = {
     fillOpacity: 0
 }
 
+var xPos, yPos;
+
 /**
  * STORY MODE
  */
@@ -431,6 +433,7 @@ var mapModeMap = new L.Map("map-mode-map", {
 var tiles = new L.StamenTileLayer("toner-lite");
 tiles.addTo(mapModeMap);
 
+/***/
 function populateTooltip(e) {
     var $thisTooltip = $(".map-mode-tooltip");
     if ($(".map-mode-tooltip--title-intro") !== null) {
@@ -451,29 +454,42 @@ function populateTooltip(e) {
             .html("<div></div>");
         $thisTooltip.append(thisDiv);
     }
+    if ($(".map-mode-tooltip").find(".map-mode-tooltip--namesake").length === 0) {
+        var thisDiv = $("<div/>")
+            .addClass("map-mode-tooltip--namesake")
+            .html("<div></div>");
+        $thisTooltip.append(thisDiv);
+    }
     if ($(".map-mode-tooltip").find(".map-mode-tooltip--description").length === 0) {
         var thisDiv = $("<div/>")
             .addClass("map-mode-tooltip--description")
             .html("<div></div>");
         $thisTooltip.append(thisDiv);
     }
-    $(".map-mode-tooltip--title").html(e.target.feature.properties.Name);
-    $(".map-mode-tooltip--date").html("<span class='map-mode-tooltip--date-title'>Date built:&ensp;</span>" + e.target.feature.properties.dateAddedStart);
-    $(".map-mode-tooltip--description").html(e.target.feature.properties.Description);
+    $(".map-mode-tooltip--title")
+        .html(e.target.feature.properties.Name);
+    $(".map-mode-tooltip--date")
+        .html("<span class='map-mode-tooltip--date-title'>Date built:&ensp;</span>" + e.target.feature.properties.dateAddedStart);
+    $(".map-mode-tooltip--namesake")
+        .html("<span class='map-mode-tooltip--namesake-title'>Namesake:&ensp;</span>" + e.target.feature.properties.namesake);
+    $(".map-mode-tooltip--description")
+        .html(e.target.feature.properties.Description);
 }
 
+/***/
 function centerMap(e) {
     mapModeMap.fitBounds(
         e.target.getBounds(), { padding: [150, 150] }
     );
 }
 
+/***/
 function highlightMap(e) {
     featureLayer.setStyle(campusStyle);
     e.target.setStyle(highlightStyle);
 }
-var xPos, yPos;
 
+/***/
 function addAnnotation(e) {
     $(".map-mode-annotation").remove();
 
@@ -490,11 +506,12 @@ function addAnnotation(e) {
     $(".map-mode-annotation").offset({ top: yPos + 25, left: (xPos - (0.50 * annotationW)) });
 }
 
+/***/
 function removeAnnotation(e) {
     $(".map-mode-annotation").remove();
-    // $(".map-mode-map").remove("#map-mode-annotation")
 }
 
+/***/
 function onEachFeature(feature, layer) {
     layer.setStyle(campusStyle);
     layer.on('click', populateTooltip);

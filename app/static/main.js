@@ -90,6 +90,24 @@ ground_truth = {
         "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com.",
         "shape-names": [],
         "story-item-number": 0
+    },
+    "campus-1890": {
+        "w": 3168,
+        "h": 2553,
+        "title": "On the Verge of Expansion: The Tucker Era. The Green, 1890s.",
+        "caption": "If Eleazar Wheelock' construction of Dartmouth Hall established the College as an educational institution, President William J. Tucker (in office 1893 - 1909) would bring it into the national and modern context of U.S. higher education. By the 1890s, national college enrollment was growing but the College's small physical campus and educational resources put it at risk of becoming irrelevant relative to peer institutions. Without radical expansion, Dartmouth would remain a rural and relatively uninfluential school. Hover over the map button (left) to view the College's in 1890, with its current buildings highlighted blue.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
+        "shape-names": [],
+        "story-item-number": 1
+    },
+    "campus-1909": {
+        "w": 6004,
+        "h": 3895,
+        "title": "Dartmouth College under the National Spotlight. Campus, 1909.",
+        "caption": "During President William J. Tucker's incumbency (1893 - 1909), the College's campus and educational capacity expanded dramatically: 19 buildings were added, utilities infrastructure came online, revenues rose five times, enrollment tripled, and more. President Tucker commented, 'They are to be told only in terms of human values: the morale of the College, its renewed vitality, it quickening influence upon the undergraduates, its expanding influence across the Nation and across the seas.'",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
+        "shape-names": [],
+        "story-item-number": 1
     }
 }
 
@@ -431,6 +449,46 @@ function mapImage() {
  */
 function removeMapImage() {
     $(".story-container-item--active .image-map").remove();
+}
+
+function createHistoricalMap(tileURL, yearStart, yearEnd) {
+    var id = $(".story-container-items--active .story-container-item--active").attr("id");
+    var mapDiv = $("<div/>")
+        .attr("id", "this-image-map")
+        .addClass("image-map")
+        .html("<div></div>");
+    var $activeImage = $(".story-container-items--active .story-container-item--active .story-container-item-image");
+    $activeImage.append(mapDiv);
+    var $imageMap = $(".story-container-items--active .story-container-item--active .image-map");
+    var topPos = $activeImage.offset()["top"],
+        leftPos = $activeImage.offset()["left"],
+        imgWidth = $activeImage.width(),
+        imgHeight = $activeImage.height();
+    $imageMap.width(imgWidth);
+    $imageMap.height(imgHeight);
+    $imageMap.offset({
+        top: topPos,
+        left: leftPos
+    });
+    var thisMap = new L.Map("this-image-map", {
+        center: new L.LatLng(lat, long),
+        zoom: zoom
+    });
+    L.tileLayer(tileURL, {
+        attribution: 'G. D. Nelson, Dartmouth College'
+    }).addTo(thisMap);
+
+    function onEachFeature(feature, layer) {
+        if (feature.properties.dateAddedStart >= yearStart && feature.properties.dateAddedStart <= yearEnd) {
+            layer.setStyle(campusStyle);
+        } else {
+            layer.setStyle(hiddenStyle);
+        }
+    }
+    var featureLayer = new L.GeoJSON(meacham, {
+        onEachFeature: onEachFeature,
+    });
+    thisMap.addLayer(featureLayer);
 }
 
 /**

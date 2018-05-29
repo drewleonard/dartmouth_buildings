@@ -273,13 +273,14 @@ body {
 .map-mode-annotation {
     background-color: #000000;
     opacity: 0.90;
+    padding: 5px;
     color: #ffffff;
-    height: 25px;
+    border-radius: 2.5px;
+    text-align: center;
     font-size: 16px;
     font-weight: 500;
     width: auto;
-    padding: 5px;
-    border-radius: 2px;
+    height: 25px;
     font-family: 'Cambo', serif !important;
 }
 

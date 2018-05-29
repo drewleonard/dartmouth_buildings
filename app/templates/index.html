@@ -21,450 +21,451 @@
     <!-- Roboto typeface -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cambo:300,400,600,700" rel="stylesheet">
-</head>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 
-<body>
-    <div class="container-site">
-        <!-- Top container (toolbar) -->
-        <div class="container-top">
-            <header class="mdc-toolbar mdc-toolbar--fixed">
-                <div class="mdc-toolbar__row">
-                    <section class="mdc-toolbar__section mdc-toolbar__section--align-start mdc-toolbar__section--shrink-to-fit">
-                        <span class="website-title mdc-toolbar__title">buildings of dartmouth</span>
-                    </section>
-                    <section class="toolbar-icons mdc-toolbar__section mdc-toolbar__section--align-end">
-                        <i tooltip="Map Mode" onmouseover="annotateToolbarIcon(event)" onmouseout="unannotateToolbarIcon()" onclick="toggleMapMode()" class="toolbar-icon mdc-icon-toggle material-icons md-24" role="button">
+    <body>
+        <div class="container-site">
+            <!-- Top container (toolbar) -->
+            <div class="container-top">
+                <header class="mdc-toolbar mdc-toolbar--fixed">
+                    <div class="mdc-toolbar__row">
+                        <section class="mdc-toolbar__section mdc-toolbar__section--align-start mdc-toolbar__section--shrink-to-fit">
+                            <span class="website-title mdc-toolbar__title">buildings of dartmouth</span>
+                        </section>
+                        <section class="toolbar-icons mdc-toolbar__section mdc-toolbar__section--align-end">
+                            <i tooltip="Map Mode" onmouseover="annotateToolbarIcon(event)" onmouseout="unannotateToolbarIcon()" onclick="toggleMapMode()" class="toolbar-icon mdc-icon-toggle material-icons md-24" role="button">
                             map
                         </i>
-                        <i tooltip="Story Mode" onmouseover="annotateToolbarIcon(event)" onmouseout="unannotateToolbarIcon()" onclick="toggleStoryMode()" class="toolbar-icon mdc-icon-toggle material-icons md-24" role="button">
+                            <i tooltip="Story Mode" onmouseover="annotateToolbarIcon(event)" onmouseout="unannotateToolbarIcon()" onclick="toggleStoryMode()" class="toolbar-icon mdc-icon-toggle material-icons md-24" role="button">
                             library_books
                         </i>
-                    </section>
-                </div>
-            </header>
-        </div>
-        <!-- Bottom container (map mode) -->
-        <div class="mode--active container-bottom-map">
-            <div id="map-mode-map" class="map-mode-map mdc-card"></div>
-            <div class="map-mode-tooltip mdc-card">
-                <div class="map-mode-tooltip--title-intro">Geography 53 Project</div>
-                <div class="map-mode-tooltip--text">Select highlighted buildings and roads of Dartmouth College to learn about their namesakes and histories.</div>
+                        </section>
+                    </div>
+                </header>
             </div>
-        </div>
-        <!-- Bottom container (story mode) -->
-        <div class="container-bottom-story" style="display:none">
-            <!-- Left story container (sidebar) -->
-            <div class="story-container-left">
-                <!-- Secondary story card one -->
-                <div onclick="activateStory(this)" class="story-card-secondary mdc-card ">
-                    <div class="story-card-secondary-title ">
-                        philanthropy & namesakes
-                    </div>
-                    <div class="story-card-secondary-items mdc-list ">
-                        <div class="story-card-secondary-item mdc-list-item ">
-                            <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
-                            <div class="story-card-secondary-item-title ">Bankrolling the campus</div>
-                        </div>
-                        <div class="story-card-secondary-item mdc-list-item ">
-                            <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
-                            <div class="story-card-secondary-item-title ">Memorializing loved ones</div>
-                        </div>
-                        <div class="story-card-secondary-item mdc-list-item ">
-                            <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
-                            <div class="story-card-secondary-item-title ">Dealing out namesakes</div>
-                        </div>
-                        <div class="story-card-secondary-item mdc-list-item ">
-                            <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
-                            <div class="story-card-secondary-item-title ">Blazing new trails</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Secondary story card two -->
-                <div onclick="activateStory(this)" class="story-card-secondary mdc-card ">
-                    <div class="story-card-secondary-title ">
-                        growth and direction
-                    </div>
-                    <div class="story-card-secondary-items mdc-list ">
-                        <div class="story-card-secondary-item mdc-list-item ">
-                            <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
-                            <div class="story-card-secondary-item-title ">Becoming Dartmouth College</div>
-                        </div>
-                        <div class="story-card-secondary-item mdc-list-item ">
-                            <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
-                            <div class="story-card-secondary-item-title ">Under the National Spotlight</div>
-                        </div>
-                        <div class="story-card-secondary-item mdc-list-item ">
-                            <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
-                            <div class="story-card-secondary-item-title ">Category 3</div>
-                        </div>
-                        <div class="story-card-secondary-item mdc-list-item ">
-                            <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
-                            <div class="story-card-secondary-item-title ">Category 4</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Secondary story card three -->
-                <div onclick="activateStory(this)" class="story-card-secondary mdc-card ">
-                    <div class="story-card-secondary-title ">
-                        Repurposing
-                    </div>
-                    <div class="story-card-secondary-items mdc-list ">
-                        <div class="story-card-secondary-item mdc-list-item ">
-                            <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
-                            <div class="story-card-secondary-item-title ">Category 1</div>
-                        </div>
-                        <div class="story-card-secondary-item mdc-list-item ">
-                            <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
-                            <div class="story-card-secondary-item-title ">Category 2</div>
-                        </div>
-                        <div class="story-card-secondary-item mdc-list-item ">
-                            <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
-                            <div class="story-card-secondary-item-title ">Category 3</div>
-                        </div>
-                        <div class="story-card-secondary-item mdc-list-item ">
-                            <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
-                            <div class="story-card-secondary-item-title ">Category 4</div>
-                        </div>
-                    </div>
+            <!-- Bottom container (map mode) -->
+            <div class="mode--active container-bottom-map">
+                <div id="map-mode-map" class="map-mode-map mdc-card"></div>
+                <div class="map-mode-tooltip mdc-card">
+                    <div class="map-mode-tooltip--title-intro">Navigate the buildings of Dartmouth College.</div>
+                    <div class="map-mode-tooltip--text">Select highlighted buildings and roads of Dartmouth College to learn about their namesakes and histories.</div>
                 </div>
             </div>
-            <!-- Right story container (main stories) -->
-            <div class="story-container-right ">
-                <!-- Introductory story container -->
-                <div class="story-container-items--active story-container-items mdc-card">
-                    <img class="campus-art" alt="alt" src="/static/campus-art.jpg" />
-                    <div class="campus-art-text--one">Welcome to story mode.</div>
-                    <div class="campus-art-text--two">Select stories to get started.</div>
-                </div>
-                <!-- First story container -->
-                <div class="story-container-items" style="display:none">
-                    <!-- Story item one -- First story container -->
-                    <div id="gold-coast-1" class="story-container-item">
-                        <div class="story-container-item-image">
-                            <img class="story-card-image mdc-card" alt="alt" src="/static/gold-coast-2.jpg" />
+            <!-- Bottom container (story mode) -->
+            <div class="container-bottom-story" style="display:none">
+                <!-- Left story container (sidebar) -->
+                <div class="story-container-left">
+                    <!-- Secondary story card one -->
+                    <div onclick="activateStory(this)" class="story-card-secondary mdc-card ">
+                        <div class="story-card-secondary-title ">
+                            philanthropy & namesakes
                         </div>
-                        <div class="story-fab-container">
-                            <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    map
-                                </span>
-                            </button>
-                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    short_text
-                                </span>
-                            </button>
-                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    navigate_next
-                                </span>
-                            </button>
+                        <div class="story-card-secondary-items mdc-list ">
+                            <div class="story-card-secondary-item mdc-list-item ">
+                                <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
+                                <div class="story-card-secondary-item-title ">Bankrolling the campus</div>
+                            </div>
+                            <div class="story-card-secondary-item mdc-list-item ">
+                                <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
+                                <div class="story-card-secondary-item-title ">Memorializing loved ones</div>
+                            </div>
+                            <div class="story-card-secondary-item mdc-list-item ">
+                                <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
+                                <div class="story-card-secondary-item-title ">Dealing out namesakes</div>
+                            </div>
+                            <div class="story-card-secondary-item mdc-list-item ">
+                                <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
+                                <div class="story-card-secondary-item-title ">Blazing new trails</div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Story item two -- First story container -->
-                    <div id="gold-coast-2" class="story-container-item">
-                        <div class="story-fab-container">
-                            <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                navigate_before
-                            </span>
-                            </button>
+                    <!-- Secondary story card two -->
+                    <div onclick="activateStory(this)" class="story-card-secondary mdc-card ">
+                        <div class="story-card-secondary-title ">
+                            growth and direction
                         </div>
-                        <div class="story-container-item-image">
-                            <img class="story-card-image mdc-card" alt="alt" src="/static/streeter.jpg" />
-                        </div>
-                        <div class="story-fab-container">
-                            <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    map
-                                </span>
-                            </button>
-                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    short_text
-                                </span>
-                            </button>
-                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    navigate_next
-                                </span>
-                            </button>
+                        <div class="story-card-secondary-items mdc-list ">
+                            <div class="story-card-secondary-item mdc-list-item ">
+                                <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
+                                <div class="story-card-secondary-item-title ">Becoming Dartmouth College</div>
+                            </div>
+                            <div class="story-card-secondary-item mdc-list-item ">
+                                <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
+                                <div class="story-card-secondary-item-title ">Under the National Spotlight</div>
+                            </div>
+                            <div class="story-card-secondary-item mdc-list-item ">
+                                <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
+                                <div class="story-card-secondary-item-title ">Category 3</div>
+                            </div>
+                            <div class="story-card-secondary-item mdc-list-item ">
+                                <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
+                                <div class="story-card-secondary-item-title ">Category 4</div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Story item three -- First story container -->
-                    <div id="dicks-house-1" class="story-container-item">
-                        <div class="story-fab-container">
-                            <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                navigate_before
-                            </span>
-                            </button>
+                    <!-- Secondary story card three -->
+                    <div onclick="activateStory(this)" class="story-card-secondary mdc-card ">
+                        <div class="story-card-secondary-title ">
+                            Repurposing
                         </div>
-                        <div class="story-container-item-image">
-                            <img class="story-card-image mdc-card" alt="alt" src="/static/dicks-house-1.jpg" />
-                        </div>
-                        <div class="story-fab-container">
-                            <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    map
-                                </span>
-                            </button>
-                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    short_text
-                                </span>
-                            </button>
-                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    navigate_next
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Story item four -- First story container -->
-                    <div id="pest-house-1" class="story-container-item">
-                        <div class="story-fab-container">
-                            <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                navigate_before
-                            </span>
-                            </button>
-                        </div>
-                        <div class="story-container-item-image">
-                            <img class="story-card-image mdc-card" alt="alt" src="/static/pest-house-1.jpg" />
-                        </div>
-                        <div class="story-fab-container">
-                            <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    map
-                                </span>
-                            </button>
-                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    short_text
-                                </span>
-                            </button>
-                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    navigate_next
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Story item five -- First story container -->
-                    <div id="webster-1" class="story-container-item">
-                        <div class="story-fab-container">
-                            <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                navigate_before
-                            </span>
-                            </button>
-                        </div>
-                        <div class="story-container-item-image">
-                            <img class="story-card-image mdc-card" alt="alt" src="/static/webster-1.jpg" />
-                        </div>
-                        <div class="story-fab-container">
-                            <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    map
-                                </span>
-                            </button>
-                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    short_text
-                                </span>
-                            </button>
-                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    navigate_next
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Story item six -- First story container -->
-                    <div id="rauner-1" class="story-container-item">
-                        <div class="story-fab-container">
-                            <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                navigate_before
-                            </span>
-                            </button>
-                        </div>
-                        <div class="story-container-item-image">
-                            <img class="story-card-image mdc-card" alt="alt" src="/static/rauner-1.jpg" />
-                        </div>
-                        <div class="story-fab-container">
-                            <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    map
-                                </span>
-                            </button>
-                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    short_text
-                                </span>
-                            </button>
-                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    navigate_next
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Story item seven -- First story container -->
-                    <div id="thornton-1" class="story-container-item">
-                        <div class="story-fab-container">
-                            <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                navigate_before
-                            </span>
-                            </button>
-                        </div>
-                        <div class="story-container-item-image">
-                            <img class="story-card-image mdc-card" alt="alt" src="/static/thornton-1.jpg" />
-                        </div>
-                        <div class="story-fab-container">
-                            <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    map
-                                </span>
-                            </button>
-                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    short_text
-                                </span>
-                            </button>
-                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
-                                    navigate_next
-                                </span>
-                            </button>
+                        <div class="story-card-secondary-items mdc-list ">
+                            <div class="story-card-secondary-item mdc-list-item ">
+                                <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
+                                <div class="story-card-secondary-item-title ">Category 1</div>
+                            </div>
+                            <div class="story-card-secondary-item mdc-list-item ">
+                                <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
+                                <div class="story-card-secondary-item-title ">Category 2</div>
+                            </div>
+                            <div class="story-card-secondary-item mdc-list-item ">
+                                <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
+                                <div class="story-card-secondary-item-title ">Category 3</div>
+                            </div>
+                            <div class="story-card-secondary-item mdc-list-item ">
+                                <i class="story-card-secondary-icon material-icons md-18 ">radio_button_unchecked</i>
+                                <div class="story-card-secondary-item-title ">Category 4</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Second story -->
-                <div class="story-container-items" style="display:none">
-                    <div id="dartmouth-hall-1" class="story-container-item">
-                        <div class="story-container-item-image">
-                            <img class="story-card-image mdc-card" alt="alt" src="/static/dartmouth-hall-1.jpg" />
-                        </div>
-                        <!-- Story item one -- Second story container -->
-                        <div class="story-fab-container">
-                            <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                <!-- Right story container (main stories) -->
+                <div class="story-container-right ">
+                    <!-- Introductory story container -->
+                    <div class="story-container-items--active story-container-items mdc-card">
+                        <img class="campus-art" alt="alt" src="/static/campus-art.jpg" />
+                        <div class="campus-art-text--one">Welcome to story mode.</div>
+                        <div class="campus-art-text--two">Select stories to get started.</div>
+                    </div>
+                    <!-- First story container -->
+                    <div class="story-container-items" style="display:none">
+                        <!-- Story item one -- First story container -->
+                        <div id="gold-coast-1" class="story-container-item">
+                            <div class="story-container-item-image">
+                                <img class="story-card-image mdc-card" alt="alt" src="/static/gold-coast-2.jpg" />
+                            </div>
+                            <div class="story-fab-container">
+                                <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                     map
                                 </span>
-                            </button>
-                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                                </button>
+                                <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                     short_text
                                 </span>
-                            </button>
-                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                                </button>
+                                <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                     navigate_next
                                 </span>
-                            </button>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Story item two -- Second story container -->
-                    <div id="nassau-hall-1" class="story-container-item">
-                        <div class="story-fab-container">
-                            <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                        <!-- Story item two -- First story container -->
+                        <div id="gold-coast-2" class="story-container-item">
+                            <div class="story-fab-container">
+                                <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                 navigate_before
                             </span>
-                            </button>
-                        </div>
-                        <div class="story-container-item-image">
-                            <img class="story-card-image mdc-card" alt="alt" src="/static/nassau-hall-1.jpg" />
-                        </div>
-                        <div class="story-fab-container">
-                            <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                                </button>
+                            </div>
+                            <div class="story-container-item-image">
+                                <img class="story-card-image mdc-card" alt="alt" src="/static/streeter.jpg" />
+                            </div>
+                            <div class="story-fab-container">
+                                <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                     map
                                 </span>
-                            </button>
-                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                                </button>
+                                <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                     short_text
                                 </span>
-                            </button>
-                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                                </button>
+                                <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                     navigate_next
                                 </span>
-                            </button>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Story item three -- Second story container -->
-                    <div id="campus-1890" class="story-container-item">
-                        <div class="story-fab-container">
-                            <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                        <!-- Story item three -- First story container -->
+                        <div id="dicks-house-1" class="story-container-item">
+                            <div class="story-fab-container">
+                                <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                 navigate_before
                             </span>
-                            </button>
-                        </div>
-                        <div class="story-container-item-image">
-                            <img class="story-card-image mdc-card" alt="alt" src="/static/campus-1890.jpg" />
-                        </div>
-                        <div class="story-fab-container">
-                            <button onmouseenter="createHistoricalMap('http://discovery.dartmouth.edu/~gnelson/tileserver/dartmouth-1890/{z}/{x}/{y}.png', 1760, 1890)" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                                </button>
+                            </div>
+                            <div class="story-container-item-image">
+                                <img class="story-card-image mdc-card" alt="alt" src="/static/dicks-house-1.jpg" />
+                            </div>
+                            <div class="story-fab-container">
+                                <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                     map
                                 </span>
-                            </button>
-                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                                </button>
+                                <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                     short_text
                                 </span>
-                            </button>
-                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                                </button>
+                                <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                     navigate_next
                                 </span>
-                            </button>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Story item four -- Second story container -->
-                    <div id="campus-1909" class="story-container-item">
-                        <div class="story-fab-container">
-                            <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                        <!-- Story item four -- First story container -->
+                        <div id="pest-house-1" class="story-container-item">
+                            <div class="story-fab-container">
+                                <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                 navigate_before
                             </span>
-                            </button>
-                        </div>
-                        <div class="story-container-item-image">
-                            <img class="story-card-image mdc-card" alt="alt" src="/static/campus-1909.jpg" />
-                        </div>
-                        <div class="story-fab-container">
-                            <button onmouseenter="createHistoricalMap('http://discovery.dartmouth.edu/~gnelson/tileserver/dartmouth-1930/{z}/{x}/{y}.png', 1893, 1909)" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                                </button>
+                            </div>
+                            <div class="story-container-item-image">
+                                <img class="story-card-image mdc-card" alt="alt" src="/static/pest-house-1.jpg" />
+                            </div>
+                            <div class="story-fab-container">
+                                <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                     map
                                 </span>
-                            </button>
-                            <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                                </button>
+                                <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                     short_text
                                 </span>
-                            </button>
-                            <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
-                                <span class="mdc-fab__icon">
+                                </button>
+                                <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
                                     navigate_next
                                 </span>
-                            </button>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Story item five -- First story container -->
+                        <div id="webster-1" class="story-container-item">
+                            <div class="story-fab-container">
+                                <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                navigate_before
+                            </span>
+                                </button>
+                            </div>
+                            <div class="story-container-item-image">
+                                <img class="story-card-image mdc-card" alt="alt" src="/static/webster-1.jpg" />
+                            </div>
+                            <div class="story-fab-container">
+                                <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    map
+                                </span>
+                                </button>
+                                <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    short_text
+                                </span>
+                                </button>
+                                <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    navigate_next
+                                </span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Story item six -- First story container -->
+                        <div id="rauner-1" class="story-container-item">
+                            <div class="story-fab-container">
+                                <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                navigate_before
+                            </span>
+                                </button>
+                            </div>
+                            <div class="story-container-item-image">
+                                <img class="story-card-image mdc-card" alt="alt" src="/static/rauner-1.jpg" />
+                            </div>
+                            <div class="story-fab-container">
+                                <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    map
+                                </span>
+                                </button>
+                                <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    short_text
+                                </span>
+                                </button>
+                                <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    navigate_next
+                                </span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Story item seven -- First story container -->
+                        <div id="thornton-1" class="story-container-item">
+                            <div class="story-fab-container">
+                                <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                navigate_before
+                            </span>
+                                </button>
+                            </div>
+                            <div class="story-container-item-image">
+                                <img class="story-card-image mdc-card" alt="alt" src="/static/thornton-1.jpg" />
+                            </div>
+                            <div class="story-fab-container">
+                                <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    map
+                                </span>
+                                </button>
+                                <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    short_text
+                                </span>
+                                </button>
+                                <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    navigate_next
+                                </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second story -->
+                    <div class="story-container-items" style="display:none">
+                        <div id="dartmouth-hall-1" class="story-container-item">
+                            <div class="story-container-item-image">
+                                <img class="story-card-image mdc-card" alt="alt" src="/static/dartmouth-hall-1.jpg" />
+                            </div>
+                            <!-- Story item one -- Second story container -->
+                            <div class="story-fab-container">
+                                <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    map
+                                </span>
+                                </button>
+                                <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    short_text
+                                </span>
+                                </button>
+                                <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    navigate_next
+                                </span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Story item two -- Second story container -->
+                        <div id="nassau-hall-1" class="story-container-item">
+                            <div class="story-fab-container">
+                                <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                navigate_before
+                            </span>
+                                </button>
+                            </div>
+                            <div class="story-container-item-image">
+                                <img class="story-card-image mdc-card" alt="alt" src="/static/nassau-hall-1.jpg" />
+                            </div>
+                            <div class="story-fab-container">
+                                <button onmouseenter="mapImage()" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    map
+                                </span>
+                                </button>
+                                <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    short_text
+                                </span>
+                                </button>
+                                <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    navigate_next
+                                </span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Story item three -- Second story container -->
+                        <div id="campus-1890" class="story-container-item">
+                            <div class="story-fab-container">
+                                <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                navigate_before
+                            </span>
+                                </button>
+                            </div>
+                            <div class="story-container-item-image">
+                                <img class="story-card-image mdc-card" alt="alt" src="/static/campus-1890.jpg" />
+                            </div>
+                            <div class="story-fab-container">
+                                <button onmouseenter="createHistoricalMap('http://discovery.dartmouth.edu/~gnelson/tileserver/dartmouth-1890/{z}/{x}/{y}.png', 1760, 1890)" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    map
+                                </span>
+                                </button>
+                                <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    short_text
+                                </span>
+                                </button>
+                                <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    navigate_next
+                                </span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Story item four -- Second story container -->
+                        <div id="campus-1909" class="story-container-item">
+                            <div class="story-fab-container">
+                                <button onclick="stepBackward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                navigate_before
+                            </span>
+                                </button>
+                            </div>
+                            <div class="story-container-item-image">
+                                <img class="story-card-image mdc-card" alt="alt" src="/static/campus-1909.jpg" />
+                            </div>
+                            <div class="story-fab-container">
+                                <button onmouseenter="createHistoricalMap('http://discovery.dartmouth.edu/~gnelson/tileserver/dartmouth-1930/{z}/{x}/{y}.png', 1893, 1909)" onmouseleave="removeMapImage()" class="story-fab--map mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    map
+                                </span>
+                                </button>
+                                <button onmouseover="captionImage()" onmouseleave="uncaptionImage()" class="story-fab--text mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    short_text
+                                </span>
+                                </button>
+                                <button onclick="stepForward()" class="story-fab mdc-fab material-icons" aria-label="Favorite">
+                                    <span class="mdc-fab__icon">
+                                    navigate_next
+                                </span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Meacham script (geoJSON obect) -->
-    <script type="text/javascript " src="/static/meacham.js "></script>
-    <!-- main JS -->
-    <script type="text/javascript " src="/static/main.js " charset="utf-8 "></script>
-</body>
+        <!-- Meacham script (geoJSON obect) -->
+        <script type="text/javascript " src="/static/meacham.js "></script>
+        <!-- main JS -->
+        <script type="text/javascript " src="/static/main.js " charset="utf-8 "></script>
+    </body>
 
 </html>

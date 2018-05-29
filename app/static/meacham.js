@@ -134,7 +134,7 @@ var meacham = {
                 "Name": "Alpha Chi Alpha House",
                 "dateAddedStart": 1896,
                 "dateAddedEnd": null,
-                "Description": "Fred P. Emery had his house built at 13 Webster Avenue when the College first opened the street to the west from North Main Street.9 The barn that today stands behind and connected to the houes appears on Sanborn maps by 1905. Emery owned the house at least through 1928; Mrs. F.P. Emery owned it in 1931; and it was still in private hand in 1950. Alpha Chi Rho Fraternity, first founded in 1919 but not revived until 195610 occupied the house some time between 1956 and 1961 after moving from their first location on the site of todayâ€™s White Church. The organization became the local Alpha Chi Alpha Fraternity in 196311 and the College currently owns the building.",
+                "Description": "Fred P. Emery had his house built at 13 Webster Avenue when the College first opened the street to the west from North Main Street.9 The barn that today stands behind and connected to the houes appears on Sanborn maps by 1905. Emery owned the house at least through 1928; Mrs. F.P. Emery owned it in 1931; and it was still in private hand in 1950. Alpha Chi Rho Fraternity, first founded in 1919 but not revived until 195610 occupied the house some time between 1956 and 1961 after moving from their first location on the site of today's White Church. The organization became the local Alpha Chi Alpha Fraternity in 196311 and the College currently owns the building.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -225,7 +225,7 @@ var meacham = {
                 "Name": "Alpha Theta",
                 "dateAddedStart": 1940,
                 "dateAddedEnd": 1941,
-                "Description": "The 1921 Theta Chi Fraternity built the house to replace its older wooden residence after that buildingâ€™s furnace leaked and killed nine fraternity members in 1934. Sanborn maps fail to indicate the change. The organization went local as Alpha Theta in 1952,22 later becoming a co-educational organization.",
+                "Description": "The 1921 Theta Chi Fraternity built the house to replace its older wooden residence after that building's furnace leaked and killed nine fraternity members in 1934. Sanborn maps fail to indicate the change. The organization went local as Alpha Theta in 1952,22 later becoming a co-educational organization.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -289,7 +289,7 @@ var meacham = {
                 "Name": "Alumni Gymnasium",
                 "dateAddedStart": 1909,
                 "dateAddedEnd": 1910,
-                "Description": "Large gymnasium designed by Charles Rich and Fredrick Mathesius, attached to Spaulding Pool and Davis Varsity House. The cornerstone was laid by President Nichols during his inauguration and contains a circular appealing to alumni for contributions, a file of the â€œNew Gymnasium News,â€ copies of The Dartmouth, the Dartmouth Magazine, the Jack oâ€™ Lantern and the Aegis, an address of Dr. Bartlett, a retrospect of Dr. Bowler, a program of exercises, a program of the inaugural ceremonies and a copy of A History of Dartmouth Athletics.23 The building cost $190,00024 and the shower room, a memorial to Stanley Hill â€™18, cost $5000.25 A famously springy board track of White Pine designed by Thayer Professor Harold Lockwood around the inside of the gym was opened in 1932 and used by Glenn Cunningham to break the American mile record in 1938,26 and the track lasted until 1947.27 The gym was used as barracks in W.W.I. and an armory and lounge in W.W.II,28 it was remodeled with a new basketball court and the Karl B. Michael Pool seating 1500 and 2100 in 1962-3,29 also in 1972 when the two-story womenâ€™s locker room added to southeast corner.30 Other remodelings occurred in 1974, 1980, and 1989.31 The windows along the main rooms were bricked over after 1961. Dolphin benches in upper halls outside the offices came from Spaulding Pool.",
+                "Description": "Large gymnasium designed by Charles Rich and Fredrick Mathesius, attached to Spaulding Pool and Davis Varsity House. The cornerstone was laid by President Nichols during his inauguration and contains a circular appealing to alumni for contributions, a file of the 'New Gymnasium News,' copies of The Dartmouth, the Dartmouth Magazine, the Jack o' Lantern and the Aegis, an address of Dr. Bartlett, a retrospect of Dr. Bowler, a program of exercises, a program of the inaugural ceremonies and a copy of A History of Dartmouth Athletics.23 The building cost $190,00024 and the shower room, a memorial to Stanley Hill '18, cost $5000.25 A famously springy board track of White Pine designed by Thayer Professor Harold Lockwood around the inside of the gym was opened in 1932 and used by Glenn Cunningham to break the American mile record in 1938,26 and the track lasted until 1947.27 The gym was used as barracks in W.W.I. and an armory and lounge in W.W.II,28 it was remodeled with a new basketball court and the Karl B. Michael Pool seating 1500 and 2100 in 1962-3,29 also in 1972 when the two-story women's locker room added to southeast corner.30 Other remodelings occurred in 1974, 1980, and 1989.31 The windows along the main rooms were bricked over after 1961. Dolphin benches in upper halls outside the offices came from Spaulding Pool.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -332,7 +332,7 @@ var meacham = {
                 "Name": "Amarna House",
                 "dateAddedStart": 1920,
                 "dateAddedEnd": null,
-                "Description": "Amarna, the Collegeâ€™s second Undergraduate Society, has occupied the College-owned house at 23 East Wheelock Street since not long after its founding in 1993. The house has a capacity of eleven, with four second-floor bedrooms rotating as singles or two doubles36; previous occupants include the Co-Op House (by 1984-5), then the Robert H. Smith alcohol rehabilitation program. The house was built as a residence between 1922 and 1928, at which time R.J. Raymond owned it. C.F. Raymond is listed as the owner in 1931.",
+                "Description": "Amarna, the College's second Undergraduate Society, has occupied the College-owned house at 23 East Wheelock Street since not long after its founding in 1993. The house has a capacity of eleven, with four second-floor bedrooms rotating as singles or two doubles36; previous occupants include the Co-Op House (by 1984-5), then the Robert H. Smith alcohol rehabilitation program. The house was built as a residence between 1922 and 1928, at which time R.J. Raymond owned it. C.F. Raymond is listed as the owner in 1931.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -359,7 +359,7 @@ var meacham = {
                 "Name": "Andres Hall",
                 "dateAddedStart": 1985,
                 "dateAddedEnd": 1987,
-                "Description": "Herbert S. Newman Associates designed the dormitory, one building of the three-building New Dorms [East Wheelock Cluster] after the example of the Houses at Harvard and the Residential Colleges at Yale.37 â€œPost-modernâ€ in style, the building mirrors Zimmerman opposite, with Brace Commons connecting the two underground. Andres contains an Area Director apartment and uses suite configurations, holding 84 in 50 singles and 17 doubles in 1990.38 The class of 1943 sponsors the cluster.",
+                "Description": "Herbert S. Newman Associates designed the dormitory, one building of the three-building New Dorms [East Wheelock Cluster] after the example of the Houses at Harvard and the Residential Colleges at Yale.37 'Post-modern' in style, the building mirrors Zimmerman opposite, with Brace Commons connecting the two underground. Andres contains an Area Director apartment and uses suite configurations, holding 84 in 50 singles and 17 doubles in 1990.38 The class of 1943 sponsors the cluster.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -424,7 +424,7 @@ var meacham = {
                 "Name": "Aquinas House Catholic Student Center",
                 "dateAddedStart": 1961,
                 "dateAddedEnd": 1962,
-                "Description": "The independent Catholic Studentsâ€™ Center stands near the end of Webster Avenue. The construction required the demolition of the L.H. Dow House, which was built in 1896.39 The organization had occupied what is now the Deanâ€™s House during much of the 1950s.",
+                "Description": "The independent Catholic Students' Center stands near the end of Webster Avenue. The construction required the demolition of the L.H. Dow House, which was built in 1896.39 The organization had occupied what is now the Dean's House during much of the 1950s.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -491,7 +491,7 @@ var meacham = {
                 "Name": "Asian Studies Center",
                 "dateAddedStart": 1952,
                 "dateAddedEnd": 1952,
-                "Description": "The house occupies the site of the Alpha Sigma Phi House, which burned in 1936, and was built as the Headmasterâ€™s House for the Clark School. The Tucker Foundation occupied the house by 1984, and the Asian Studies Center opened in the house in 1985. The house contains six rooms for eight students as well as a faculty room.40 The building stands on the northwest corner of North Main and Clement Road.",
+                "Description": "The house occupies the site of the Alpha Sigma Phi House, which burned in 1936, and was built as the Headmaster's House for the Clark School. The Tucker Foundation occupied the house by 1984, and the Asian Studies Center opened in the house in 1985. The house contains six rooms for eight students as well as a faculty room.40 The building stands on the northwest corner of North Main and Clement Road.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -641,7 +641,7 @@ var meacham = {
                 "Name": "Bartlett Tower",
                 "dateAddedStart": 1885,
                 "dateAddedEnd": 1895,
-                "Description": "â€œTower erected near the site of the Old Pine, destroyed by lightning, bears this inscription: â€˜This tower suggested by President Bartlett was erected by subscriptions from the classes of 1885 to 1895 inclusive.â€™ The total height is 71 feet, and the summit is reached by a spiral stairway; the material for which the tower is built of hornblende schist, a rock found in abundance in the Park.â€62 At one time the tower was visible over the trees.",
+                "Description": "'Tower erected near the site of the Old Pine, destroyed by lightning, bears this inscription: â€˜This tower suggested by President Bartlett was erected by subscriptions from the classes of 1885 to 1895 inclusive.' The total height is 71 feet, and the summit is reached by a spiral stairway; the material for which the tower is built of hornblende schist, a rock found in abundance in the Park.'62 At one time the tower was visible over the trees.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -769,7 +769,7 @@ var meacham = {
                 "Name": "Berry Library",
                 "dateAddedStart": 1998,
                 "dateAddedEnd": 2000,
-                "Description": "A gift from George Berry, who made his fortune in through his fatherâ€™s L.M Berry Co., originators of the Yellow Pages, contributed the bulk of the buildingâ€™s cost, which along with other gifts and earnings totaled $50 million. The hall stands on the site of Elm Street and required the demolition of the 1931 Dragon Hall and 1961 Bradley-Gerry complex.",
+                "Description": "A gift from George Berry, who made his fortune in through his father's L.M Berry Co., originators of the Yellow Pages, contributed the bulk of the building's cost, which along with other gifts and earnings totaled $50 million. The hall stands on the site of Elm Street and required the demolition of the 1931 Dragon Hall and 1961 Bradley-Gerry complex.",
                 "namesake": "George Berry (principal donor)"
             },
             "geometry": {
@@ -812,7 +812,7 @@ var meacham = {
                 "Name": "Berry Sports Center",
                 "dateAddedStart": 1987,
                 "dateAddedEnd": 1987,
-                "Description": "Gwathmey & Siegel designed the gymnasium to house weight rooms and basketball and racquetball facilities. The building stands on the site of Davis Rink. John Berry â€™44 funded the building and Ed Leede â€™49 , basketball star and independent oilman, gave Leede Arena, the largest space inside the building.",
+                "Description": "Gwathmey & Siegel designed the gymnasium to house weight rooms and basketball and racquetball facilities. The building stands on the site of Davis Rink. John Berry '44 funded the building and Ed Leede '49 , basketball star and independent oilman, gave Leede Arena, the largest space inside the building.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -904,7 +904,7 @@ var meacham = {
                 "Name": "Billings Lee Nurses' Home",
                 "dateAddedStart": 1920,
                 "dateAddedEnd": 1920,
-                "Description": "The three-story white dormitory building stands north of the Mary Hitchcock Memorial Hospital and Dickâ€™s House and connects to Building 37. The building originally held 37 nurses of the M.H.M.H. School of Nursing.69 The Billings and Lee families donated the building.70",
+                "Description": "The three-story white dormitory building stands north of the Mary Hitchcock Memorial Hospital and Dick's House and connects to Building 37. The building originally held 37 nurses of the M.H.M.H. School of Nursing.69 The Billings and Lee families donated the building.70",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -943,7 +943,7 @@ var meacham = {
                 "Name": "Bissell Hall",
                 "dateAddedStart": 1958,
                 "dateAddedEnd": 1958,
-                "Description": "The College built the Choates on the playing field of the Clark School that the College had acquired in the Fall of 1953.80 The Choates were the first major buildings of the Dickey reign and introduced Modernism to Dartmouth; the College began construction in the Summer of 1956 at a cost of $1.5 million, with funding from the U.S. Housing and Home Finance Administration.81 Bissell opened in the Fall 1958.82 The buildings had ground -level faculty apartments in the pods under the lounges, â€œa new concept of dormitory life as recommended by the Commission on Campus Life.â€83 The building originally held 75 in eight- or nine-man suites, including 27 singles and 24 doubles,84 and it held 72 in 30 singles and 21 doubles in 1990.85 The College remodeled the building in 1958 and 1984.86 In 1970 the Choates became a â€œsemi-autonomous living unitâ€ housing two faculty members and 75 women transfer students.87 The building bears the name of George Bissell of 1845 because the College had demolished the earlier Bissell for the Hopkins Center.88 Campbell, Aldrich & Nulty designed the dormitory group.",
+                "Description": "The College built the Choates on the playing field of the Clark School that the College had acquired in the Fall of 1953.80 The Choates were the first major buildings of the Dickey reign and introduced Modernism to Dartmouth; the College began construction in the Summer of 1956 at a cost of $1.5 million, with funding from the U.S. Housing and Home Finance Administration.81 Bissell opened in the Fall 1958.82 The buildings had ground -level faculty apartments in the pods under the lounges, 'a new concept of dormitory life as recommended by the Commission on Campus Life.'83 The building originally held 75 in eight- or nine-man suites, including 27 singles and 24 doubles,84 and it held 72 in 30 singles and 21 doubles in 1990.85 The College remodeled the building in 1958 and 1984.86 In 1970 the Choates became a 'semi-autonomous living unit' housing two faculty members and 75 women transfer students.87 The building bears the name of George Bissell of 1845 because the College had demolished the earlier Bissell for the Hopkins Center.88 Campbell, Aldrich & Nulty designed the dormitory group.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -970,7 +970,7 @@ var meacham = {
                 "Name": "Blunt Alumni Center",
                 "dateAddedStart": 1810,
                 "dateAddedEnd": 1980,
-                "Description": "Professor Zephaniah Swift Moore, who became president of Williams and the first president of Amherst, built the two-story brick house on land originally granted to Ebenezer Woodward in 1792 in payment for his work on Dartmouth Hall. The house passed to Dr. Reuben D. Muzzey, who used it from 1815-38, after which Dr. Dixi Crosby owned the building and moved Lang Hall behind it in 1865. The College bought the building with some of the Chandler fund in 1884, remodeling in 1896 into a dormitory holding 4591 or 55, and naming it Crosby House. Architect Charles Rich added the columns added to front, painted the building yellow, added a third story and designed the large wooden dormitory annex to the rear.92 This annex replaced a previous domestic ell. The house became a barracks in 1918.93 Along with Wheeler and Richardson, Crosby was one of the few dormitories the College used allotted to civilian students during its lowest enrollment in a century, in 1943.94 The College remodeled the interior and abandoned the dormitory function in 1949 when Alumni Records moved in from Parkhurst. The building was renovated when the Modernist white-painted brick office addition replaced Richâ€™s earlier frame dormitory addition.95 The addition was designed by Benjamin Thompson Associates and opened in June 1980. Crosby is the oldest house in Hanover on its original foundation and bears a memorial to petroleum, the first scientific examination of which took place here, on its south wall.96",
+                "Description": "Professor Zephaniah Swift Moore, who became president of Williams and the first president of Amherst, built the two-story brick house on land originally granted to Ebenezer Woodward in 1792 in payment for his work on Dartmouth Hall. The house passed to Dr. Reuben D. Muzzey, who used it from 1815-38, after which Dr. Dixi Crosby owned the building and moved Lang Hall behind it in 1865. The College bought the building with some of the Chandler fund in 1884, remodeling in 1896 into a dormitory holding 4591 or 55, and naming it Crosby House. Architect Charles Rich added the columns added to front, painted the building yellow, added a third story and designed the large wooden dormitory annex to the rear.92 This annex replaced a previous domestic ell. The house became a barracks in 1918.93 Along with Wheeler and Richardson, Crosby was one of the few dormitories the College used allotted to civilian students during its lowest enrollment in a century, in 1943.94 The College remodeled the interior and abandoned the dormitory function in 1949 when Alumni Records moved in from Parkhurst. The building was renovated when the Modernist white-painted brick office addition replaced Rich's earlier frame dormitory addition.95 The addition was designed by Benjamin Thompson Associates and opened in June 1980. Crosby is the oldest house in Hanover on its original foundation and bears a memorial to petroleum, the first scientific examination of which took place here, on its south wall.96",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -1025,7 +1025,7 @@ var meacham = {
                 "Name": "Bones Gate House",
                 "dateAddedStart": 1925,
                 "dateAddedEnd": 1925,
-                "Description": "Blackall, Clapp & Whittemore designed the house at 10 Webster Avenue, giving it a gambrel roof with a projecting entrance bay and specifying â€œnon-fireproofâ€ construction. Enclosing approximately 100,000 cubic feet, the Delta Tau Delta fraternity completed the house in July of 1925 at a cost of 46.5 cents per cubic foot.102 Founded 1901,103 the fraternity moved from the house at 39 North Main Street. Fire gutted the building in 1929104 after which Wells & Hudson rebuilt it. The fraternity went local and changed its name to Bones Gate in 1960.105",
+                "Description": "Blackall, Clapp & Whittemore designed the house at 10 Webster Avenue, giving it a gambrel roof with a projecting entrance bay and specifying 'non-fireproof' construction. Enclosing approximately 100,000 cubic feet, the Delta Tau Delta fraternity completed the house in July of 1925 at a cost of 46.5 cents per cubic foot.102 Founded 1901,103 the fraternity moved from the house at 39 North Main Street. Fire gutted the building in 1929104 after which Wells & Hudson rebuilt it. The fraternity went local and changed its name to Bones Gate in 1960.105",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -1080,7 +1080,7 @@ var meacham = {
                 "Name": "Alexis Boss Tennis Center and Alan Gordon Pavilion",
                 "dateAddedStart": 2000,
                 "dateAddedEnd": 2000,
-                "Description": "The tennis complex stands east of South Park Street near Thompson Arena. The Alexis Boss Tennis Center contains six regulation-sized doubles tennis courts with a multi-layer competition surface. The Gordon Pavilion houses the accompanying lobby, lounge, and locker shower rooms and joins the facility to Scully-Fahey Field. Marjorie and Russell Boss â€™61 and their family donated the tennis center in memory of their daughter, Alexis Boss â€™93, a five-time All-Ivy player. Lynn and Alan D. Gordon â€™77 donated the Gordon Pavilion (Office of Public Affairs 2000).",
+                "Description": "The tennis complex stands east of South Park Street near Thompson Arena. The Alexis Boss Tennis Center contains six regulation-sized doubles tennis courts with a multi-layer competition surface. The Gordon Pavilion houses the accompanying lobby, lounge, and locker shower rooms and joins the facility to Scully-Fahey Field. Marjorie and Russell Boss '61 and their family donated the tennis center in memory of their daughter, Alexis Boss '93, a five-time All-Ivy player. Lynn and Alan D. Gordon '77 donated the Gordon Pavilion (Office of Public Affairs 2000).",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -1134,7 +1134,7 @@ var meacham = {
                 "Name": "Brown Hall",
                 "dateAddedStart": 1956,
                 "dateAddedEnd": 1958,
-                "Description": "The College began the dormitory in the Choate cluster 'as an experiment in student living' and named it for Trustee Albert O. Brown of 1881.132 The hall is arranged in suites, each with a bathroom, and shares a separate lounge with Little to which it is connected by skywalk. The building beneath the lounge houses the Womenâ€™s Resource Center. In 1961 the hall held held 75 in eight or 9-man suites including 27 singles and 24 doubles133; the hall held 72 in 30 singles and 21 doubles in 1990. In 1970 the Choates became a â€œsemi-autonomous living unitâ€ housing two faculty members and 75 women transfer students.134 Campbell, Aldrich & Nulty designed the dormitory group.",
+                "Description": "The College began the dormitory in the Choate cluster 'as an experiment in student living' and named it for Trustee Albert O. Brown of 1881.132 The hall is arranged in suites, each with a bathroom, and shares a separate lounge with Little to which it is connected by skywalk. The building beneath the lounge houses the Women's Resource Center. In 1961 the hall held held 75 in eight or 9-man suites including 27 singles and 24 doubles133; the hall held 72 in 30 singles and 21 doubles in 1990. In 1970 the Choates became a 'semi-autonomous living unit' housing two faculty members and 75 women transfer students.134 Campbell, Aldrich & Nulty designed the dormitory group.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -1271,7 +1271,7 @@ var meacham = {
                 "Name": "Butterfield Hall",
                 "dateAddedStart": 1940,
                 "dateAddedEnd": 1940,
-                "Description": "Millionaire philanthropist Ralph Butterfield of 1839 funded the 1895 Butterfield Museum; after that building fell to make way for Baker Library, this building took the name. Jens Frederick Larson designed this last of the pre-war dormitories. The building held 59 students in 1961 and 55 in 1990, occupying 35 singles and 10 doubles at that time.147 The dormitory was one of ten Navy V-12 dormitories and operated as the ship â€œU.S.S. Butterfieldâ€ during W.W.II.148 The Hyphen of 1988-9 connects the building to the adjacent Russell Sage Hall.",
+                "Description": "Millionaire philanthropist Ralph Butterfield of 1839 funded the 1895 Butterfield Museum; after that building fell to make way for Baker Library, this building took the name. Jens Frederick Larson designed this last of the pre-war dormitories. The building held 59 students in 1961 and 55 in 1990, occupying 35 singles and 10 doubles at that time.147 The dormitory was one of ten Navy V-12 dormitories and operated as the ship 'U.S.S. Butterfield' during W.W.II.148 The Hyphen of 1988-9 connects the building to the adjacent Russell Sage Hall.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -1307,7 +1307,7 @@ var meacham = {
                 "Name": "Carpenter Hall",
                 "dateAddedStart": 1929,
                 "dateAddedEnd": 1929,
-                "Description": "The Fine Arts building houses the Art History Department and Sherman Art Library, as well as the Anthropology Department, and adjoins Baker Library to the east. The building cost $290,000;159 Frank P. Carpenter of Manchester, N.H. is the donor after whom the building is named.160 Carpenterâ€™s gift was $305,000.161 Jens Frederick Larson was the designer. The College dedicated the building in June of 1929.162 The reading room of the library contains a fireplace with an Italian Renaissance mantle. An addition of stacks for the Sherman Art Library filled in the small courtyard next to Baker at some time, and the building underwent remodelings in 1962 and 1985.163",
+                "Description": "The Fine Arts building houses the Art History Department and Sherman Art Library, as well as the Anthropology Department, and adjoins Baker Library to the east. The building cost $290,000;159 Frank P. Carpenter of Manchester, N.H. is the donor after whom the building is named.160 Carpenter's gift was $305,000.161 Jens Frederick Larson was the designer. The College dedicated the building in June of 1929.162 The reading room of the library contains a fireplace with an Italian Renaissance mantle. An addition of stacks for the Sherman Art Library filled in the small courtyard next to Baker at some time, and the building underwent remodelings in 1962 and 1985.163",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -1345,7 +1345,7 @@ var meacham = {
                 "Name": "Carson Hall",
                 "dateAddedStart": 2002,
                 "dateAddedEnd": 2002,
-                "Description": "V.S.B.A. designed this 33,000 sq. ft. academic wing to attach to the west end of the existing Berry Library before either was built. The hall bears the name of Judy and Russ Carson â€™65, his parents Alice and Samuel Carson â€™34 Tuâ€™35, and daughter Cecily â€™95. The view of the buildingâ€™s front (north) facade takes advantage of the removal of Kiewit and Bradley-Gerry Halls. Carson houses the history department in offices and classrooms, including two amphitheater classrooms on the lower and ground floors, as well as the top three floors. The first floor houses the academic computing department formerly located in Kiewit.",
+                "Description": "V.S.B.A. designed this 33,000 sq. ft. academic wing to attach to the west end of the existing Berry Library before either was built. The hall bears the name of Judy and Russ Carson '65, his parents Alice and Samuel Carson '34 Tu'35, and daughter Cecily '95. The view of the building's front (north) facade takes advantage of the removal of Kiewit and Bradley-Gerry Halls. Carson houses the history department in offices and classrooms, including two amphitheater classrooms on the lower and ground floors, as well as the top three floors. The first floor houses the academic computing department formerly located in Kiewit.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -1379,7 +1379,7 @@ var meacham = {
                 "Name": "Casque and Gauntlet House",
                 "dateAddedStart": 1823,
                 "dateAddedEnd": 1823,
-                "Description": "The society had previously met in the next house to the south, the former Graves Store. The society replaced the older gambrel-roofed section to the rear in 1915 with an addition designed by founding member Fred Wesley Wentworth. The house became a â€œHostess Houseâ€ in W.W.II. (Navy at Dartmouth 1944) when the College took it over and allowed C.O.S.O. to run it as a home for visiting wives of soldiers. â€œOne of the few links that South Main Street still has from the early years of the nineteenth century, this handsome brick building continues to maintain an impressive watch over the Hanover Inn corner. This fine building exhibits a style of architecture quite typical of the Federal or Adam period, with its crisp classical lines and four chimneys. There was a time when Main Street had numerous structures of this period gracing the village with their substantial and dignified appearance, however, several catastrophic fires and the march of time have forever altered thatâ€ (H.H.S.).",
+                "Description": "The society had previously met in the next house to the south, the former Graves Store. The society replaced the older gambrel-roofed section to the rear in 1915 with an addition designed by founding member Fred Wesley Wentworth. The house became a 'Hostess House' in W.W.II. (Navy at Dartmouth 1944) when the College took it over and allowed C.O.S.O. to run it as a home for visiting wives of soldiers. 'One of the few links that South Main Street still has from the early years of the nineteenth century, this handsome brick building continues to maintain an impressive watch over the Hanover Inn corner. This fine building exhibits a style of architecture quite typical of the Federal or Adam period, with its crisp classical lines and four chimneys. There was a time when Main Street had numerous structures of this period gracing the village with their substantial and dignified appearance, however, several catastrophic fires and the march of time have forever altered that' (H.H.S.).",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -1428,7 +1428,7 @@ var meacham = {
                 "Name": "Chase Softball Field",
                 "dateAddedStart": 1892,
                 "dateAddedEnd": 1892,
-                "Description": "The field lies southeast of campus behind Thompson Arena and forms part of the old 65-acre Chase Farm that the state originally bought for the Agricultural College in about 1869, with 18 acres added in 1873.184 N.H. College added a barn in 1875,185 possibly the field house? The College used the field for trench practice in W.W.I.186 The College bought the land in 1921, with other land, for $30,000.187 The old Field House was removed and became Jigger Penderâ€™s barn.188 The lower fields, behind Thompson itself, are set up for football and the upper field is a rugby pitch. WDCR keeps its transmitter on the field and inaugurated it on 4 March 1958.189",
+                "Description": "The field lies southeast of campus behind Thompson Arena and forms part of the old 65-acre Chase Farm that the state originally bought for the Agricultural College in about 1869, with 18 acres added in 1873.184 N.H. College added a barn in 1875,185 possibly the field house? The College used the field for trench practice in W.W.I.186 The College bought the land in 1921, with other land, for $30,000.187 The old Field House was removed and became Jigger Pender's barn.188 The lower fields, behind Thompson itself, are set up for football and the upper field is a rugby pitch. WDCR keeps its transmitter on the field and inaugurated it on 4 March 1958.189",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -1811,7 +1811,7 @@ var meacham = {
                 "Name": "Cobra (Hall)",
                 "dateAddedStart": 1898,
                 "dateAddedEnd": 1915,
-                "Description": "The College owns the house at 13 Summer Street and devoted it to Dartmouth Hillel before the Roth Center for Jewish Life was ready in 1998. Cobra, the 1979 womenâ€™s senior society, now occupies the house and is the first such society to do so. Summer Street was laid out around the turn of the century and this house built facing it by 1915.",
+                "Description": "The College owns the house at 13 Summer Street and devoted it to Dartmouth Hillel before the Roth Center for Jewish Life was ready in 1998. Cobra, the 1979 women's senior society, now occupies the house and is the first such society to do so. Summer Street was laid out around the turn of the century and this house built facing it by 1915.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -2342,7 +2342,7 @@ var meacham = {
                 "Name": "Davis Field House",
                 "dateAddedStart": 1926,
                 "dateAddedEnd": 1926,
-                "Description": "Jens Larson designed the varsity house for sports teams, whose cost of $138,000 Howard Clark Davis â€™06 of Boston paid for.365 Davis also funded Davis Rink on the opposite end of Alumni Gymnasium to which the Field House connects. The College remodeled the building in 1989.",
+                "Description": "Jens Larson designed the varsity house for sports teams, whose cost of $138,000 Howard Clark Davis '06 of Boston paid for.365 Davis also funded Davis Rink on the opposite end of Alumni Gymnasium to which the Field House connects. The College remodeled the building in 1989.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -2442,7 +2442,7 @@ var meacham = {
                 "Name": "Epsilon Kappa Theta House",
                 "dateAddedStart": 1896,
                 "dateAddedEnd": 1896,
-                "Description": "rchitects Dwight & Chandler designed the house at 15 Webster Avenue for W.M. Patten,401 who owned it at least through 1931. The M.H.M.H. Nursesâ€™ School leased the builiding from its owner in 1942,402 and the house was still in private hands in 1950. The Tau Epsilon Phi Fraternity, founded in 1950,403 occupied the house by 1961. In 1969 that organization became The Harold Parmington Foundation, later transforming into Delta Psi Delta, which failed in 1990. Both organizations were co-ed and local. The alumni of these three organizations founded the 15 Webster Avenue Award for community service performed by C.F.S. organizations. The local Epsilon Kappa Theta Sorority, which was the national Kappa Alpha Theta until around 1991, now occupies the house, which the College owns.",
+                "Description": "rchitects Dwight & Chandler designed the house at 15 Webster Avenue for W.M. Patten,401 who owned it at least through 1931. The M.H.M.H. Nurses' School leased the builiding from its owner in 1942,402 and the house was still in private hands in 1950. The Tau Epsilon Phi Fraternity, founded in 1950,403 occupied the house by 1961. In 1969 that organization became The Harold Parmington Foundation, later transforming into Delta Psi Delta, which failed in 1990. Both organizations were co-ed and local. The alumni of these three organizations founded the 15 Webster Avenue Award for community service performed by C.F.S. organizations. The local Epsilon Kappa Theta Sorority, which was the national Kappa Alpha Theta until around 1991, now occupies the house, which the College owns.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -2582,7 +2582,7 @@ var meacham = {
                 "Name": "Fairchild Physical Sciences Center",
                 "dateAddedStart": 1972,
                 "dateAddedEnd": 1974,
-                "Description": "Architects Shepley, Bulfinch, Richardson and Abbot of Boston, including James F. Clapp, Jr., Partner-in-charge and project architect George Balich designed the building. . The four-story building holds classrooms, offices and laboratories for the geography and physical science departments,409 and connects to both Steele and Wilder in the form of a glass-and-concrete tower. The later Burke adjoins Fairchild to the north. Fairchild building incorporates a â€œflexibleâ€ modular system that the Ford Foundation and the Toronto school system developed. The building stands on sites once occupied by the 1811 Medical School Building; the Lord House, which had moved there in 1920; and the Professors Lord House, also moved there in 1920. The College remodeled the building in 1983.",
+                "Description": "Architects Shepley, Bulfinch, Richardson and Abbot of Boston, including James F. Clapp, Jr., Partner-in-charge and project architect George Balich designed the building. . The four-story building holds classrooms, offices and laboratories for the geography and physical science departments,409 and connects to both Steele and Wilder in the form of a glass-and-concrete tower. The later Burke adjoins Fairchild to the north. Fairchild building incorporates a 'flexible' modular system that the Ford Foundation and the Toronto school system developed. The building stands on sites once occupied by the 1811 Medical School Building; the Lord House, which had moved there in 1920; and the Professors Lord House, also moved there in 1920. The College remodeled the building in 1983.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -2627,7 +2627,7 @@ var meacham = {
                 "Name": "Fayerweather Hall",
                 "dateAddedStart": 1899,
                 "dateAddedEnd": 1900,
-                "Description": "The dormitory stands on the site of the outhouses that stood behind Dartmouth Hall, including one called the Little College.413 College architect Charles Rich designed the building to be â€œbuilt in Colonial design, of red brick with granite trimmings;â€ it is 120â€™ long and 52â€™ deep and is divided by brick walls into three sections; it originally contained an â€œunusual number of single roomsâ€ and originally accommodated 81 students.â€414 The hall cost $44,060 to build415 and bears the name of the New York leather merchant Mr. Daniel D. Fayerweather, who had no particular connection to the College but included it in his will with a number of other institutions that also posess Fayerweather Halls today, including the University of Virginia, Amherst College and Harvard University. Though Emerson notes that the building â€œrepresents a part of his bequest to the College,â€416 the building seems to have been built with College funds like the other dormitories and simply named in honor of Mr. Fayerweatherâ€™s gift, which went to cover College deficits. Fayerweather became a barracks in 1918.",
+                "Description": "The dormitory stands on the site of the outhouses that stood behind Dartmouth Hall, including one called the Little College.413 College architect Charles Rich designed the building to be 'built in Colonial design, of red brick with granite trimmings;' it is 120' long and 52' deep and is divided by brick walls into three sections; it originally contained an 'unusual number of single rooms' and originally accommodated 81 students.'414 The hall cost $44,060 to build415 and bears the name of the New York leather merchant Mr. Daniel D. Fayerweather, who had no particular connection to the College but included it in his will with a number of other institutions that also posess Fayerweather Halls today, including the University of Virginia, Amherst College and Harvard University. Though Emerson notes that the building 'represents a part of his bequest to the College,'416 the building seems to have been built with College funds like the other dormitories and simply named in honor of Mr. Fayerweather's gift, which went to cover College deficits. Fayerweather became a barracks in 1918.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -2703,7 +2703,7 @@ var meacham = {
                 "Name": "Foley House",
                 "dateAddedStart": 1931,
                 "dateAddedEnd": 1931,
-                "Description": "The first owner of the house at 20 West Street built or moved it there after 1931; by 1984-5 the College owned the building and used it as the Outward Bound House. Now it serves as a â€œplace for consensual decision-making,â€ living, etc., and holds ten students in four single and three doubles.427 The Foley House organization had previously occupied the house at 9 Webster Avenue, now Kappa Delta Epsilon Sorority, since Foley was descended from the Delta Upsilon Fraternity.",
+                "Description": "The first owner of the house at 20 West Street built or moved it there after 1931; by 1984-5 the College owned the building and used it as the Outward Bound House. Now it serves as a 'place for consensual decision-making,' living, etc., and holds ten students in four single and three doubles.427 The Foley House organization had previously occupied the house at 9 Webster Avenue, now Kappa Delta Epsilon Sorority, since Foley was descended from the Delta Upsilon Fraternity.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -2746,7 +2746,7 @@ var meacham = {
                 "Name": "F.O.M. Warehouse",
                 "dateAddedStart": 1927,
                 "dateAddedEnd": 1944,
-                "Description": "Lying on the northwest corner of Lebanon and Crosby Streets, the F.O.M. Warehouse occupies land owned by the N.H. College of Agriculture and the Mechanic Arts until 1892. The whole block, especially in the area to the northwest of the warehouse, had been home to industrial and workshop functions since the 1870s when the College Gasworks occupied the center of the block. By 1894 Sanborn maps show the block housing a machine shop south of Hallgarten Hall, formerly of the N.H.C.A.M.A.; the Collegeâ€™s Heating Plant; a print shop; and a collection of five lumber sheds strung out to the southeast of the Heating Plant â€“ all still to the northwest of the site of the F.O.M. Warehouse. By 1912 a narrow one-story garage stood near the corner of Crosby Street, aligned north-south. This building would last until some time between 1927 and 1944 when the Warehouse would occupy its site. Meanwhile the College built a ca. 1904-1912 lumber shed of frame construction running east-west that forms the oldest part of the Warehouse today. A later block of one-story sheds midway up Crosby Street forms the northern portion of the Warehouse and dates to between 1912 and 1922. The College built the angled Warehouse itself as a lumber shed and it first appears on Sanborn maps of 1944.",
+                "Description": "Lying on the northwest corner of Lebanon and Crosby Streets, the F.O.M. Warehouse occupies land owned by the N.H. College of Agriculture and the Mechanic Arts until 1892. The whole block, especially in the area to the northwest of the warehouse, had been home to industrial and workshop functions since the 1870s when the College Gasworks occupied the center of the block. By 1894 Sanborn maps show the block housing a machine shop south of Hallgarten Hall, formerly of the N.H.C.A.M.A.; the College's Heating Plant; a print shop; and a collection of five lumber sheds strung out to the southeast of the Heating Plant â€“ all still to the northwest of the site of the F.O.M. Warehouse. By 1912 a narrow one-story garage stood near the corner of Crosby Street, aligned north-south. This building would last until some time between 1927 and 1944 when the Warehouse would occupy its site. Meanwhile the College built a ca. 1904-1912 lumber shed of frame construction running east-west that forms the oldest part of the Warehouse today. A later block of one-story sheds midway up Crosby Street forms the northern portion of the Warehouse and dates to between 1912 and 1922. The College built the angled Warehouse itself as a lumber shed and it first appears on Sanborn maps of 1944.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -3191,7 +3191,7 @@ var meacham = {
                 "Name": "Dick Hall's House",
                 "dateAddedStart": 1927,
                 "dateAddedEnd": 1927,
-                "Description": "The College infirmary is known as Dickâ€™s House and was a gift of the parents of Richard Drew Hall, Mr. and Mrs. E.K. Hall. Richard Hall had died at Dartmouth. Jens Fredrick Larson designed the building, which cost $226,000. The doorstep, inscribed â€œ1784,â€ came from the original Dartmouth Hall; the door knocker, a Napoleon eagle cast in 1805, and came from a lamp post in the Place de Lâ€™Etoile in Paris; Mrs. Hall selected personally the furnishings and wallpaper selected over the years; the lounge holds a small flag given by Admiral Byrd that flew at the South Pole; and the library features books given by friends of Hall and his parents, including one inscribed by Calvin Coolidge.",
+                "Description": "The College infirmary is known as Dick's House and was a gift of the parents of Richard Drew Hall, Mr. and Mrs. E.K. Hall. Richard Hall had died at Dartmouth. Jens Fredrick Larson designed the building, which cost $226,000. The doorstep, inscribed '1784,' came from the original Dartmouth Hall; the door knocker, a Napoleon eagle cast in 1805, and came from a lamp post in the Place de L'Etoile in Paris; Mrs. Hall selected personally the furnishings and wallpaper selected over the years; the lounge holds a small flag given by Admiral Byrd that flew at the South Pole; and the library features books given by friends of Hall and his parents, including one inscribed by Calvin Coolidge.",
                 "namesake": "Richard Drew Hall ('27, in memory of)"
             },
             "geometry": {
@@ -3712,7 +3712,7 @@ var meacham = {
                 "Name": "Kappa Kappa Gamma House",
                 "dateAddedStart": 1842,
                 "dateAddedEnd": 1842,
-                "Description": "rs. Abigail Dewey owned the house that stood on the site of the present east entrance to Baker Library on College Street, occupying the site of Professor Bezaleel Woodwardâ€™s 1771 house which had burned around 1833.583 Bissell owned the house by 1855, and later Senator James Patterson lived there. The College bought the building and was and using it as the Graduate Club by 1928. The house was moved in 1925 (?) to its present location at 24 East Wheelock Street while other parts of it became houses around Toy Town.584 It is still owned by the College and the 1978 Kappa Kappa Gamma Sorority has occupied it since before 1986.",
+                "Description": "rs. Abigail Dewey owned the house that stood on the site of the present east entrance to Baker Library on College Street, occupying the site of Professor Bezaleel Woodward's 1771 house which had burned around 1833.583 Bissell owned the house by 1855, and later Senator James Patterson lived there. The College bought the building and was and using it as the Graduate Club by 1928. The house was moved in 1925 (?) to its present location at 24 East Wheelock Street while other parts of it became houses around Toy Town.584 It is still owned by the College and the 1978 Kappa Kappa Gamma Sorority has occupied it since before 1986.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -3823,7 +3823,7 @@ var meacham = {
                 "Name": "Kellogg Medical Auditorium",
                 "dateAddedStart": 1962,
                 "dateAddedEnd": 1962,
-                "Description": "The Medical School auditorium stands between Dickâ€™s House and Remsen and connects to Remsen by a skybridge.",
+                "Description": "The Medical School auditorium stands between Dick's House and Remsen and connects to Remsen by a skybridge.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -3906,7 +3906,7 @@ var meacham = {
                 "Name": "La Casa",
                 "dateAddedStart": 1820,
                 "dateAddedEnd": 1820,
-                "Description": "Dr. Dixi Crosby operated a private hospital in the ca. 1820 house at 42 College Street from at least 1850 to his retirement from the Medical School faculty in 1870. Long-time Dean of the Thayer School Robert Fletcher acquired the house after Crosbyâ€™s death in 1873 and occupied it for the next 63 years, and the College acquired it upon Fletcherâ€™s death. The Department of Spanish and Portuguese sponsors La Casa, a language immersion program for the house residents.",
+                "Description": "Dr. Dixi Crosby operated a private hospital in the ca. 1820 house at 42 College Street from at least 1850 to his retirement from the Medical School faculty in 1870. Long-time Dean of the Thayer School Robert Fletcher acquired the house after Crosby's death in 1873 and occupied it for the next 63 years, and the College acquired it upon Fletcher's death. The Department of Spanish and Portuguese sponsors La Casa, a language immersion program for the house residents.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -3933,7 +3933,7 @@ var meacham = {
                 "Name": "Ledyard Apartments",
                 "dateAddedStart": 1921,
                 "dateAddedEnd": 1921,
-                "Description": "Jens Larsonâ€™s firm designed the white clapboard apartment at 19 East Wheelock Street, on the northwest corner of Wheelock and North Park Streets. The College began building the apartments to house new faculty members in 1921601 and it appears on maps of 1922. Scattered Arts and Crafts tiles line the brick stairhall.",
+                "Description": "Jens Larson's firm designed the white clapboard apartment at 19 East Wheelock Street, on the northwest corner of Wheelock and North Park Streets. The College began building the apartments to house new faculty members in 1921601 and it appears on maps of 1922. Scattered Arts and Crafts tiles line the brick stairhall.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -3987,7 +3987,7 @@ var meacham = {
                 "Name": "Leverone Fieldhouse",
                 "dateAddedStart": 1962,
                 "dateAddedEnd": 1963,
-                "Description": "Pier Luigi Nervi engineered the 63-foot high hall as his first large work in the U.S. The building resembles his Palazetto dello Sport at the 1960 Olympics in Rome.606 Dartmouthâ€™s Business Manager Mr. Oldmsted devised the idea of hiring Nervi and contracted his services on a visit to Rome.607 Campbell and Aldrich were the architects on the project.608 The buildingâ€™s site on South Park Street included only a Stone Crusher and the Edward Gould House in 1905; the crusher was gone and the Gould house was the only structure there in 1931. The College dedicated the hall on 18 November 1962, and has used it since for an indoor running track and tennis courts. The College installed AstroTurf in 1972.",
+                "Description": "Pier Luigi Nervi engineered the 63-foot high hall as his first large work in the U.S. The building resembles his Palazetto dello Sport at the 1960 Olympics in Rome.606 Dartmouth's Business Manager Mr. Oldmsted devised the idea of hiring Nervi and contracted his services on a visit to Rome.607 Campbell and Aldrich were the architects on the project.608 The building's site on South Park Street included only a Stone Crusher and the Edward Gould House in 1905; the crusher was gone and the Gould house was the only structure there in 1931. The College dedicated the hall on 18 November 1962, and has used it since for an indoor running track and tennis courts. The College installed AstroTurf in 1972.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -4332,7 +4332,7 @@ var meacham = {
                 "Name": "Massachusetts Hall (Middle)",
                 "dateAddedStart": 1907,
                 "dateAddedEnd": 1907,
-                "Description": "Charles Rich designed the building, which cost $80,000.654 The building connects to the later North and South Massachusetts by open colonnades. Where the side entrances are today, several rooms originally stood. The building held 88 when it was new655; by 1961 it held 125 in 19 doubles and 29 triples656; and in 1990 the hall held 117 in 2 singles, 17 doubles and 27 triples657 Massachusetts Hall became a barracks in 1918658 and operated as the ship â€œU.S.S. Massachusettsâ€ when it became one of ten Navy V-12 dormitories during W.W.II.",
+                "Description": "Charles Rich designed the building, which cost $80,000.654 The building connects to the later North and South Massachusetts by open colonnades. Where the side entrances are today, several rooms originally stood. The building held 88 when it was new655; by 1961 it held 125 in 19 doubles and 29 triples656; and in 1990 the hall held 117 in 2 singles, 17 doubles and 27 triples657 Massachusetts Hall became a barracks in 1918658 and operated as the ship 'U.S.S. Massachusetts' when it became one of ten Navy V-12 dormitories during W.W.II.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -4582,7 +4582,7 @@ var meacham = {
                 "Name": "Moore Hall",
                 "dateAddedStart": 1996,
                 "dateAddedEnd": 1998,
-                "Description": "Robert A.M. Sternâ€™s firm designed the psychology department building at the northwest corner of the Ravine Mall, and the building forms half of the proposed gateway. Formerly the department had been split between Silsby and Gerry Halls. Part of the funds for the building were donated by Florence Moore, who died in 1993, in honor of her husband Lansing Moore â€™37, who died in 1990. Lansing Moore only spent one semester at Dartmouth before withdrawing in 1933 during the Depression.",
+                "Description": "Robert A.M. Stern's firm designed the psychology department building at the northwest corner of the Ravine Mall, and the building forms half of the proposed gateway. Formerly the department had been split between Silsby and Gerry Halls. Part of the funds for the building were donated by Florence Moore, who died in 1993, in honor of her husband Lansing Moore '37, who died in 1990. Lansing Moore only spent one semester at Dartmouth before withdrawing in 1933 during the Depression.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -4699,7 +4699,7 @@ var meacham = {
                 "Name": "Murdough Hall",
                 "dateAddedStart": 1973,
                 "dateAddedEnd": 1973,
-                "Description": "Campbell, Aldrich and Nulty designed this Modernist brick structure at the west end of Tuck Mall. The center cost $4.7 million and bears the names of Thomas G. Murdough â€™26 and Grace Murdough.",
+                "Description": "Campbell, Aldrich and Nulty designed this Modernist brick structure at the west end of Tuck Mall. The center cost $4.7 million and bears the names of Thomas G. Murdough '26 and Grace Murdough.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -4828,7 +4828,7 @@ var meacham = {
                 "Name": "Fayerweather North Hall",
                 "dateAddedStart": 1906,
                 "dateAddedEnd": 1907,
-                "Description": "Charles Rich designed the four- story dormitory north of and now connected to Fayerweather Hall, which cost $30,530. A fire damaged the building in 1908.700 The hall became a barracks in 1918. The College remodeled the building between 1928-30 and remodeled it â€œcompletelyâ€ in 1959-60.",
+                "Description": "Charles Rich designed the four- story dormitory north of and now connected to Fayerweather Hall, which cost $30,530. A fire damaged the building in 1908.700 The hall became a barracks in 1918. The College remodeled the building between 1928-30 and remodeled it 'completely' in 1959-60.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -5011,7 +5011,7 @@ var meacham = {
                 "Name": "Massachusetts Hall (North)",
                 "dateAddedStart": 1912,
                 "dateAddedEnd": 1912,
-                "Description": "Charles Rich designed the dormitory, which connects to Middle Massachusetts. The dormitory became a barracks in 1918 and operated as the ship â€œU.S.S. North Massachusettsâ€ as one of ten Navy V-12 dormitories during W.W.II.",
+                "Description": "Charles Rich designed the dormitory, which connects to Middle Massachusetts. The dormitory became a barracks in 1918 and operated as the ship 'U.S.S. North Massachusetts' as one of ten Navy V-12 dormitories during W.W.II.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -5050,7 +5050,7 @@ var meacham = {
                 "Name": "Occom Pond",
                 "dateAddedStart": 1900,
                 "dateAddedEnd": 1900,
-                "Description": "Professor Thomas W.D. Worthen, who built the now-Sigma Phi Epsilon House, and Mr. C.P. Chase created the Pond.719 The land was a marshy part of Phineas Clementâ€™s cow pasture called Clementâ€™s Swamp.720 The D.O.C. House stands at the north end of the Pond.",
+                "Description": "Professor Thomas W.D. Worthen, who built the now-Sigma Phi Epsilon House, and Mr. C.P. Chase created the Pond.719 The land was a marshy part of Phineas Clement's cow pasture called Clement's Swamp.720 The D.O.C. House stands at the north end of the Pond.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -5508,7 +5508,7 @@ var meacham = {
                 "Name": "LALACS House",
                 "dateAddedStart": 1874,
                 "dateAddedEnd": 1874,
-                "Description": "The building continued as a dormitory until the 1920s; it housed the 1920 Epsilon Kappa Phi Fraternity in the 1920s as well. That organization later evolved into the Delta Upsilon Fraternity in 1926.763 Workers remodeled the house extensively in 1963.764 The College currently owns the house and in the 1990s devoted it to Public Affairs, including the Alumni Magazine. The building became the home of Latin American and Caribbean Studies (the â€œLatino Houseâ€) beginning in 1999.",
+                "Description": "The building continued as a dormitory until the 1920s; it housed the 1920 Epsilon Kappa Phi Fraternity in the 1920s as well. That organization later evolved into the Delta Upsilon Fraternity in 1926.763 Workers remodeled the house extensively in 1963.764 The College currently owns the house and in the 1990s devoted it to Public Affairs, including the Alumni Magazine. The building became the home of Latin American and Caribbean Studies (the 'Latino House') beginning in 1999.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -5590,7 +5590,7 @@ var meacham = {
                 "Name": "Psi Upsilon House",
                 "dateAddedStart": 1908,
                 "dateAddedEnd": 1908,
-                "Description": "The 1841 Psi Upsilon Fraternity built the house at 7 West Wheelock Street on an empty lot.783 The organization had previously used a hall in the Tontine Building and the Carter Block. The lot approximates the location of ahatterâ€™s shop that Asa Huntington kept as early as 1774.784 The fraternity added the ell extending to the east at some time after building the house; the fraternity added the front balcony and staircase after 1963.",
+                "Description": "The 1841 Psi Upsilon Fraternity built the house at 7 West Wheelock Street on an empty lot.783 The organization had previously used a hall in the Tontine Building and the Carter Block. The lot approximates the location of ahatter's shop that Asa Huntington kept as early as 1774.784 The fraternity added the ell extending to the east at some time after building the house; the fraternity added the front balcony and staircase after 1963.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -5672,7 +5672,7 @@ var meacham = {
                 "Name": "Reed Hall",
                 "dateAddedStart": 1839,
                 "dateAddedEnd": 1840,
-                "Description": "The College built Reed Hall as an academic building on the site of the Wheelock Mansion House, which its owner moved west to West Wheelock Street. The hallâ€™s namesake is William Reed of Marblehead, Ma., a Trustee from 1834 to 1837.787 Ammi B. Young, who had designed Wentworth and Thornton, designed Reed Hall. Youngâ€™s brother Dyer Young was the contractor and their brother Professor Ira Young was the supervisor of construction.788 Reed is the most Classically refined building on Dartmouth Row and is the only one with Greek Revival corner pilasters.",
+                "Description": "The College built Reed Hall as an academic building on the site of the Wheelock Mansion House, which its owner moved west to West Wheelock Street. The hall's namesake is William Reed of Marblehead, Ma., a Trustee from 1834 to 1837.787 Ammi B. Young, who had designed Wentworth and Thornton, designed Reed Hall. Young's brother Dyer Young was the contractor and their brother Professor Ira Young was the supervisor of construction.788 Reed is the most Classically refined building on Dartmouth Row and is the only one with Greek Revival corner pilasters.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -5695,7 +5695,7 @@ var meacham = {
                 "Name": "Remsen Medical Sciences Building",
                 "dateAddedStart": 1961,
                 "dateAddedEnd": 1961,
-                "Description": "The Medical School began constructing Remsen in the summer of 1959 and finished 9 September 1960. The building connects to Vail on the north and Gilman on the south. The School remodeled the building in 1964 and 1973. The Deanâ€™s Conference Room contains the spiral staircase from the old Medical School Building.",
+                "Description": "The Medical School began constructing Remsen in the summer of 1959 and finished 9 September 1960. The building connects to Vail on the north and Gilman on the south. The School remodeled the building in 1964 and 1973. The Dean's Conference Room contains the spiral staircase from the old Medical School Building.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -5733,7 +5733,7 @@ var meacham = {
                 "Name": "Richardson Hall",
                 "dateAddedStart": 1897,
                 "dateAddedEnd": 1898,
-                "Description": "Charles Rich designed the first dormitory on the Terrace to form a quadrangle with Rollins and Wheeler. The building bears the name of the Hon. James B. Richardson of Boston â€œin recognition of the fact that he was the first Trustee nominated under the present system of Alumni representation.â€803 The hall cost $49,013 to build.",
+                "Description": "Charles Rich designed the first dormitory on the Terrace to form a quadrangle with Rollins and Wheeler. The building bears the name of the Hon. James B. Richardson of Boston 'in recognition of the fact that he was the first Trustee nominated under the present system of Alumni representation.'803 The hall cost $49,013 to build.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -6085,7 +6085,7 @@ var meacham = {
                 "Name": "Red Rolfe Field at Biondi Park",
                 "dateAddedStart": 2008,
                 "dateAddedEnd": 2008,
-                "Description": "The baseball field on South Park Street carries the name of the Yankeesâ€™ Robert Rolfe, 1931.",
+                "Description": "The baseball field on South Park Street carries the name of the Yankees' Robert Rolfe, 1931.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -6200,7 +6200,7 @@ var meacham = {
                 "Name": "Rope Ferry Road",
                 "dateAddedStart": 1793,
                 "dateAddedEnd": 1793,
-                "Description": "One of oldest streets into town, Rope Ferry Road began when townspeople trod it from the northwest corner of the Green to the ferry in 1795. The street went by the familiar name of Stump Lane in much of the 19th century because of the stumps that lined the road: they came from the Green before 1831. Others called the road Loversâ€™ Lane.",
+                "Description": "One of oldest streets into town, Rope Ferry Road began when townspeople trod it from the northwest corner of the Green to the ferry in 1795. The street went by the familiar name of Stump Lane in much of the 19th century because of the stumps that lined the road: they came from the Green before 1831. Others called the road Lovers' Lane.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -6250,7 +6250,7 @@ var meacham = {
                 "Name": "Roth Center for Jewish Life",
                 "dateAddedStart": 1996,
                 "dateAddedEnd": 1997,
-                "Description": "Construction on the center for the Upper Valleyâ€™s Jewish community began in May of 1996. Kliment & Halsband designed the building at 5-7 Occom Road.",
+                "Description": "Construction on the center for the Upper Valley's Jewish community began in May of 1996. Kliment & Halsband designed the building at 5-7 Occom Road.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -6283,7 +6283,7 @@ var meacham = {
                 "Name": "Russell Sage Hall",
                 "dateAddedStart": 1922,
                 "dateAddedEnd": 1923,
-                "Description": "Eminent architect John Russell Pope designed the building (Riorden) with Larson & Wells of Hanover, and it cost $176,000. The hall operated as the ship â€œU.S.S. Russell Sageâ€ during W.W.II. when it was one of ten Navy V-12 dormitories.860 The Viking painting in the upper hallway predates the advent of Asgard and is more of the period of the annual â€œSussel Rageâ€ party.",
+                "Description": "Eminent architect John Russell Pope designed the building (Riorden) with Larson & Wells of Hanover, and it cost $176,000. The hall operated as the ship 'U.S.S. Russell Sage' during W.W.II. when it was one of ten Navy V-12 dormitories.860 The Viking painting in the upper hallway predates the advent of Asgard and is more of the period of the annual 'Sussel Rage' party.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -6328,7 +6328,7 @@ var meacham = {
                 "Name": "Sanborn House",
                 "dateAddedStart": 1928,
                 "dateAddedEnd": 1928,
-                "Description": "The library and offices of the English department connects to Baker Library by a walkway and tunnel. The College built the building with $344,000 from the bequest of Edwin Webster Sanborn and named it for Professor Edwin David Sanborn 1832 , Mary Webster Sanborn, Miss Kate Sanborn and Mrs. Mary Webster (Sanborn) Babcock. The Wren Room follows a room that Christopher Wren designed; the Poetry Room is a replica of Professor Sanbornâ€™s study and includes the mantle, Naples wallpaper, window casings, furniture, and other elements from the original Sanborn House; the Rupert Brooke Room follows a modified Norman decor; and the Shakespeare Room features a carving of Shakespeareâ€™s coat of arms above the mantle.",
+                "Description": "The library and offices of the English department connects to Baker Library by a walkway and tunnel. The College built the building with $344,000 from the bequest of Edwin Webster Sanborn and named it for Professor Edwin David Sanborn 1832 , Mary Webster Sanborn, Miss Kate Sanborn and Mrs. Mary Webster (Sanborn) Babcock. The Wren Room follows a room that Christopher Wren designed; the Poetry Room is a replica of Professor Sanborn's study and includes the mantle, Naples wallpaper, window casings, furniture, and other elements from the original Sanborn House; the Rupert Brooke Room follows a modified Norman decor; and the Shakespeare Room features a carving of Shakespeare's coat of arms above the mantle.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -6363,7 +6363,7 @@ var meacham = {
                 "Name": "Sanborn Lane",
                 "dateAddedStart": 1799,
                 "dateAddedEnd": 1799,
-                "Description": "Professor Sanbornâ€™s house stood on the southern corner of the Lane and gave it its name. Earlier it was called Cemetery Lane.",
+                "Description": "Professor Sanborn's house stood on the southern corner of the Lane and gave it its name. Earlier it was called Cemetery Lane.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -6526,7 +6526,7 @@ var meacham = {
                 "Name": "Scully-Fahey Field",
                 "dateAddedStart": 2000,
                 "dateAddedEnd": 2000,
-                "Description": "The artificial-turf field lies southeast of Thompson Arena and is host to the field-hockey and lacrosse teams. The fieldâ€™s stands seat 1,500. The families of Alma and Donald Scully Â¥49 and Helen and Peter Fahey â€™68 donated the field in memory of long-time soccer and lacrosse coach Tom Dent.",
+                "Description": "The artificial-turf field lies southeast of Thompson Arena and is host to the field-hockey and lacrosse teams. The field's stands seat 1,500. The families of Alma and Donald Scully Â¥49 and Helen and Peter Fahey '68 donated the field in memory of long-time soccer and lacrosse coach Tom Dent.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -6608,7 +6608,7 @@ var meacham = {
                 "Name": "Sherman House",
                 "dateAddedStart": 1883,
                 "dateAddedEnd": 1883,
-                "Description": "Professor Frank A. Sherman had his house built at 37 North Main. Today the building stands on the corner of Maynard and North Main, though the house predates Maynard Street by nine years. Sherman still owned the house in 1905. In its original guise, the house was a rather conventional two-story building with a steeply-pitched roof and jerkin-headed gables. By 1928 the Sigma Phi Epsilon Fraternity had bought the house and had hired Jens Larson to design a new appearance: as it stands today the houseâ€™s upper stories wear a rather Tudor half-timbered skin, with leaded windows and a porch of carefully haphazard brick. The building was in private hands again by 1950 and the College now owns it.",
+                "Description": "Professor Frank A. Sherman had his house built at 37 North Main. Today the building stands on the corner of Maynard and North Main, though the house predates Maynard Street by nine years. Sherman still owned the house in 1905. In its original guise, the house was a rather conventional two-story building with a steeply-pitched roof and jerkin-headed gables. By 1928 the Sigma Phi Epsilon Fraternity had bought the house and had hired Jens Larson to design a new appearance: as it stands today the house's upper stories wear a rather Tudor half-timbered skin, with leaded windows and a porch of carefully haphazard brick. The building was in private hands again by 1950 and the College now owns it.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -6680,7 +6680,7 @@ var meacham = {
                 "Name": "Sigma Delta House",
                 "dateAddedStart": 1936,
                 "dateAddedEnd": 1937,
-                "Description": "The Phi Gamma Delta Fraternity had Alfred Hoyt Granger of Chicago design the house at 10 West Wheelock to replace the former dwelling that the fraternity had occupied on that site.896 Wells, Hudson & Granger was the local architectural firm of Jens Larsonâ€™s former partner and the College Superintendent of Buildings, Harry Wells. The fraternity went local in 1965 as Phoenix and later folded. The College bought the house and rented it for use by the first sorority at Dartmouth, the 1977 Sigma Kappa, which went local to become Sigma Delta in 1988.897",
+                "Description": "The Phi Gamma Delta Fraternity had Alfred Hoyt Granger of Chicago design the house at 10 West Wheelock to replace the former dwelling that the fraternity had occupied on that site.896 Wells, Hudson & Granger was the local architectural firm of Jens Larson's former partner and the College Superintendent of Buildings, Harry Wells. The fraternity went local in 1965 as Phoenix and later folded. The College bought the house and rented it for use by the first sorority at Dartmouth, the 1977 Sigma Kappa, which went local to become Sigma Delta in 1988.897",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -6768,7 +6768,7 @@ var meacham = {
                 "Name": "Silsby Hall",
                 "dateAddedStart": 1927,
                 "dateAddedEnd": 1928,
-                "Description": "Jens Larson designed the building that bears the name of the donorâ€™s grandfather, the Rev. Ozias Silsby, 1785.902 The College revealed the name of the donor, T. Julien Silsby of Brookline, Ma., a year after he died.903 The building cost $468,000904 and contains classrooms, offices and laboratories that replace the demolished Butterfield Museum.",
+                "Description": "Jens Larson designed the building that bears the name of the donor's grandfather, the Rev. Ozias Silsby, 1785.902 The College revealed the name of the donor, T. Julien Silsby of Brookline, Ma., a year after he died.903 The building cost $468,000904 and contains classrooms, offices and laboratories that replace the demolished Butterfield Museum.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -6810,7 +6810,7 @@ var meacham = {
                 "Name": "Fayerweather Hall South",
                 "dateAddedStart": 1907,
                 "dateAddedEnd": 1910,
-                "Description": "Charles Rich designed the dormitory to flank the earlier Fayerweather Hall in a pattern mimicking that of Dartmouth Row. The hall cost $35,686 to build917 and stands on the site of the Burke house, which was already long-gone as it had burned in 1856.918 Students under the leadership of Fred Harris founded the Dartmouth Outing Club on 17 December 1909919 in room 4. Later that month, however, the uilding burned to its brick skeleton. Students saved themselves by jumping from windows into the deep snow920; Fred Harris injured his knee doing so. The College rebuilt the building in 1910, again to Richâ€™s designs. The hall became a barracks in 1918922 and was one of ten Navy V-12 dormitories (operated as the ship â€œU.S.S. South Fayerweatherâ€) during W.W.II.",
+                "Description": "Charles Rich designed the dormitory to flank the earlier Fayerweather Hall in a pattern mimicking that of Dartmouth Row. The hall cost $35,686 to build917 and stands on the site of the Burke house, which was already long-gone as it had burned in 1856.918 Students under the leadership of Fred Harris founded the Dartmouth Outing Club on 17 December 1909919 in room 4. Later that month, however, the uilding burned to its brick skeleton. Students saved themselves by jumping from windows into the deep snow920; Fred Harris injured his knee doing so. The College rebuilt the building in 1910, again to Rich's designs. The hall became a barracks in 1918922 and was one of ten Navy V-12 dormitories (operated as the ship 'U.S.S. South Fayerweather') during W.W.II.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -6944,7 +6944,7 @@ var meacham = {
                 "Name": "Steele Hall",
                 "dateAddedStart": 1920,
                 "dateAddedEnd": 1921,
-                "Description": "Larson and Wells designed the building to contain laboratories, offices and classrooms. The building cost $475,000 in total, with Trustee Sanford Steele 1870 of New York City leaving $249,000 of the total. The building bears the name of Sanfordâ€™s brother Benjamin H. Steele, 1857.",
+                "Description": "Larson and Wells designed the building to contain laboratories, offices and classrooms. The building cost $475,000 in total, with Trustee Sanford Steele 1870 of New York City leaving $249,000 of the total. The building bears the name of Sanford's brother Benjamin H. Steele, 1857.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -6979,7 +6979,7 @@ var meacham = {
                 "Name": "Stell Hall",
                 "dateAddedStart": 1930,
                 "dateAddedEnd": 1930,
-                "Description": "J.F. Larson designed the refectory of the Tuck School that bears the name of Edward Tuckâ€™s wife Julia Stell. The building cost $297,655.",
+                "Description": "J.F. Larson designed the refectory of the Tuck School that bears the name of Edward Tuck's wife Julia Stell. The building cost $297,655.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -7034,7 +7034,7 @@ var meacham = {
                 "Name": "Streeter Hall",
                 "dateAddedStart": 1929,
                 "dateAddedEnd": 1929,
-                "Description": "Jens Larson designed this dormitory, which bears the name of prominent Trustee General Frank Streeter. The building forms the center of the Gold Coast cluster and connects to Gile and Lord by open arcades; Lord and Streeter are contemporary and together cost $297,000. The Navy V-12 program ran the building as as the ship â€œU.S.S. Streeterâ€ during W.W.II, one of ten such dormitories.",
+                "Description": "Jens Larson designed this dormitory, which bears the name of prominent Trustee General Frank Streeter. The building forms the center of the Gold Coast cluster and connects to Gile and Lord by open arcades; Lord and Streeter are contemporary and together cost $297,000. The Navy V-12 program ran the building as as the ship 'U.S.S. Streeter' during W.W.II, one of ten such dormitories.",
                 "namesake": "Frank Streeter (principal donor)"
             },
             "geometry": {
@@ -7151,7 +7151,7 @@ var meacham = {
                 "Name": "Sudikoff Hall",
                 "dateAddedStart": 1968,
                 "dateAddedEnd": 1968,
-                "Description": "The building, originally the Mental Health ward of the hospital, houses the computer science department and its laboratories. The College bought the building with the other hospital properties in the late 1980s and remodeled itin 1993 to the designs of R.M. Kliment and Frances Halsband. The College renamed the building during the transformatin for donor Jeffrey Sudikoff â€™77, then a part-owner of the L.A. Kings. The building now has copper roofing, â€œindustrialâ€ torchieres, and overhead cable channels in the hallways.",
+                "Description": "The building, originally the Mental Health ward of the hospital, houses the computer science department and its laboratories. The College bought the building with the other hospital properties in the late 1980s and remodeled itin 1993 to the designs of R.M. Kliment and Frances Halsband. The College renamed the building during the transformatin for donor Jeffrey Sudikoff '77, then a part-owner of the L.A. Kings. The building now has copper roofing, 'industrial' torchieres, and overhead cable channels in the hallways.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -7218,7 +7218,7 @@ var meacham = {
                 "Name": "The Tabard",
                 "dateAddedStart": 1932,
                 "dateAddedEnd": 1932,
-                "Description": "The 1893 Sigma Chi Fraternity, descended from the local Chandler School organization Phi Zeta Mu of 1857,971 built the house at 3 Webster Avenue in 1932. The organizationâ€™s previous house on the same site, a 1912 wooden building, burned in September of 1931. The fraternity became the Tabard in 1960,973 taking the name of Chaucerâ€™s inn in Southwark. The organization went co-educational in the 1970s.",
+                "Description": "The 1893 Sigma Chi Fraternity, descended from the local Chandler School organization Phi Zeta Mu of 1857,971 built the house at 3 Webster Avenue in 1932. The organization's previous house on the same site, a 1912 wooden building, burned in September of 1931. The fraternity became the Tabard in 1960,973 taking the name of Chaucer's inn in Southwark. The organization went co-educational in the 1970s.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -7326,7 +7326,7 @@ var meacham = {
                 "Name": "Theta Delta Chi House",
                 "dateAddedStart": 1925,
                 "dateAddedEnd": 1926,
-                "Description": "Putnam and Chandler of Boston designed the fraternityâ€™s replacement building in brick, this time orienting its long direction perpendicular to the street and placing its entrance on the east side. The fraternity dedicated the building in the fall of 1926.",
+                "Description": "Putnam and Chandler of Boston designed the fraternity's replacement building in brick, this time orienting its long direction perpendicular to the street and placing its entrance on the east side. The fraternity dedicated the building in the fall of 1926.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -7357,7 +7357,7 @@ var meacham = {
                 "Name": "Thompson Ice Arena and Auditorium",
                 "dateAddedStart": 1975,
                 "dateAddedEnd": 1975,
-                "Description": "Pier Luigi Nervi provided the engineering work and again teamed up with designers Campbell and Aldrich to build Thompson Arena, as he had for Leverone Field House of a dozen years earlier (Hunt, 34). The hockey arena faces Leverone across South Park Street, though it stands half-sunken behind a row of houses and is often invisible from the street. The building bears the name of Trustee Rupert (Robert?) C. Thompson Jr. â€™28 of Providence.",
+                "Description": "Pier Luigi Nervi provided the engineering work and again teamed up with designers Campbell and Aldrich to build Thompson Arena, as he had for Leverone Field House of a dozen years earlier (Hunt, 34). The hockey arena faces Leverone across South Park Street, though it stands half-sunken behind a row of houses and is often invisible from the street. The building bears the name of Trustee Rupert (Robert?) C. Thompson Jr. '28 of Providence.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -7788,7 +7788,7 @@ var meacham = {
                 "Name": "Thornton Hall",
                 "dateAddedStart": 1828,
                 "dateAddedEnd": 1829,
-                "Description": "The College built Thornton as a dormitory to the designs of Ammi Burhnam Young. Youngâ€™s rejected drawings for Thornton and its companion Wentworth featured relieved brick arcades (Tolles) but the College went with the simpler design that exists today. The hall occupies the site of the 1790 Chapel, which the College moved, but stands somewhat farther back and closer to the front line of Dartmouth Hall. The building continued to house students on all three floors at least through 1905 and later on just the top two floors, probably continuing into the 1920s. The building also held the Gallery of Paintings from 1829 to 1840 when the Gallery moved to Reed. The College entirely reconstructed the building in 1924 for $66,000989; now the hall functions as a classroom and office building.",
+                "Description": "The College built Thornton as a dormitory to the designs of Ammi Burhnam Young. Young's rejected drawings for Thornton and its companion Wentworth featured relieved brick arcades (Tolles) but the College went with the simpler design that exists today. The hall occupies the site of the 1790 Chapel, which the College moved, but stands somewhat farther back and closer to the front line of Dartmouth Hall. The building continued to house students on all three floors at least through 1905 and later on just the top two floors, probably continuing into the 1920s. The building also held the Gallery of Paintings from 1829 to 1840 when the Gallery moved to Reed. The College entirely reconstructed the building in 1924 for $66,000989; now the hall functions as a classroom and office building.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -7811,7 +7811,7 @@ var meacham = {
                 "Name": "Topliff Hall",
                 "dateAddedStart": 1920,
                 "dateAddedEnd": 1920,
-                "Description": "J.F. Larson designed the hall that the College named for Elijah M. Topliff, 1852, who had earlier left money to the College. The building cost $355,000. The existence of two sizes of rooms stems from the Collegeâ€™s determination to place affluent students next to those of more limited means; College built the dormitory to handle the postwar boom in admissions and it was the largest dormitory on the campus at the time it went up. Topliff operated as the ship â€œU.S.S. Topliffâ€ as one of the ten Navy V-12 dormitories that sailors occupied during W.W.II.",
+                "Description": "J.F. Larson designed the hall that the College named for Elijah M. Topliff, 1852, who had earlier left money to the College. The building cost $355,000. The existence of two sizes of rooms stems from the College's determination to place affluent students next to those of more limited means; College built the dormitory to handle the postwar boom in admissions and it was the largest dormitory on the campus at the time it went up. Topliff operated as the ship 'U.S.S. Topliff' as one of the ten Navy V-12 dormitories that sailors occupied during W.W.II.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -7870,7 +7870,7 @@ var meacham = {
                 "Name": "Tuck Drive",
                 "dateAddedStart": 1914,
                 "dateAddedEnd": 1914,
-                "Description": "Edward Tuck, benefactor of the Tuck School, gave the funds that created the Tuck Drive. The College opened the road in 1914 through the ravine earlier known as â€œWebsterâ€™s Valeâ€ and later as â€œHitchcock Valeâ€ since it formed part of the Hitchcock Estate. The College received the Estate in 1912 and saw an opportunity to provide a new automobile access route to the campus that would avoid the unsightly and barren hill of West Wheelock Street.",
+                "Description": "Edward Tuck, benefactor of the Tuck School, gave the funds that created the Tuck Drive. The College opened the road in 1914 through the ravine earlier known as 'Webster's Vale' and later as 'Hitchcock Vale' since it formed part of the Hitchcock Estate. The College received the Estate in 1912 and saw an opportunity to provide a new automobile access route to the campus that would avoid the unsightly and barren hill of West Wheelock Street.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -8224,7 +8224,7 @@ var meacham = {
                 "Name": "Webster Avenue",
                 "dateAddedStart": 1896,
                 "dateAddedEnd": 1896,
-                "Description": "The College opened Webster Avenue in 1896 to provide housing for the growing faculty, cluding those whom the Collegeâ€™s expansion around the Green displaced.",
+                "Description": "The College opened Webster Avenue in 1896 to provide housing for the growing faculty, cluding those whom the College's expansion around the Green displaced.",
                 "namesake": "To be added."
             },
             "geometry": {
@@ -8595,7 +8595,7 @@ var meacham = {
                 "Name": "Triangle House",
                 "dateAddedStart": 1928,
                 "dateAddedEnd": 1929,
-                "Description": "Originally known as Whitaker Apartment. ens F. Larson designed the faculty housing at 4 North Park Street in a traditional C-shape; it appeared in Larsonâ€™s treatise on college architecture.",
+                "Description": "Originally known as Whitaker Apartment. ens F. Larson designed the faculty housing at 4 North Park Street in a traditional C-shape; it appeared in Larson's treatise on college architecture.",
                 "namesake": "To be added."
             },
             "geometry": {

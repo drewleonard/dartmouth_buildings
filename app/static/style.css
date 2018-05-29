@@ -301,7 +301,9 @@ body {
     position: absolute;
     background-color: #000000;
     opacity: 0.75;
-    margin: -33vh 50px 50px 50px;
+    top: 115px;
+    left: 350px;
+    /* margin: -33vh 50px 50px 50px; */
     padding: 20px;
     color: #ffffff;
     font-size: 32px;
@@ -312,7 +314,9 @@ body {
     position: absolute;
     background-color: #000000;
     opacity: 0.80;
-    margin: -23vh 50px 50px 100px;
+    top: 195px;
+    left: 390px;
+    /* margin: -23vh 50px 50px 100px; */
     padding: 20px;
     color: #ffffff;
     font-size: 32px;

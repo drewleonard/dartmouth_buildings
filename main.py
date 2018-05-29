@@ -6,6 +6,7 @@ from flask import render_template
 def index():
     return render_template('index.html')
 
-# RUN APP FROM COMMAND LINE
 if __name__ == '__main__':
-    app.run()
+    app.debug = True
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)

@@ -119,6 +119,46 @@ ground_truth = {
         "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
         "shape-names": [],
         "story-item-number": 1
+    },
+    "hopkins-center-1": {
+        "w": 6017,
+        "h": 4871,
+        "title": "Dickey's 'Liberting Arts': The Hopkins Center for the Arts",
+        "subtitle": "Hopkins Center for the Arts, 1962.",
+        "caption": "President John Sloan Dickey (in office: 1945 to 1970) wanted to broaden the educational horizons for Dartmouth College and its community. Toward these ends, he fundraised to build the Hopkins Center for the Arts, which became the College's hub for arts and culture. President Dickey was making the statement that the College had educational goals or responsbilities to culture: in his words, '[to] expose all of our students to painting, sculpture, architecture, music, poetry, print making, woodworking, the craft arts and the theater.' The building's central location, imposing and open architecutral style, and role as a funding priority spotlight President Dickey's vision for liberal arts and learning at the College.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
+        "shape-names": ["Hopkins Center for the Arts"],
+        "story-item-number": 2
+    },
+    "kiewit-1": {
+        "w": 6237,
+        "h": 5014,
+        "title": "The Liberal Arts and Computing at Dartmouth",
+        "subtitle": "Kiewit Computation Center, undated.",
+        "caption": "Apparently opposed to the Hopkins Center for the Arts in its educational identity, the Kiewit Computation Center was President Dickey's answer to the dawning era of computation. President Dickey fit Kiewit sqaurely into his liberal arts goals, in that he recognized computation would increasingly determine how the world functions: knowledge he hoped to deliver to students. While the Kiewit Computation Center's educational stock was in scientific rather than artistic knowledge, President Dickey vision of the liberal arts merited both ends. Then too did the College make bold bets on discovery.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
+        "shape-names": [],
+        "story-item-number": 2
+    },
+    "alternative-space-1": {
+        "w": 876,
+        "h": 580,
+        "title": "Alternative Social and Residential Spaces: Major Change",
+        "subtitle": "House Center B, 2017.",
+        "caption": "Today, the College continues to signal its priorities through designing and redesigning the campus, supporting groups by giving them building space while relegating others, and funding major new academic and architecutral initiatives. The campus is in flux today as it has been throughout the College's history. Of note, President Hanlon's vision for the College involves shifting away from traditional social spaces and toward ones centered around the recently-introduced house community system. House Center B (pictured above) hosted several social events during 2018 Spring, providing an alternative space to Greek Life houses.",
+        "citation": "Website of Architect Magazine.",
+        "shape-names": [],
+        "story-item-number": 3
+    },
+    "west-end-1": {
+        "w": 1003,
+        "h": 680,
+        "title": "Preparing the College for Future Successes: The Plan",
+        "subtitle": "West End Master Plan, 2018.",
+        "caption": "In Spring 2018, President Hanlon announced the College's medium- to long-term priorities through the $3b Call to Lead fundraising intiative, which is slated to enable future success, in areas such as the sciences and the arts, for the College. The Call to Lead will restructure the campus dramatically, with familiar spaces renovated and new ones built. The West End of Campus plan (pictured above) will give technology a central hub while breathing new life into a more distant area of campus. The College envisions this architectural initiative as enabling future scientific discovery, in which the space itself is part of the formula for success. Buildings on campus continue to reflect the College's strongly.",
+        "citation": "Image: Dartmo.: The Buildings of Dartmouth College website. Caption: Written by Drew N. Leonard, sourced from Dartmouth's Call to Lead fundraising website.",
+        "shape-names": [],
+        "story-item-number": 3
     }
 }
 
@@ -145,6 +185,14 @@ var highlightStyle = {
     opacity: 0.95,
     fillOpacity: 0.25,
 };
+
+var historicalStyle = {
+    color: "#dc322f",
+    fillColor: "#dc322f",
+    weight: 2,
+    opacity: 0.95,
+    fillOpacity: 0.25,
+}
 
 var hiddenStyle = {
     olor: "#dc322f",
@@ -491,12 +539,12 @@ function createHistoricalMap(tileURL, yearStart, yearEnd) {
         zoom: zoom
     });
     L.tileLayer(tileURL, {
-        attribution: 'G. D. Nelson, Dartmouth College'
+        attribution: 'Dartmouth Digital Collections'
     }).addTo(thisMap);
 
     function onEachFeature(feature, layer) {
         if (feature.properties.dateAddedStart >= yearStart && feature.properties.dateAddedStart <= yearEnd) {
-            layer.setStyle(campusStyle);
+            layer.setStyle(historicalStyle);
         } else {
             layer.setStyle(hiddenStyle);
         }

@@ -3482,7 +3482,7 @@ var meacham = {
         }, {
             "type": "Feature",
             "properties": {
-                "Name": "Hopkins Center for the Visual and Performing Arts",
+                "Name": "Hopkins Center for the Arts",
                 "dateAddedStart": 1962,
                 "dateAddedEnd": 1962,
                 "Description": "To be added.",

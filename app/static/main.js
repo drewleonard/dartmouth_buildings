@@ -531,7 +531,7 @@ function removeMapImage() {
     $("#map-caption").remove();
 }
 
-function createHistoricalMap(tileURL, yearStart, yearEnd) {
+function createHistoricalMap(e, tileURL, yearStart, yearEnd) {
     var id = $(".story-container-items--active .story-container-item--active").attr("id");
     var mapDiv = $("<div/>")
         .attr("id", "this-image-map")
@@ -569,6 +569,7 @@ function createHistoricalMap(tileURL, yearStart, yearEnd) {
         onEachFeature: onEachFeature,
     });
     thisMap.addLayer(featureLayer);
+    captionMap(e, topPos, leftPos, imgWidth, imgHeight);
 }
 
 /**

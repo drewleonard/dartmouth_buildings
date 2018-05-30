@@ -338,11 +338,11 @@ body {
 .map-caption {
     z-index: 999;
     background-color: #000000;
-    opacity: 0.90;
+    opacity: 0.85;
     padding: 10px;
-    font-weight: 700;
+    font-weight: 500;
     color: #ffffff;
     border-radius: 2.5px;
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'Cambo', serif !important;
 }

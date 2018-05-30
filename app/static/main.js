@@ -397,16 +397,15 @@ function stepBackward() {
  * @param  {div} container          image container
  */
 function scaleWidth(container) {
+
     var containerH = container.height(),
         imgId = container.attr("id"),
         imgW = ground_truth[imgId]["w"],
         imgH = ground_truth[imgId]["h"];
+    // console.log(containerH, imgId, imgW, imgH)
     var containerW = (imgW / imgH) * containerH;
-    if (containerW < ($(".story-container-item").width())) {
-        container.width(containerW + "px");
-    }
-    if (containerW >= ($(".story-container-item").width())) {
-        container.width($(".story-container-item").width() + "px");
+    if (containerW <= container.width()) {
+        container.width(containerW);
     }
 }
 

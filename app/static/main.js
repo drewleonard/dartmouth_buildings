@@ -466,7 +466,7 @@ function uncaptionImage() {
  * Map locations of buildings in images
  * Called when mousing over map button
  */
-function mapImage() {
+function mapImage(e) {
     var id = $(".story-container-items--active .story-container-item--active").attr("id"),
         shapeNames = ground_truth[id]["shape-names"];
     var mapDiv = $("<div/>")
@@ -504,6 +504,22 @@ function mapImage() {
         onEachFeature: onEachFeature,
     });
     map.addLayer(featureLayer);
+    captionMap(e, topPos, leftPos, imgWidth, imgHeight);
+}
+
+function captionMap(e, topPos, leftPos, imgWidth, imgHeight) {
+    var mapCaptionDiv = $("<div/>")
+        .attr("id", "map-caption")
+        .addClass("map-caption")
+        .html("<div>" + e.target.getAttribute("map-caption") + "</div>");
+    $(".story-container-items--active .story-container-item--active .image-map").append(mapCaptionDiv);
+    var mapCaptionHeight = $("#map-caption").height(),
+        mapCaptionWidth = imgWidth - 20;
+    $(".map-caption").width(mapCaptionWidth - 20);
+    $("#map-caption").offset({
+        top: topPos + imgHeight - mapCaptionHeight - 40,
+        left: leftPos + imgWidth - mapCaptionWidth - 10
+    });
 }
 
 /**
@@ -512,6 +528,7 @@ function mapImage() {
  */
 function removeMapImage() {
     $(".story-container-item--active .image-map").remove();
+    $("#map-caption").remove();
 }
 
 function createHistoricalMap(tileURL, yearStart, yearEnd) {

@@ -3,7 +3,6 @@
  * 1. Place buttons on first open of story
  * 2. Find other Rauner names
  * 3. Add tooltip for unavailable map
- * 4. Raise shadows on nav buttons
  */
 
 /**

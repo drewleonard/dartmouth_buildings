@@ -1026,7 +1026,7 @@ var meacham = {
                 "dateAddedStart": 1925,
                 "dateAddedEnd": 1925,
                 "Description": "Blackall, Clapp & Whittemore designed the house at 10 Webster Avenue, giving it a gambrel roof with a projecting entrance bay and specifying 'non-fireproof' construction. Enclosing approximately 100,000 cubic feet, the Delta Tau Delta fraternity completed the house in July of 1925 at a cost of 46.5 cents per cubic foot.102 Founded 1901,103 the fraternity moved from the house at 39 North Main Street. Fire gutted the building in 1929104 after which Wells & Hudson rebuilt it. The fraternity went local and changed its name to Bones Gate in 1960.105",
-                "namesake": "To be added."
+                "namesake": "To be added. (A random pub in London)?"
             },
             "geometry": {
                 "type": "Polygon",

@@ -158,6 +158,16 @@ ground_truth = {
         "citation": "Image: Dartmo.: The Buildings of Dartmouth College website. Caption: Written by Drew N. Leonard, sourced from Dartmouth's Call to Lead fundraising website.",
         "shape-names": [],
         "story-item-number": 3
+    },
+    "webster-interior-1": {
+        "w": 6196,
+        "h": 4958,
+        "title": "Reduce, Reuse, Recycle: Webster Hall's Many Functions.",
+        "subtitle": "Interior of Webster Hall, 1958.",
+        "caption": "Dartmouth College is careful not onyl about the external architectural styles of its buildings, but also their internal use cases. While the College grows and shifts its priorities, adding and removing from the list, space remains a constraining factor often. It follows that, often, buildings on campus have served multiple internal functions throughout their histories, which spotlight moments in the College's past. Webster Hall exemplifies this well. Today the College's special collections library, it once was the College's theater and housed major events such as the annual commencement. Its interior was designed for good acoustics, making it the likely-loudest library on campus.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
+        "shape-names": ["Webster Hall"],
+        "story-item-number": 0
     }
 }
 
@@ -397,12 +407,10 @@ function stepBackward() {
  * @param  {div} container          image container
  */
 function scaleWidth(container) {
-
     var containerH = container.height(),
         imgId = container.attr("id"),
         imgW = ground_truth[imgId]["w"],
         imgH = ground_truth[imgId]["h"];
-    // console.log(containerH, imgId, imgW, imgH)
     var containerW = (imgW / imgH) * containerH;
     if (containerW <= container.width()) {
         container.width(containerW);
@@ -464,6 +472,7 @@ function uncaptionImage() {
 /**
  * Map locations of buildings in images
  * Called when mousing over map button
+ * @param {event} e         Event object
  */
 function mapImage(e) {
     var id = $(".story-container-items--active .story-container-item--active").attr("id"),
@@ -506,6 +515,7 @@ function mapImage(e) {
     captionMap(e, topPos, leftPos, imgWidth, imgHeight);
 }
 
+/***/
 function captionMap(e, topPos, leftPos, imgWidth, imgHeight) {
     var mapCaptionDiv = $("<div/>")
         .attr("id", "map-caption")
@@ -530,6 +540,7 @@ function removeMapImage() {
     $("#map-caption").remove();
 }
 
+/***/
 function createHistoricalMap(e, tileURL, yearStart, yearEnd) {
     var id = $(".story-container-items--active .story-container-item--active").attr("id");
     var mapDiv = $("<div/>")

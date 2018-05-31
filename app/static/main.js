@@ -168,6 +168,26 @@ ground_truth = {
         "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
         "shape-names": ["Webster Hall"],
         "story-item-number": 0
+    },
+    "webster-nugget-1": {
+        "w": 6196,
+        "h": 4958,
+        "title": "The Nugget in Webster: A Brief Interlude",
+        "subtitle": "Moviegoers at The Nugget in Webster Hall, undated.",
+        "caption": "For a brief moment in time, Webster Hall housed The Nugget Theater (between 1944 and 1949) after the original on South Main Street (built in 1916) burned down. Pictured are moviegoers enjoying centrally-located entertainment during that unusual turn of events.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
+        "shape-names": ["Webster Hall"],
+        "story-item-number": 0
+    },
+    "webster-seating-1": {
+        "w": 3300,
+        "h": 2187,
+        "title": "Today, an Unfamiliar Arrangement: Seating at Wesbter Hall's Theater",
+        "subtitle": "Theater Seating Plan, Webster Hall, undated.",
+        "caption": "In gazing at this seating plan, those familiar with Webster Hall today will notice the building's interior would work well as a theater. Today, far fewer people are ever in the building at once than this seating plan would allow. However, as the College grew in population and functions, Webster Hall became too small a space for functions such as commencement and shows. Becoming defunct as a result, the College would later find a use-case for Webster Hall in its special collections library.",
+        "citation": "Image: Rauner Special Collections Library, Webster Hall Vertical File. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
+        "shape-names": ["Webster Hall"],
+        "story-item-number": 0
     }
 }
 

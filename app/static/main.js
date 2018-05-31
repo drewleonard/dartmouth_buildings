@@ -198,6 +198,26 @@ ground_truth = {
         "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
         "shape-names": ["Robinson Hall", "Brown Hall", "Cohen Hall", "Bissell Hall", "Little Hall", "Triangle House"],
         "story-item-number": 1,
+    },
+    "row-1": {
+        "w": 5371,
+        "h": 3832,
+        "title": "Revolutionary Beginnings and Secession: Dartmouth College",
+        "subtitle": "Dartmouth Row, 1851. (College Hall not pictured).",
+        "caption": "Dartmouth College was established just prior to America's War of Independence and during the turmoil that led to it, and did not remain neutral in the process. College Hall (built 1770), one of two original academic buildings, became the center of the College's political involvement. Committees met there to raise soliders for defense during the war, as well as declare Hanover's secession to the state of New Connecticut (with 15 other towns). It then published the Dresden Mercury newspaper, which bore the namesake of Dartmouth College's new town (in New Connecticut, 'Hanover' was already taken). True to its political beginnings, in 1789 (just 19 years into its lifetime), students would demolish the building to vocalize their anger over the slow progress of Dartmouth Hall's construction.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
+        "shape-names": [],
+        "story-item-number": 2
+    },
+    "parkhurst-1": {
+        "w": 5780,
+        "h": 4100,
+        "title": "Twelve Hours: The Student Seizure of Parkhurst Hall, 1969.",
+        "subtitle": "The Student Seizure of Parkhurst Hall, 1969.",
+        "caption": "Unpopular sentiment toward The Vietnam War spread to American college campuses throughout the late 1960s, Dartmouth College included. On May 6, 1969, students seized and occupied Parkhurst Hall, home to the Administration, to protest The Vietnam War and the Reserve Officers' Training Corps' (ROTC) presence on campus. The College's community had debated ROTC hotly prior to the seizure, with many (students and faculty alike) arguing that the organization's campus presence signalled the College's support for the war. In response to the Administration's apparent inaction on the issue, anti-ROTC students made good on their promises of militant action on May 6 in forcibly removing administrators from Parkhurst and nailing the doors shut. Dozens were arrested, but ROTC left campus fully by 1973 (the program was reinstated on campus in 2014).",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from the Dartmout Alumni Magazine, June 1969.",
+        "shape-names": ["Parkhurst Hall"],
+        "story-item-number": 2
     }
 }
 

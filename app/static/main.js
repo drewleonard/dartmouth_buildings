@@ -2,7 +2,6 @@
  * TODO:
  * 1. Place buttons on first open of story
  * 2. Find other Rauner names
- * 3. Add tooltip for unavailable map
  */
 
 /**
@@ -650,7 +649,10 @@ var mapModeMap = new L.Map("map-mode-map", {
 var tiles = new L.StamenTileLayer("toner-lite");
 tiles.addTo(mapModeMap);
 
-/***/
+/**
+ * Populate upper-right-hand corner tooltip
+ * @param  {event} e        Event (on click)
+ */
 function populateTooltip(e) {
     var $thisTooltip = $(".map-mode-tooltip");
     if ($(".map-mode-tooltip--title-intro") !== null) {
@@ -693,20 +695,29 @@ function populateTooltip(e) {
         .html(e.target.feature.properties.Description);
 }
 
-/***/
+/**
+ * Center map on feature
+ * @param  {event} e        Event (on click)
+ */
 function centerMap(e) {
     mapModeMap.fitBounds(
         e.target.getBounds(), { padding: [150, 150] }
     );
 }
 
-/***/
+/**
+ * Highlight building
+ * @param  {event} e        Event (on click)
+ */
 function highlightMap(e) {
     featureLayer.setStyle(campusStyle);
     e.target.setStyle(highlightStyle);
 }
 
-/***/
+/**
+ * Add annotation to map (feature name)
+ * @param {event} e         Event (on hover)
+ */
 function addAnnotation(e) {
     $(".map-mode-annotation").remove();
 
@@ -723,12 +734,19 @@ function addAnnotation(e) {
     $(".map-mode-annotation").offset({ top: yPos + 25, left: (xPos - (0.50 * annotationW)) });
 }
 
-/***/
+/**
+ * Remove annotation from map (feature name)
+ * @param  {event} e        Event (on hover off)
+ */
 function removeAnnotation(e) {
     $(".map-mode-annotation").remove();
 }
 
-/***/
+/**
+ * Functions for interacting with map layers
+ * @param  {} feature       
+ * @param  {} layer  
+ */
 function onEachFeature(feature, layer) {
     layer.setStyle(campusStyle);
     layer.on('click', populateTooltip);
@@ -759,6 +777,10 @@ function positionTooltipContainer() {
 }
 positionTooltipContainer();
 
+/**
+ * Annotate icon in toolbar
+ * @param  {event} e        Event (on hover)
+ */
 function annotateToolbarIcon(e) {
     var $tooltipText = e.target.getAttribute("tooltip"),
         $icon = $(e.target);
@@ -775,6 +797,9 @@ function annotateToolbarIcon(e) {
     $(".toolbar-icon-tooltip").offset({ top: iconY + 48, left: iconX - (tooltipW * 0.3) });
 }
 
+/**
+ * Remove annotation from toolbar icon
+ */
 function unannotateToolbarIcon() {
     $(".toolbar-icon-tooltip").remove();
 }

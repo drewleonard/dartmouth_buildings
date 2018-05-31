@@ -188,6 +188,16 @@ ground_truth = {
         "citation": "Image: Rauner Special Collections Library, Webster Hall Vertical File. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
         "shape-names": ["Webster Hall"],
         "story-item-number": 0
+    },
+    "robo-hall-1": {
+        "w": 4322,
+        "h": 3049,
+        "title": "A Home for Those Without a Home: Robinson Hall",
+        "subtitle": "Robinson Hall, undated.",
+        "caption": "Seen here covered in snow, Robinson Hall is likely today's best case-study in College buildings home to non-traditional functions. It was built in 1913 to house specifically non-athletic organizations, following the expansion of campus during President Tucker's incumbency. Notable for its size and central location, Robinson Hall has housed a variety of non-athletic organizations throughout its 100+ year history, such as the Dartmouth Outing Club and Pan Asian Community. Recently and notably, the College has slated both the Pan Asian Community resource room and Rainbow Room will be moved out of Robinson Hall to the Choates Cluster and Triangle House (respectively): what many regard as the outskirts of campus and a signal of the College's prioritization of marginalized groups on campus.",
+        "citation": "Image: Dartmouth Digital Collections. Caption: written by Drew N. Leonard, sourced from Scott Meacham, 'Notes toward a Catalog of the Buildings and Landscapes of Dartmouth College,' Dartmo.: The Buildings of Dartmouth College (updated 2001), at http://www.dartmo.com, Rauner Special Collections Library, and Dartmouth College.",
+        "shape-names": ["Robinson Hall", "Brown Hall", "Cohen Hall", "Bissell Hall", "Little Hall", "Triangle House"],
+        "story-item-number": 1,
     }
 }
 
